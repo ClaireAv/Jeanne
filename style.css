@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Libre Caslon Text', serif;
+    src: url('Libre_Caslon_Text/LibreCaslonText-Regular.ttf');
+    }
+/*--------------------- HEADER----------------------- */
+header{
+    box-shadow: 0px 0px 10px #B17F4A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header ul.menu{
+    display: flex;
+    font-size: 25px;
+    font-weight: 700;
+}
+header li{
+    margin-right: 20px;
+    list-style-type: none;
+}
+header ul.deroulant{
+    display: none;
+    font-weight: 400;
+}
+
+
+
+header li.promo{
+    color: #B17F4A;
+    font-weight: 1400;
+}
+
+header img{
+    margin: 10px;
+}
+header .picto img{
+    height: 40px;
+    margin-left: 30px ;
+}
+header form input{
+    border:none;
+    text-decoration: overline;
+    width: 90px;
+}
+header form button{
+    border: none ;
+    background-color: #EFBB7E;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    
+}
+.derourlant{
+    position: absolute;
+    width: 100%;
+    background-color: #1E2A37;
+    top: -600px;
+    transition: .5s ease-out;
+    color: blanchedalmond;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    display: block;
+
+}
+.deroulant.active{
+    top: 0;
+}
+/*---------------------FIN HEADER----------------------- */
+
+
+/*---------------------FOOTER----------------------- */
+
+footer{
+    background-color: #EFBB7E;
+    margin-top: 200px;
+    }
+footer .bloc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+footer .bloc > *{
+    margin: 20px;
+}
+footer h1{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+footer li{
+    list-style-type: none;
+    line-height: 170%;
+}
+footer li a{
+    text-decoration: none;
+    color: black;
+}
+footer li a:visited{
+    color: black;
+}
+footer li a:hover{
+    color: brown;
+}
+footer .picto img{
+    height: 70px;
+    margin: 15px;
+}
+footer .picto{
+    display: flex;
+    justify-content: center;
+}
+/*---------------------FIN FOOTER----------------------- */
