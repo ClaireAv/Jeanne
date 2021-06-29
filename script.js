@@ -1,4 +1,3 @@
-
 var btnC = document.querySelector('.toggle_collection');
 var btnN = document.querySelector('.toggle_nouveautés');
 var navC = document.querySelector('.navC');
