@@ -1,34 +1,12 @@
 
-const deroulant =document.querySelector('.deroulant');
-const click =document.querySelector('.click')
+var btnC = document.querySelector('.toggle_collection');
+var btnN = document.querySelector('.toggle_nouveautés');
+var navC = document.querySelector('.navC');
+var navN = document.querySelector('.navN');
 
-
-click.addEventListener('click', show);
-
-function show(){
-  deroulant.classList.toggle('active');}
-
-
-// const burger = document.querySelector('.burger');
-// const sidebar =document.querySelector('.sidebar');
-
-// burger.addEventListener ('click', ()=>{
-//     burger.classList.toggle('active');
-// });
-
-// burger.addEventListener('click', show);
-
-// function show(){
-//   sidebar.classList.toggle('active');
-// }
-
-//     // Click pour enlever le menu
-//     const ul = document.querySelector('ul');
-
-//     ul.addEventListener('click', () => {
-//       sidebar.classList.remove('active');
-//     });
-
-//     ul.addEventListener('click', () => {
-//         burger.classList.remove('active');
-//       });
+btnC.onclick = function(){
+    navC.classList.toggle ('navC_open');
+}
+btnN.onclick = function(){
+    navN.classList.toggle ('navN_open');
+}
