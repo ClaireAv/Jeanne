@@ -3,9 +3,17 @@ var btnN = document.querySelector('.toggle_nouveautés');
 var navC = document.querySelector('.navC');
 var navN = document.querySelector('.navN');
 
-btnC.onclick = function(){
+btnC.onmouseover = function(){
     navC.classList.toggle ('navC_open');
 }
-btnN.onclick = function(){
+btnC.onmouseout = function(){
+    navC.classList.toggle ('navC');
+}
+btnN.onmouseover = function(){
     navN.classList.toggle ('navN_open');
 }
+
+// btnN.onmouseout = function(){
+//     navN.classList.toggle ('navN');
+// }
+

@@ -3,23 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-@font-face {
+@font-face{
     font-family: 'Libre Caslon Text', serif;
-    src: url('Libre_Caslon_Text/LibreCaslonText-Regular.ttf');
-    }
-
-
-
-    /*--------------------- HEADER----------------------- */
-
+    src: url(Caslon/LibreCaslonText-Regular.ttf);
+}
+a{
+    cursor: pointer;
+}
+/*--------------------- HEADER----------------------- */
 header{
+    font-family: 'Libre Caslon Text', serif;
     box-shadow: 0px 0px 10px #B17F4A;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: white;
     z-index: 1;
-
 }
 header .toggle_collection, header .toggle_nouveautés, header .toggle_promo{
     cursor: pointer;
@@ -34,14 +33,30 @@ header .toggle_promo{
 header img{
     margin: 10px;
 }
+header .LOGO{
+    width: 150px;
+}
 header .picto img{
     height: 40px;
     margin-left: 30px ;
 }
+header .picto{
+    display: flex;
+}
+/* header form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: black 2px solid;
+} */
 header form input{
     border:none;
-    text-decoration: overline;
-    width: 90px;
+    text-decoration: underline;
+    width: 120px;
+    font-family: 'Libre Caslon Text', serif;
+    margin-left: 90px;
+    font-size: 18px;
+    color: black;
 }
 header form button{
     border: none ;
@@ -63,20 +78,16 @@ header form button{
     height: auto;
     background-color: white ;
     z-index: -1;
-    cursor: pointer;
-
-
 }
-.menuC a, .menuN a{
+.menuC> a, .menuN> a{
     text-decoration: none;
     font-size: 25px;
     color: black;
     padding: 15px;
     display: block;
     text-align: center;
-    box-shadow: 0px 0px 10px #B17F4A;
-    
-
+    box-shadow: 1px 2px 10px #B17F4A;
+    cursor: pointer;  
 }
 .menuN{    
     z-index: -2;
@@ -90,13 +101,14 @@ header form button{
     top: 0px;
     transition: 1s;
 }
+
 .navN{
     position: relative;
-    top: -800px;
+    top: -550px;
     transition: 1s;
 }
 .navN_open{
-    top: -465px;
+    top: -230px;
     transition: 1s;
 }
 /*---- FIN MENU DEROULANT------------------------- */
@@ -104,7 +116,6 @@ header form button{
 
 
 /*---------------------FOOTER----------------------- */
-
 footer{
     background-color: #EFBB7E;
     margin-top: 200px;
