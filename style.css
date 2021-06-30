@@ -69,12 +69,7 @@ header form input{
     color: black;
 }
 
-@media(max-width: 1020px){
-    
 
-
-
-}
 
 /*---------------------FIN HEADER----------------------- */
 
@@ -120,11 +115,6 @@ header form input{
 .navN_open{
     top: -230px;
     transition: 1s;
-}
-@media(max-width: 1020px){
-
-
-
 }
 
 /*---- FIN MENU DEROULANT------------------------- */
