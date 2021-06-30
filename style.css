@@ -18,7 +18,7 @@ header{
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    z-index: 1;
+    z-index: 2;
 }
 header .toggle_collection, header .toggle_nouveautés, header .toggle_promo{
     cursor: pointer;
@@ -27,7 +27,7 @@ header .toggle_collection, header .toggle_nouveautés, header .toggle_promo{
 }
 header .toggle_promo{
     font-weight: 700;
-    color:#EFBB7E ;
+    color:#FFDBB0 ;
     font-size: 25px;
 }
 header img{
@@ -38,35 +38,20 @@ header .LOGO{
 }
 header .picto img{
     height: 40px;
-    margin-left: 30px ;
+    margin: 15px ;
 }
 header .picto{
     display: flex;
 }
-/* header form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: black 2px solid;
-} */
 header form input{
     border:none;
     text-decoration: underline;
     width: 120px;
     font-family: 'Libre Caslon Text', serif;
-    margin-left: 90px;
+    margin-left: 30px;
     font-size: 18px;
     color: black;
 }
-header form button{
-    border: none ;
-    background-color: #EFBB7E;
-    border-radius: 20px;
-    width: 80px;
-    height: 30px;
-    
-}
-
 /*---------------------FIN HEADER----------------------- */
 
 
@@ -77,6 +62,8 @@ header form button{
     width: 200px ;
     height: auto;
     background-color: white ;
+    /* box-shadow: 1px 2px 10px #B17F4A; */
+
     z-index: -1;
 }
 .menuC> a, .menuN> a{
@@ -86,7 +73,8 @@ header form button{
     padding: 15px;
     display: block;
     text-align: center;
-    box-shadow: 1px 2px 10px #B17F4A;
+    box-shadow: -3px 6px 10px #B17F4A;
+
     cursor: pointer;  
 }
 .menuN{    
@@ -117,7 +105,7 @@ header form button{
 
 /*---------------------FOOTER----------------------- */
 footer{
-    background-color: #EFBB7E;
+    background-color:#FFDBB0;
     margin-top: 200px;
     }
 footer .bloc{
