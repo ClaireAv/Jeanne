@@ -137,7 +137,6 @@ header form input{
 footer{
     width: 100%;
     background-color:#FFDBB0;
-    margin-top: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -190,3 +189,223 @@ footer a{
 }
 
 /*---------------------FIN FOOTER----------------------- */
+
+/* --------------------- DEBUT PAGE ACCUEIL -----------------------  */
+
+@font-face {
+    font-family: 'Caslon';
+    src: url(Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-family:'Caslon', serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+
+
+/* !------------------------ VITRINE ------------------------ */
+
+#vitrine img {
+    width: 100vw;
+    /* height: 100vh; */
+}
+
+/* !------------------------ VITRINE ------------------------ */
+
+/* !------------------------ NOUVEAUTES ---------------------- */
+
+#nouveautes img, #nouveautes a {
+    padding: 30px;
+}
+
+#nouveautes h2 {
+    color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#nouveautes h2:hover {
+    font-size: 44px;
+}
+
+/* !------------------------ NOUVEAUTES ---------------------- */
+
+/* !------------------------ GRANDE_CATEGORIE ---------------------- */
+
+#grande-cat {
+    height: 524px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#grande-cat div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#grande-cat .bijoux {
+    background: url(images/gde-cat/Bijoux.png) no-repeat center/cover;
+}
+
+#grande-cat .sacs {
+    background: url(images/gde-cat/sac.png) no-repeat center/cover; 
+}
+
+#grande-cat .chaussures {
+    background: url(images/gde-cat/chaussures.png) no-repeat center/cover;
+}
+
+#grande-cat .robes {
+    background: url(images/gde-cat/robes-categorie.png) no-repeat center/cover; 
+}
+
+#grande-cat h2 {
+    color: white;
+    text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+    padding: 80px 60px;
+}
+
+#grande-cat h2:hover {
+    font-size: 44px;
+}
+
+/* !------------------------ GRANDE_CATEGORIE ---------------------- */
+
+/* !------------------------ INTEMPORELS ------------------------ */
+
+#intemporels img, #intemporels a {
+    padding: 30px;
+}
+
+#intemporels h2 {
+    color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#intemporels h2:hover {
+    font-size: 44px;
+}
+
+/* !------------------------ INTEMPORELS ------------------------ */
+
+
+/* !------------------------ PETITE_CATEGORIE ---------------------- */
+
+#petite-cat {
+    height: 524px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#petite-cat div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#petite-cat .robes-blanches {
+    background: url(images/ptte-cat/robe-blanche.png) no-repeat center/cover;
+}
+
+#petite-cat .robes-denim {
+    background: url(images/ptte-cat/robe-denim\ 1.png) no-repeat center/cover; 
+}
+
+#petite-cat .robes-fleurs {
+    background: url(images/ptte-cat/robe-fleurs\ 1.png) no-repeat center/cover; 
+}
+
+#petite-cat .robes-longues {
+    background: url(images/ptte-cat/robe-a-pois\ 1.png) no-repeat center/cover; 
+}
+
+#petite-cat h2 {
+    color: white;
+    text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+    padding: 80px;
+}
+
+#petite-cat h2:hover {
+    font-size: 44px;
+}
+
+/* !------------------------ PETITE_CATEGORIE ---------------------- */
+
+/* !------------------------ ENGAGEMENTS ---------------------- */
+
+#engagements a {
+    color: black;
+}
+
+#engagements a:hover {
+    color: gray;
+}
+
+#engagements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+#engagements .icon {
+    align-self: center;
+    text-align: center;
+}
+
+#engagements figcaption {
+    padding: 10px;
+}
+
+#engagements h1 {
+    text-transform: uppercase;
+    color: #B17F4A;
+}
+
+
+/* !------------------------ ENGAGEMENTS ---------------------- */
+
+/* --------------------- FIN PAGE ACCUEIL -----------------------  */
+
+
+
+
+
+
+
