@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 @font-face{
-    font-family: 'Libre Caslon Text', serif;
-    src: url(Caslon/LibreCaslonText-Regular.ttf);
+    font-family: 'Caslon', serif;
+    src: url(Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
 }
 a{
     cursor: pointer;
@@ -28,7 +28,7 @@ a{
 }
 /*--------------------- HEADER----------------------- */
 header{
-    font-family: 'Libre Caslon Text', serif;
+    font-family: 'Caslon', serif;
     box-shadow: 0px 0px 10px #B17F4A;
     display: flex;
     justify-content: space-around;
@@ -63,7 +63,7 @@ header form input{
     border:none;
     text-decoration: underline;
     width: 120px;
-    font-family: 'Libre Caslon Text', serif;
+    font-family: 'Caslon', serif;
     margin-left: 30px;
     font-size: 18px;
     color: black;
@@ -87,7 +87,6 @@ header form input{
     height: auto;
     background-color: white ;
     /* box-shadow: 1px 2px 10px #B17F4A; */
-
     z-index: -1;
 }
 .menuC> a, .menuN> a{
@@ -113,7 +112,6 @@ header form input{
     top: 0px;
     transition: 1s;
 }
-
 .navN{
     position: relative;
     top: -550px;
