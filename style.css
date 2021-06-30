@@ -9,6 +9,22 @@
 }
 a{
     cursor: pointer;
+    text-decoration: none;
+}
+.pc{
+    display: block;
+}
+.mob{
+    display:none;
+}
+@media(max-width: 1020px){
+    .pc{
+        display: none;
+    }
+    .mob{
+        display: block;
+    }
+
 }
 /*--------------------- HEADER----------------------- */
 header{
@@ -52,6 +68,14 @@ header form input{
     font-size: 18px;
     color: black;
 }
+
+@media(max-width: 1020px){
+    
+
+
+
+}
+
 /*---------------------FIN HEADER----------------------- */
 
 
@@ -99,23 +123,39 @@ header form input{
     top: -230px;
     transition: 1s;
 }
+@media(max-width: 1020px){
+
+
+
+}
+
 /*---- FIN MENU DEROULANT------------------------- */
 
 
 
 /*---------------------FOOTER----------------------- */
 footer{
+    width: 100%;
     background-color:#FFDBB0;
     margin-top: 200px;
-    }
-footer .bloc{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
+    padding: 30px;
+    }
+footer .bloc{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
 }
 footer .bloc > *{
     margin: 20px;
+}
+footer .bloc1, footer .bloc2, footer .bloc3{
+    text-align: center;
+    margin: 15px;
 }
 footer h1{
     font-size: 20px;
@@ -136,11 +176,17 @@ footer li a:hover{
     color: brown;
 }
 footer .picto img{
-    height: 70px;
+    height: 30px;
     margin: 15px;
 }
 footer .picto{
     display: flex;
     justify-content: center;
 }
+footer a{
+    text-align: center;
+    color: white;
+    margin: 30px;
+}
+
 /*---------------------FIN FOOTER----------------------- */
