@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+  }
+
+@font-face {
+    font-family: "Caslon";
+    src: url("./Libre_Caslon_Text/LibreCaslonText-Regular.ttf");
+}
+
+body{
+    font-family: "Caslon";
+}
+
+.s2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 133px;
+}
+
+.description{
+    background: #f3ede3;
+    text-align: left;
+    font-family: "Caslon";
+    font-size: 20px;
+    width: 359px;
+    height: 549px;
+}
+
+.description h3{
+    color:#b17f43;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 69px;
+    margin-bottom: 70px;
+}
+
+.s3{
+    display: flex;
+    justify-content: space-around;
+    gap: 104px;
+}
