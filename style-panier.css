@@ -1,8 +1,11 @@
 .containergrand{
-    
-    margin: 70px;
+    height:90vh;
+    margin: 10px;
     background-color:#f7f6f5; 
     font-family: 'Libre Caslon Text', serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
 
 }
 
@@ -62,6 +65,7 @@ ul{
 .s1{
     border: bisque 1px solid;
     justify-content: space-between;
+    height:45vh;
     
     
 }
@@ -81,6 +85,7 @@ ul{
 .s2{
   border: bisque 1px solid;
   width: auto;
+  height:45vh;
 
 
 }
