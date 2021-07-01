@@ -17,12 +17,15 @@ a{
 .mob{
     display:none;
 }
-@media(max-width: 1020px){
+@media(max-width: 1100px){
     .pc{
         display: none;
     }
     .mob{
         display: block;
+    }
+    .root a {
+        display: none;
     }
 
 }  
@@ -35,17 +38,6 @@ header{
     align-items: center;
     background-color: white;
     height: 90px;
-}
-
-header .toggle_collection, header .toggle_nouveautés, header .toggle_promo{
-    cursor: pointer;
-    font-size: 20px;
-    margin: 20px;
-}
-header .toggle_promo{
-    font-weight: 700;
-    color:#FFDBB0 ;
-    font-size: 25px;
 }
 header img{
     margin: 10px;
@@ -69,13 +61,6 @@ header form input{
     font-size: 18px;
     color: black;
 }
-
-
-
-
-
-
-
 .header-left {
     display: flex;
     justify-content: flex-start;
@@ -83,7 +68,6 @@ header form input{
     gap: 70px;
     padding: 0 40px;
 }
-
 .header-left h3 {
     color: black;
     font-size: 20px;
@@ -153,7 +137,7 @@ header form input{
 
     text-align: left;
 
-    background: white;
+    background:rgba(255, 255, 255, 0.85);
     list-style-type: none;
 }
 
@@ -300,7 +284,7 @@ h2 {
 
 #vitrine img {
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 /* !------------------------ VITRINE ------------------------ */
