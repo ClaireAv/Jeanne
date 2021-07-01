@@ -68,9 +68,10 @@ ul{
 
 
 
-.footer{
+.bas{
   margin:0px;
   background:rgb(190, 148, 106);
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,6 +133,16 @@ form{
     background-color: palegreen;
    
     
+}
+
+.footer{
+    margin:0px;
+    background:rgb(190, 148, 106);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid 1px;
+
 }
 
 
