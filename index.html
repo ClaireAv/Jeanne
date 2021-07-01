@@ -12,54 +12,84 @@
 <body>
 <!----------------------- HEADER------------------------->
 
-    <header id="haut">
-        <div class="toggle_collection pc">
-            <span>Collection</span>
-        </div>
-        <div class="toggle_nouveautés pc">
-            <span>Nouveautés</span>
-        </div>
-        <div class="toggle_promo pc">Promotions </div>    
-        <!-- LOGO -->
-        <a href="index.html"><img class="LOGO" src="images/LOGO.png" alt="logo Jeanne" title="Accueil"></a>
+<header id="haut">   
+    <div class="header-left flex">
 
-         <form> <!--Bouton de recherche -->
-              <input type="search" id="maRecherche"
-               placeholder="Rechercher">
-          </form>
-          <!-- PICTO -->
-        <div class="picto">
-            <a href="panier.html" target="_blank"><img src="images/coeur1.png" alt="picto coeur" title="Favoris"></a>
-            <a href="panier.html"  target="_blank"><img src="images/panier1.png" alt="picto panier" title="Panier"></a>
-            <a href=""><img src="images/connexion1.png" alt="picto connexion" title="Connexion"></a>
+        <div id="root">
+            <a id="topnav_icon" href="javascript:void(0);" onmouseover="showResponsiveMenu()" ><h3>Collection</h3></a>
+
+            <!-- MENU DEROULANT -->
+            <nav role="navigation" id="topnav_menu" >
+                <ol class="grande-categorie" href="javascript:void(0);" onmouseleave="showResponsiveMenu()">
+                    <li><a href="#">Bijoux</a>
+                        <ul class="petite-categorie">
+                            <li><a href="#">Boucles d'oreilles</a></li>
+                            <li><a href="#">Colliers</a></li>
+                            <li><a href="">Bracelets</a></li>
+                            <li><a href="#">Bagues</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sacs</a>
+                        <ul class="petite-categorie">
+                            <li><a href="#">Sacs à main</a></li>
+                            <li><a href="">Sacs à dos</a></li>
+                            <li><a href="">Sacs en bandolière</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sacs</a>
+                        <ul class="petite-categorie">
+                            <li><a href="">Mocassins</a></li>
+                            <li><a href="">Sandales</a></li>
+                            <li><a href="">Escarpins</a></li>
+                            <li><a href="">Chaussures plates</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Robes</a>
+                        <ul class="petite-categorie">
+                            <li><a href="#">Robes blanches</a></li>
+                            <li><a href="#">Robes denim</a></li>
+                            <li><a href="#">Robes à fleurs</a></li>
+                            <li><a href="#">Robes longues</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </header>
+
+        <a href="#"><h3>Nouveautés</h3></a>
+        <a href="#"><h3 class="promo">Promotions</h3></a>
+
+    </div>
+<!-- LOGO -->
+    <a href="index.html"><img class="LOGO" src="images/LOGO.png" alt="logo Jeanne" title="Accueil"></a>
+
+
+
+
+    <div class="header-right flex">
+        <input type="search" name="recherche" id="recherche" placeholder="Recherche">
+    </div>
+          <!-- PICTO -->
+    <div class="picto">
+        <a href="panier.html" target="_blank"><img src="images/coeur1.png" alt="picto coeur" title="Favoris"></a>
+        <a href="panier.html"  target="_blank"><img src="images/panier1.png" alt="picto panier" title="Panier"></a>
+        <a href=""><img src="images/connexion1.png" alt="picto connexion" title="Connexion"></a>
+    </div>
+</header>
 
 <!-- FIN HEADER------------------------->
 
 
-    <!-- MENU DEROULAT------------------------- -->
-    <div class="navC menuC">
-        <a href="vetement.html" target="_blank"> Robe </a>
-        <a href="vetement.html"target="_blank"> Chaussures</a> 
-        <a href="vetement.html"target="_blank"> Sacs</a> 
-        <a href="vetement.html"target="_blank"> Bijoux</a>
-    </div>
-<div class="navN menuN">
-    <a href="">Collection été 2021</a>
-    <a href="">Derniers arrivages</a>
-    <a href=""> Collection automne hiver 2021</a>
-</div>
 
-
-    <!--FIN MENU DEROULAT----------------------------------- -->
 
     <main>
+        
 
         <!------------------------ VITRINE ---------------------->
            <section id="vitrine">
                <img src="images/Vitrine.png" alt="photo de couverture Jeanne">
            </section>
+        
         <!------------------------ VITRINE ---------------------->
        
         <!------------------------ NOUVEAUTES ---------------------->
@@ -215,7 +245,9 @@
 <!-----------------------FIN FOOTER------------------------->
 
 
-<script src="script.js "></script>    
+<script src="script.js "></script> 
+ 
+
 </body>
 
 </html>
