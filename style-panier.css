@@ -1,7 +1,7 @@
 .containergrand{
     
     margin: 70px;
-    background-color:#eee5dc; 
+    background-color:#f7f6f5; 
     font-family: 'Libre Caslon Text', serif;
 
 }
@@ -71,7 +71,7 @@ ul{
 .bas{
   margin:0px;
   background:rgb(190, 148, 106);
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,8 +80,7 @@ ul{
 
 .s2{
   border: bisque 1px solid;
-  height:80vh;
-  width: auto;
+  
 
 
 }
