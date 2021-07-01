@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Caslon";
+    src: url(./Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
+    font-size: 20px;
+}
+
+
+img{
+    display: block;
+    max-width: 100%;
+   
+}
+
+p{
+  font-weight: lighter;  
+  
+}
+
+body{
+    border: 4px solid black;
+}
+
+.box1{
+    border: green 4px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2{
+    margin: auto;
+}
+
+
+/* SECTION 2 */
+
+
+/* BOX 2 */
+
+
+.box2{
+    border: pink 4px solid;
+    display: flex;
+    justify-content: space-between;
+ 
+   
+
+}
+
+/* BOX 3 */
+
+.box3{
+    border: indigo 4px solid;
+    display: flex;    
+}
+
+/* BOX 4 */
+
+.box4{
+    border: blue 4px solid;
+    display: flex;
+}
+
+
+/* BOX 5 */
+
+.box5{
+    border: yellow 4px solid;
+    display: flex;  
+}
+   
+
+
