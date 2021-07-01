@@ -11,6 +11,86 @@
 </head>
 
 <body>
+<!----------------------- HEADER------------------------->
+
+<header id="haut">   
+
+    <div class="responseive mob">
+        <div class="burger  mob" id="burger" href="javascript:void(0);" onmouseleave="showResponsiveMenu()">
+            <span></span>
+        </div> 
+    </div>
+
+    <div class="header-left flex ">
+
+        <div id="root ">
+            <a class="pc" id="topnav_icon" href="javascript:void(0);" onmouseover="showResponsiveMenu()" >
+                <h3 class="pc">Collection</h3></a>
+
+            <!-- MENU DEROULANT -->
+            <nav role="navigation" id="topnav_menu" >
+                <ol class="grande-categorie" href="javascript:void(0);" onmouseleave="showResponsiveMenu()">
+                    <li><a href="#">Bijoux</a>
+                        <ul class="petite-categorie">
+                            <li><a href="#">Boucles d'oreilles</a></li>
+                            <li><a href="#">Colliers</a></li>
+                            <li><a href="">Bracelets</a></li>
+                            <li><a href="#">Bagues</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sacs</a>
+                        <ul class="petite-categorie">
+                            <li><a href="#">Sacs à main</a></li>
+                            <li><a href="">Sacs à dos</a></li>
+                            <li><a href="">Sacs en bandolière</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sacs</a>
+                        <ul class="petite-categorie">
+                            <li><a href="">Mocassins</a></li>
+                            <li><a href="">Sandales</a></li>
+                            <li><a href="">Escarpins</a></li>
+                            <li><a href="">Chaussures plates</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Robes</a>
+                        <ul class="petite-categorie">
+                            <li><a href="#">Robes blanches</a></li>
+                            <li><a href="#">Robes denim</a></li>
+                            <li><a href="#">Robes à fleurs</a></li>
+                            <li><a href="#">Robes longues</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <a href="#" class="pc"><h3>Nouveautés</h3></a>
+        <a href="#" class="pc"><h3 class="promo">Promotions</h3></a>
+
+    </div>
+   
+<!-- LOGO -->
+    <a href="index.html"><img class="LOGO " src="images/LOGO.png" alt="logo Jeanne" title="Accueil"></a>
+
+
+
+
+    <div class="header-right flex pc">
+        <input type="search" name="recherche" id="recherche" placeholder="Recherche" class="pc">
+    </div>
+          <!-- PICTO -->
+    <div class="picto">
+        <a href="panier.html" target="_blank"><img src="images/coeur1.png" alt="picto coeur" title="Favoris"></a>
+        <a href="panier.html"  target="_blank"><img src="images/panier1.png" alt="picto panier" title="Panier"></a>
+        <a href=""><img src="images/connexion1.png" alt="picto connexion" title="Connexion"></a>
+    </div>
+</header>
+
+<!-- FIN HEADER------------------------->
+
+
+
     <!------------ CONTAINERGRAND ------------>
     <section class="containergrand">
 
@@ -121,6 +201,50 @@
 
 
     </section>
+
+
+<!-----------------------FOOTER------------------------->
+
+<footer>
+    <div class="picto">
+        <a href=""><img src="images/fb.png" alt="picto facebook" title="Notre Facebook"></a>
+        <a href=""><img src="images/insta.png" alt="picto instagram" title="Notre Instagram"></a>
+        <a href=""><img src="images/twitter.png" alt="picto instagram" title="Notre Twitter"></a>
+    </div>
+<div class="bloc">
+    <div class="bloc1">
+        <h1> AIDE & INFORMATION</h1>
+            <ul>
+                <li><a href="">Assistance</a></li>
+                <li><a href="">Suivi de commande</a></li>
+                <li><a href="">Livraison & retours</a></li>
+                <li><a href="">Livraison Premier</a></li>
+            </ul>
+    </div>
+    <div class="bloc2">
+        <h1>À PROPOS DE  JEANNE</h1>
+            <ul>
+                <li><a href=""> À propos de JEANNE</a></li>
+                <li><a href="">JEANNE recrute</a></li>
+                <li><a href=""> Responsabilité des entreprises</a></li>
+                <li><a href=""> Investisseurs</a></li>                    
+            </ul>
+    </div>
+    <div class="bloc3">
+        <h1>ENCORE PLUS DE JEANNE</h1>
+            <ul>
+                <li><a href="">Chèques cadeaux</a></li>
+                <li><a href="">French Days</a></li>
+                <li><a href="">Soldes</a></li>
+                <li><a href="">Black Friday</a></li>
+            </ul>
+    </div>
+</div>      
+    <a class="logobas" href="#haut"><img src="images/LOGO.png" alt="logo Jeanne"></a>
+    <a href="">© 2021 Jeanne</a>
+</footer>
+<!-----------FIN FOOTER------------------------->
+<script src="script.js "></script> 
 </body>
 
 </html>
