@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:(1fr 1fr 1fr) ;
+}
+
+.container .adf {
+    color:rgb(98, 60, 15);
+}
+.payer{
+    color: rgb(98, 60, 15);
+}
+span{
+    color:grey;
+}
+h2{
+    color: rgb(98, 60, 15) ;
+}
+.container.background{
+    color: rgb(254, 248, 248);
+}
+
+.container .payer{
+    text-align: center;
+}
