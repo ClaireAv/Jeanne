@@ -68,7 +68,7 @@ ul{
 
 
 
-.footer{
+.bas{
   margin:0px;
   background:rgb(190, 148, 106);
   display: flex;
@@ -125,11 +125,13 @@ form{
   justify-content: center;
   align-items: center;
 }
-.paye1{
+.livraison .paye1{
+  display: flex;
     height:20px;
-    width:auto;
+    width: fit-content;
     border-radius:3px;
     background-color: palegreen;
+    align-self: center;
    
     
 }
