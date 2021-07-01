@@ -80,7 +80,7 @@ ul{
 
 .s2{
   border: bisque 1px solid;
-  
+  width: auto;
 
 
 }
@@ -119,11 +119,10 @@ form{
   
 }
 .img{
- 
-  
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 }
 .livraison .paye1{
   display: flex;
@@ -137,13 +136,11 @@ form{
 }
 
 .footer{
-    margin:0px;
-    background:rgb(190, 148, 106);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: black solid 1px;
-
+  background:rgb(190, 148, 106);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: black solid 1px;
 }
 
 
