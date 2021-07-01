@@ -1,10 +1,118 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link rel="stylesheet" href="paye.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paiement</title>
+    <title>JEANNE</title>
+
+    <Section class="container">
+
+<div class="box1">
+        <p class="payer">Panier<b> >PAYER</b> >Confirmation</p>
+
+        <img src="images/Polygon 1.png" alt="triangle">
+       <a href="# Retour sur le résumé de la commande">Retour sur le résumé de la commande</a>
+
+       
+
+        <h1 class="adf">Adresse de facturation</h1>
+        <span>Veuillez vérifier que l'adresse de facturation correspond au nom et à l'adresse associée à la carte de crédit que vous utilisez pour cet achat.</span></p>
+      
+
+        <!-- FORMULAIRE ADRESSE NOM TELEPHONE-->
+
+    
+      <ol>
+        <li>
+          <label for=nom>Nom</label>
+          <input id=nom name=nom type=text placeholder="Prénom et nom" required autofocus>
+        </li>
+        <li>
+          <label for=email>Email</label>
+          <input id=email name=email type=email placeholder="exemple@domaine.com" required>
+        </li>
+        <li>
+          <label for=telephone>Téléphone</label>
+          <input id=telephone name=telephone type=tel placeholder="par ex&nbsp;: +3375500000000" required>
+        </li>
+      </ol>
+    </fieldset>
+  
+    <fieldset>
+      <legend>Adresse de livraison</legend>
+        <ol>
+          <li>
+            <label for=adresse>Adresse</label>
+            <textarea id=adresse name=adresse rows=5 required> </textarea>
+          </li>
+          <li>
+            <label for=codepostal>Code postal</label>
+            <input id=codepostal name=codepostal type=text required>
+          </li>
+            <li>
+            <label for=pays>Pays</label>
+            <input id=pays name=pays type=text required>
+          </li>
+          <div class="background">
+
+      <p>Informations sur la carte:</p>
+
+      <img src="images/Rectangle 9 (1).png" alt="">
+
+      <!-- IMAGES LOGOS MOYEN DE PAIEMENT -->
+
+      <div class="infos-carte">
+
+      <p>Numéro de la carte*</p>
+      <input type="text">
+
+      <p>Date d'expiration*</p>
+      <input type="month">
+      
+      <p>Code de sécurité*</p>
+      <input type="password">Qu'est ce que le code de sécurité?
+      <br><br>
+
+      <input type="checkbox" name="name" id="id">Rappelez-vous cette carte pour une utilisation ultérieure
+    </div>
+  </div>
+
+</div>
+
+    <div class="box2">
+
+     <h2><b>Résumé de votre commande</b></h2> 
+     <table>
+       <tr>
+         <td>Numéro de commande</td>
+         <td>GSHMHL00N000TVJ</td>
+       </tr>
+       <tr>
+          <td>Sous-total</td>
+          <td>89.90</td>
+        </tr>
+        <tr>
+          <td>Frais de livraison</td>
+          <td>5.50</td>
+       </tr>
+       <tr>
+         <td>TOTAL</td>
+         <td>95.40</td>
+  
+       </tr>
+     </table>
+     <input type="button" value="PAYER">
+
+    <h1>Paiement sécurisé:</h1>
+
+    <img src="images/Rectangle 19.png" alt="logos cartes"><br>
+
+    <img src="images/Rectangle 14.png" alt="robe">
+
+  </div>
+    </Section>
 </head>
 <body>
     
