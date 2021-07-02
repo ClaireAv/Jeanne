@@ -1,17 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: 'Caslon';
+  src: url(Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
+}
+
 .containergrand{
-    height:90vh;
-    margin: 10px;
-    background-color:#f7f6f5; 
-    font-family: 'Libre Caslon Text', serif;
+    /* margin: 10px; */
+    /* background-color:#f7f6f5;  */
+    font-family: 'Caslon', serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
-   
-
 }
 
 
 h1{
-  font-size:32px;
+  font-size: 30px;
 }
 
 h2{
@@ -20,7 +33,7 @@ h2{
   align-items:center;
 }
 
- p{
+p{
   font-size:20px;
 }
 
@@ -34,7 +47,7 @@ h2{
 
 }
 
-img{
+.s1 .div1 img{
   height:350px;
   width:280px;
 }
@@ -52,25 +65,22 @@ ul{
 }
 
 .h2{
-  
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  
 }
 
-  
-
+article {
+  line-height: 1.6;
+} 
 
 .s1{
-    border: bisque 1px solid;
-    justify-content: space-between;
-    height:45vh;
-    
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: bisque 1px solid;
+  height:87vh;    
 }
-
-
 
 .bas{
   margin:0px;
@@ -82,12 +92,17 @@ ul{
   border: black solid 1px;
 }
 
+/* ------------------- fin - S1 ------------------- */
+
+
+/* ------------------- S2 ------------------- */
+
 .s2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: bisque 1px solid;
-  width: auto;
-  height:45vh;
-
-
+  height:87vh;
 }
 
 .livraison{
@@ -96,20 +111,20 @@ ul{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- 
+  line-height: 1.6;
 }
 
 .livraison .p, .titre{
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
 }
 form{
   height:30px;
   width:auto;
-
   display: flex;
   justify-content: space-between;
+  margin: 10px 0;
 }
 
 .paye2 p{
@@ -129,15 +144,23 @@ form{
   align-items: center;
   margin: 20px;
 }
-.livraison .paye1{
+
+.paye1{
   display: flex;
-    height:20px;
-    width: fit-content;
-    border-radius:3px;
-    background-color: palegreen;
-    align-self: center;
-   
-    
+    /* height:20px; */
+    /* width: fit-content; */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    background-color: #EFBB7E;
+    font-family: 'Caslon';
+    padding: 20px 40px;
+    align-self: center; 
+    font-size: 20px;
+}
+
+.paye1:hover {
+  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+  font-size: 21px;
 }
 
 .footer{
@@ -147,6 +170,9 @@ form{
   align-items: center;
   border: black solid 1px;
 }
+
+/* ------------------- fin - S2 ------------------- */
+
 
 
 
