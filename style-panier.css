@@ -47,7 +47,7 @@ p{
 
 }
 
-img{
+.s1 .div1 img{
   height:350px;
   width:280px;
 }
@@ -79,7 +79,7 @@ article {
   flex-direction: column;
   justify-content: space-between;
   border: bisque 1px solid;
-  height:100vh;    
+  height:87vh;    
 }
 
 .bas{
@@ -102,7 +102,7 @@ article {
   flex-direction: column;
   justify-content: space-between;
   border: bisque 1px solid;
-  height:100%;
+  height:87vh;
 }
 
 .livraison{
