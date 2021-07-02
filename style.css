@@ -11,21 +11,7 @@ a{
     cursor: pointer;
     text-decoration: none;
 }
-.pc{
-    display: block;
-}
-.mob{
-    display:none;
-}
-@media(max-width: 1020px){
-    .pc{
-        display: none;
-    }
-    .mob{
-        display: block;
-    }
 
-}  
 /*--------------------- HEADER----------------------- */
 header{
     font-family: 'Caslon', serif;
@@ -35,17 +21,7 @@ header{
     align-items: center;
     background-color: white;
     height: 90px;
-}
-
-header .toggle_collection, header .toggle_nouveautés, header .toggle_promo{
-    cursor: pointer;
-    font-size: 20px;
-    margin: 20px;
-}
-header .toggle_promo{
-    font-weight: 700;
-    color:#FFDBB0 ;
-    font-size: 25px;
+    width: 100%;
 }
 header img{
     margin: 10px;
@@ -69,13 +45,6 @@ header form input{
     font-size: 18px;
     color: black;
 }
-
-
-
-
-
-
-
 .header-left {
     display: flex;
     justify-content: flex-start;
@@ -83,7 +52,6 @@ header form input{
     gap: 70px;
     padding: 0 40px;
 }
-
 .header-left h3 {
     color: black;
     font-size: 20px;
@@ -153,7 +121,7 @@ header form input{
 
     text-align: left;
 
-    background: white;
+    background:rgba(255, 255, 255, 0.85);
     list-style-type: none;
 }
 
@@ -189,6 +157,83 @@ header form input{
 
 /*---- FIN MENU DEROULANT------------------------- */
 
+
+/*---- responsive----------------------------- */
+.pc{
+    display: block;
+}
+.mob{
+    display:none;
+}
+@media(max-width: 1100px){
+    .pc{
+        display: none;
+    }
+    .mob{
+        display: block;
+    }
+    .root a {
+        display: none;
+    }
+    .responsive{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .burger{
+        height: 24px;
+        width: 42px;
+        cursor: pointer;
+        position: relative;
+        margin: 15px;
+    }
+    .burger span{
+        width: 100%;
+        height: 4px;
+        background-color: #B17F4A;
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: background-color 0.5s ease-in-out;
+        border-radius: 15px;
+    }
+    .burger span::before, .burger span::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #B17F4A;
+        transition: transform 0.5s ease-in-out;
+        border-radius: 15px;}
+    .burger span::before{
+        transform: translateY(-10px);
+    }
+    .burger span::after{
+        transform: translateY(10px);
+    }
+    .burger.active span{
+        background-color: transparent;
+    }
+    .burger.active span::before{
+        transform: translateY(0px) rotateZ(45deg);
+    }
+    .burger.active span::after{
+        transform: translateY(0px) rotateZ(-45deg);
+    }   
+    header .LOGO {      
+        padding-right: 30px;
+    }}  
+
+    @media(max-width: 600px){
+    header .picto a img{
+        height: 30px;
+        margin: 8px;
+    }
+    header .picto{
+        margin-right: 20px;
+    }}
+/*---- responsive----------------------------- */
 
 
 /*---------------------FOOTER----------------------- */
@@ -300,7 +345,7 @@ h2 {
 
 #vitrine img {
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 /* !------------------------ VITRINE ------------------------ */
