@@ -363,7 +363,7 @@ a {
 }
 
 main h2 {
-    font-size: clamp(18px, 8vw, 40px);
+    font-size: clamp(30px, 4vw, 40px);
 }
 
 
@@ -393,7 +393,7 @@ main h2 {
 }
 
 #nouveautes h2:hover {
-    font-size: clamp(20px, 8vw, 42px);
+    font-size: clamp(30px, 4vw, 42px);
 }
 
 #nouveautes .API .yeah{
@@ -441,7 +441,7 @@ opacity: 0!important;
 }
 
 #grande-cat h2:hover {
-    font-size: clamp(20px, 8vw, 42px);
+    font-size: clamp(32px, 4vw, 42px);
 }
 
 /* !------------------------ GRANDE_CATEGORIE ---------------------- */
@@ -462,7 +462,7 @@ opacity: 0!important;
 }
 
 #intemporels h2:hover {
-    font-size: clamp(20px, 8vw, 42px);
+    font-size: clamp(30px, 4vw, 42px);
 }
 
 /* !------------------------ INTEMPORELS ------------------------ */
@@ -505,7 +505,7 @@ opacity: 0!important;
 }
 
 #petite-cat h2:hover {
-    font-size: clamp(20px, 8vw, 42px);
+    font-size: clamp(32px, 4vw, 42px);
 }
 
 /* !------------------------ PETITE_CATEGORIE ---------------------- */
@@ -562,6 +562,10 @@ opacity: 0!important;
 
     #petite-cat h2 {
         padding: 50px 40px;
+    }
+
+    #petite-cat .r h2 {
+        padding: 50px 0;
     }
 }
 
@@ -629,7 +633,7 @@ opacity: 0!important;
         height: 500px;
     }
 
-    #grande-cat h2, #grande-cat .r h2 {
+    #grande-cat h2, #grande-cat .r h2, #petite-cat .r h2 {
         padding: 40px 0;
     }
 
