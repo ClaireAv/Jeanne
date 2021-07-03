@@ -73,7 +73,7 @@ burger.addEventListener ('click', ()=>{
 const logo = document.querySelector('.LOGO');
 const vit = document.querySelector('.vit');
 const anim = document.querySelectorAll('.anim');
-const scrollT = document.getElementsByClassName('.scrollT')
+// const scrollT = document.getElementsByClassName('.scrollT');
 
 window.addEventListener('load', () => {
 
@@ -85,6 +85,14 @@ window.addEventListener('load', () => {
 
   TL.play();
 
-})
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to('.scrollT', {
+  ScrollTigger: '.scrollT',
+  right: 200,
+  duration: 3
+});
 
 
