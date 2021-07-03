@@ -304,7 +304,12 @@ footer a{
     color: white;
     margin: 30px;
 }
-
+@media(max-width: 600px){
+    footer .bloc{
+        flex-direction: column;
+        
+    }
+}
 /*---------------------FIN FOOTER----------------------- */
 
 /* --------------------- DEBUT PAGE ACCUEIL -----------------------  */
