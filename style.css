@@ -349,8 +349,8 @@ a {
     text-align: center;
 }
 
-h2 {
-    font-size: 40px;
+main h2 {
+    font-size: clamp(18px, 8vw, 40px);
 }
 
 
@@ -367,12 +367,12 @@ h2 {
 /* !------------------------ NOUVEAUTES ---------------------- */
 
 #nouveautes img, #nouveautes a {
-    padding: 30px;
+    margin: 30px;
 }
 
 #nouveautes h2 {
     color: black;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(68, 68, 68, 0.25);
 }
 
 #nouveautes h2:hover {
@@ -426,12 +426,16 @@ h2 {
 /* !------------------------ INTEMPORELS ------------------------ */
 
 #intemporels img, #intemporels a {
-    padding: 30px;
+    margin: 30px;
+}
+
+#intemporels img, #nouveautes img {
+    box-shadow: 0px 4px 10px #b17f4a;
 }
 
 #intemporels h2 {
     color: black;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 10px rgba(68, 68, 68, 0.25);
 }
 
 #intemporels h2:hover {
@@ -478,7 +482,7 @@ h2 {
 }
 
 #petite-cat h2:hover {
-    font-size: 42px;
+    font-size: clamp(20px, 8vw, 42px);
 }
 
 /* !------------------------ PETITE_CATEGORIE ---------------------- */
@@ -519,6 +523,62 @@ h2 {
 /* !------------------------ ENGAGEMENTS ---------------------- */
 
 /* --------------------- FIN PAGE ACCUEIL -----------------------  */
+
+/* !--------------------- RESPONSIVE - PAGE ACCUEIL -----------------------  */
+
+@media(max-width: 1100px) {
+    #grande-cat h2 {
+        padding: 50px 40px;
+    }
+
+    #grande-cat .r h2 {
+        padding: 50px 0;
+    }
+
+    #petite-cat h2 {
+        padding: 50px 40px;
+    }
+}
+
+@media(max-width: 1000px) {
+    #grande-cat {
+        grid-template-columns: repeat(2, 1fr);
+        height: 720px;
+    }
+    #grande-cat .robes {
+        background: url(images/gde-cat/img-mob/media1000/robes-categorie.png) no-repeat center/cover; 
+    }
+}
+
+@media(max-width: 600px) {
+    #grande-cat {
+        grid-template-columns: repeat(2, 1fr);
+        height: 500px;
+    }
+    #grande-cat .bijoux {
+        background: url(images/gde-cat/img-mob/Bijoux.png) no-repeat center/cover;
+    }
+    
+    #grande-cat .sacs {
+        background: url(images/gde-cat/img-mob/sac.png) no-repeat center/cover; 
+    }
+    
+    #grande-cat .chaussures {
+        background: url(images/gde-cat/img-mob/chaussures.png) no-repeat center/cover;
+    }
+    
+    #grande-cat .robes {
+        background: url(images/gde-cat/img-mob/robes-categorie.png) no-repeat center/cover; 
+    }
+
+    #petite-cat {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #grande-cat h2, #grande-cat .r h2 {
+        padding: 40px 0;
+    }
+} 
 
 
 
