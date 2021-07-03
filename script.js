@@ -78,8 +78,8 @@ window.addEventListener('load', () => {
 
   const TL = gsap.timeline({paused: true});
 
-  TL.staggerFrom(vit, 1, {opacity: 0, ease: 'power2.out'}, 0.3);
-  TL.staggerFrom(logo, 1, {top: -50, opacity: 0, ease: 'power2.out'}, 0.3, '-=0.5');
+  TL.staggerFrom(vit, 1, {top: -100, ease: 'power2.out'}, 0.3);
+  TL.staggerFrom(logo, 1, {top: -50, opacity: 0, ease: 'power2.out'}, 0.3, '-=0.8');
   TL.staggerFrom(anim, 3, {opacity: 0, ease: 'power2.out'}, 0.3, '-=0.2');
 
   TL.play();
