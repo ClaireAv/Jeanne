@@ -355,7 +355,7 @@ a {
 }
 
 main h2 {
-    font-size: clamp(18px, 8vw, 40px);
+    font-size: clamp(30px, 4vw, 40px);
 }
 
 
@@ -385,7 +385,7 @@ main h2 {
 }
 
 #nouveautes h2:hover {
-    font-size: clamp(20px, 8vw, 42px);
+    font-size: clamp(30px, 4vw, 42px);
 }
 
 /* !------------------------ NOUVEAUTES ---------------------- */
@@ -427,7 +427,7 @@ main h2 {
 }
 
 #grande-cat h2:hover {
-    font-size: clamp(20px, 8vw, 42px);
+    font-size: clamp(32px, 4vw, 42px);
 }
 
 /* !------------------------ GRANDE_CATEGORIE ---------------------- */
@@ -448,7 +448,7 @@ main h2 {
 }
 
 #intemporels h2:hover {
-    font-size: clamp(20px, 8vw, 42px);
+    font-size: clamp(30px, 4vw, 42px);
 }
 
 /* !------------------------ INTEMPORELS ------------------------ */
@@ -491,7 +491,7 @@ main h2 {
 }
 
 #petite-cat h2:hover {
-    font-size: clamp(20px, 8vw, 42px);
+    font-size: clamp(32px, 4vw, 42px);
 }
 
 /* !------------------------ PETITE_CATEGORIE ---------------------- */
@@ -548,6 +548,10 @@ main h2 {
 
     #petite-cat h2 {
         padding: 50px 40px;
+    }
+
+    #petite-cat .r h2 {
+        padding: 50px 0;
     }
 }
 
@@ -615,7 +619,7 @@ main h2 {
         height: 500px;
     }
 
-    #grande-cat h2, #grande-cat .r h2 {
+    #grande-cat h2, #grande-cat .r h2, #petite-cat .r h2 {
         padding: 40px 0;
     }
 
