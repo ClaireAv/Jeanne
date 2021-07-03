@@ -27,6 +27,7 @@ header img{
     margin: 10px;
 }
 header .LOGO{
+    position: relative;
     width: 150px;
 }
 header .picto img{
@@ -372,6 +373,7 @@ main h2 {
 
 #vitrine img {
     width: 100vw;
+    position: relative;
     /* height: 100vh; */
 }
 
