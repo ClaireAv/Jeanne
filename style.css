@@ -232,7 +232,19 @@ header form input{
     }
     header .picto{
         margin-right: 20px;
-    }}
+    }
+    #topnav_menu ol {
+        grid-template-columns:1fr;
+        grid-template-rows: repeat (4, auto);
+    }
+    #topnav_menu ul li {
+        line-height: 5px;
+        font-size: 14px;
+
+    }
+
+
+}
 /*---- responsive----------------------------- */
 
 
