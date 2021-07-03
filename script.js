@@ -1,4 +1,4 @@
-
+//  Menu souris
   function showMenu() {
     var menu = document.getElementById("topnav_menu");
     var icon = document.getElementById("topnav_icon");
@@ -13,6 +13,15 @@
     }
     
   }
+
+//  MENU RESPONSIVE
+var menu = document.getElementById("topnav_menu");
+var icon = document.getElementById("topnav_icon");
+
+
+burger.addEventListener ('click', ()=>{
+  menu.classList.toggle('open');
+});
 
  
 // Chaussures
@@ -46,8 +55,7 @@ var bijoux = document.getElementById("bijoux");
     bijoux.addEventListener ('click', ()=>{
     listeBijoux.classList.toggle('open');
 });
-
-   
+  
 
 // Burger  croix
 const burger = document.querySelector('.burger');
@@ -56,16 +64,26 @@ burger.addEventListener ('click', ()=>{
     burger.classList.toggle('active');
 });
 
+
+
 // ESSAI GSAP
 
-//  MENU RESPONSIVE
-var menu = document.getElementById("topnav_menu");
-var icon = document.getElementById("topnav_icon");
 
+const logo = document.querySelector('.LOGO');
+const vit = document.querySelector('.vit');
+const anim = document.querySelectorAll('.anim');
 
-burger.addEventListener ('click', ()=>{
-  menu.classList.toggle('open');
-});
+window.addEventListener('load', () => {
+
+  const TL = gsap.timeline({paused: true});
+
+  TL.staggerFrom(vit, 1, {top: -100, ease: 'power2.out'}, 0.3);
+  TL.staggerFrom(logo, 1, {top: -50, opacity: 0, ease: 'power2.out'}, 0.3, '-=0.8');
+  TL.staggerFrom(anim, 3, {opacity: 0, ease: 'power2.out'}, 0.3, '-=0.2');
+
+  TL.play();
+
+})
 
 
 
@@ -149,18 +167,3 @@ burger.addEventListener ('click', ()=>{
 
 // let API= document.querySelector('.API');
 // observer.observe(API, 'yeah');
-const logo = document.querySelector('.LOGO');
-const vit = document.querySelector('.vit');
-const anim = document.querySelectorAll('.anim');
-
-window.addEventListener('load', () => {
-
-  const TL = gsap.timeline({paused: true});
-
-  TL.staggerFrom(vit, 1, {top: -100, ease: 'power2.out'}, 0.3);
-  TL.staggerFrom(logo, 1, {top: -50, opacity: 0, ease: 'power2.out'}, 0.3, '-=0.8');
-  TL.staggerFrom(anim, 3, {opacity: 0, ease: 'power2.out'}, 0.3, '-=0.2');
-
-  TL.play();
-
-})
