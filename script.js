@@ -68,5 +68,20 @@ burger.addEventListener ('click', ()=>{
     burger.classList.toggle('active');
 });
 
+// ESSAI GSAP
 
+const logo = document.querySelector('.LOGO');
+const vit = document.querySelector('.vit');
+const anim = document.querySelectorAll('.anim');
 
+window.addEventListener('load', () => {
+
+  const TL = gsap.timeline({paused: true});
+
+  TL.staggerFrom(vit, 1, {opacity: 0, ease: 'power2.out'}, 0.3);
+  TL.staggerFrom(logo, 1, {top: -50, opacity: 0, ease: 'power2.out'}, 0.3, '-=0.5');
+  TL.staggerFrom(anim, 3, {opacity: 0, ease: 'power2.out'}, 0.3, '-=0.2');
+
+  TL.play();
+
+})
