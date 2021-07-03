@@ -14,7 +14,7 @@
 <header id="haut">   
 
     <div class="responseive mob">
-        <div class="burger  mob" id="burger" href="javascript:void(0);" onmouseleave="showResponsiveMenu()">
+        <div class="burger mob" id="burger" href="javascript:void(0);" onclick="showResponsiveMenu()">
             <span></span>
         </div> 
     </div>
@@ -22,43 +22,44 @@
     <div class="header-left flex ">
 
         <div id="root ">
-            <a class="pc" id="topnav_icon" href="javascript:void(0);" onmouseover="showResponsiveMenu()" >
+            <a class="pc" id="topnav_icon" href="javascript:void(0);" onmouseover="showMenu()" >
                 <h3 class="pc">Collection</h3></a>
 
             <!-- MENU DEROULANT -->
             <nav role="navigation" id="topnav_menu" >
-                <ol class="grande-categorie" href="javascript:void(0);" onmouseleave="showResponsiveMenu()">
-                    <li><a href="#">Bijoux</a>
-                        <ul class="petite-categorie">
-                            <li><a href="#">Boucles d'oreilles</a></li>
-                            <li><a href="#">Colliers</a></li>
-                            <li><a href="">Bracelets</a></li>
-                            <li><a href="#">Bagues</a></li>
+                <ol class="grande-categorie" href="javascript:void(0);" onmouseleave="showMenu()">
+                    <li><a href="#" id="robes">Robes</a>
+                        <ul class="petite-categorie" id="listeRobes">
+                            <li><a href="vetement.html">Robes blanches</a></li>
+                            <li><a href="vetement.html">Robes denim</a></li>
+                            <li><a href="vetement.html">Robes à fleurs</a></li>
+                            <li><a href="vetement.html">Robes longues</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Sacs</a>
-                        <ul class="petite-categorie">
-                            <li><a href="#">Sacs à main</a></li>
-                            <li><a href="">Sacs à dos</a></li>
-                            <li><a href="">Sacs en bandolière</a></li>
+                    <li><a href="#" id="bijoux">Bijoux</a>
+                        <ul class="petite-categorie" id="listeBijoux">
+                            <li><a href="vetement.html">Boucles d'oreilles</a></li>
+                            <li><a href="vetement.html">Colliers</a></li>
+                            <li><a href="vetement.html">Bracelets</a></li>
+                            <li><a href="vetement.html">Bagues</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Sacs</a>
-                        <ul class="petite-categorie">
-                            <li><a href="">Mocassins</a></li>
-                            <li><a href="">Sandales</a></li>
-                            <li><a href="">Escarpins</a></li>
-                            <li><a href="">Chaussures plates</a></li>
+                    <li  ><a id="sacs" href="#" >Sacs</a>
+                        <ul class="petite-categorie" id="listeSacs">
+                            <li><a href="vetement.html">Sacs à main</a></li>
+                            <li><a href="vetement.html">Sacs à dos</a></li>
+                            <li><a href="vetement.html">Sacs en bandolière</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Robes</a>
-                        <ul class="petite-categorie">
-                            <li><a href="#">Robes blanches</a></li>
-                            <li><a href="#">Robes denim</a></li>
-                            <li><a href="#">Robes à fleurs</a></li>
-                            <li><a href="#">Robes longues</a></li>
+                    <li><a id="chaussures"  href="#" >Chaussures</a>
+                        <ul class="petite-categorie" id="listeChaussures">
+                            <li><a href="vetement.html">Mocassins</a></li>
+                            <li><a href="vetement.html">Sandales</a></li>
+                            <li><a href="vetement.html">Escarpins</a></li>
+                            <li><a href="vetement.html">Chaussures plates</a></li>
                         </ul>
                     </li>
+                    
                 </ul>
             </nav>
         </div>
