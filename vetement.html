@@ -9,80 +9,81 @@
     <title>Jeanne - La mode Parisienne</title>
   </head>
   <body>
-    <!--- HEADER------------------------->
+<!----------------------- HEADER------------------------->
 
 <header id="haut">   
 
-  <div class="responseive mob">
-      <div class="burger  mob" id="burger" href="javascript:void(0);" onmouseleave="showResponsiveMenu()">
-          <span></span>
-      </div> 
-  </div>
+    <div class="responseive mob">
+        <div class="burger mob" id="burger" href="javascript:void(0);" onclick="showResponsiveMenu()">
+            <span></span>
+        </div> 
+    </div>
 
-  <div class="header-left flex ">
+    <div class="header-left flex ">
 
-      <div id="root ">
-          <a class="pc" id="topnav_icon" href="javascript:void(0);" onmouseover="showResponsiveMenu()" >
-              <h3 class="pc">Collection</h3></a>
+        <div id="root ">
+            <a class="pc" id="topnav_icon" href="javascript:void(0);" onmouseover="showMenu()" >
+                <h3 class="pc">Collection</h3></a>
 
-          <!-- MENU DEROULANT -->
-          <nav role="navigation" id="topnav_menu" >
-              <ol class="grande-categorie" href="javascript:void(0);" onmouseleave="showResponsiveMenu()">
-                  <li><a href="#">Bijoux</a>
-                      <ul class="petite-categorie">
-                          <li><a href="#">Boucles d'oreilles</a></li>
-                          <li><a href="#">Colliers</a></li>
-                          <li><a href="">Bracelets</a></li>
-                          <li><a href="#">Bagues</a></li>
-                      </ul>
-                  </li>
-                  <li><a href="#">Sacs</a>
-                      <ul class="petite-categorie">
-                          <li><a href="#">Sacs à main</a></li>
-                          <li><a href="">Sacs à dos</a></li>
-                          <li><a href="">Sacs en bandolière</a></li>
-                      </ul>
-                  </li>
-                  <li><a href="#">Sacs</a>
-                      <ul class="petite-categorie">
-                          <li><a href="">Mocassins</a></li>
-                          <li><a href="">Sandales</a></li>
-                          <li><a href="">Escarpins</a></li>
-                          <li><a href="">Chaussures plates</a></li>
-                      </ul>
-                  </li>
-                  <li><a href="#">Robes</a>
-                      <ul class="petite-categorie">
-                          <li><a href="#">Robes blanches</a></li>
-                          <li><a href="#">Robes denim</a></li>
-                          <li><a href="#">Robes à fleurs</a></li>
-                          <li><a href="#">Robes longues</a></li>
-                      </ul>
-                  </li>
-              </ul>
-          </nav>
-      </div>
+            <!-- MENU DEROULANT -->
+            <nav role="navigation" id="topnav_menu" >
+                <ol class="grande-categorie" href="javascript:void(0);" onmouseleave="showMenu()">
+                    <li><a href="#" id="robes">Robes</a>
+                        <ul class="petite-categorie" id="listeRobes">
+                            <li><a href="vetement.html">Robes blanches</a></li>
+                            <li><a href="vetement.html">Robes denim</a></li>
+                            <li><a href="vetement.html">Robes à fleurs</a></li>
+                            <li><a href="vetement.html">Robes longues</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" id="bijoux">Bijoux</a>
+                        <ul class="petite-categorie" id="listeBijoux">
+                            <li><a href="vetement.html">Boucles d'oreilles</a></li>
+                            <li><a href="vetement.html">Colliers</a></li>
+                            <li><a href="vetement.html">Bracelets</a></li>
+                            <li><a href="vetement.html">Bagues</a></li>
+                        </ul>
+                    </li>
+                    <li  ><a id="sacs" href="#" >Sacs</a>
+                        <ul class="petite-categorie" id="listeSacs">
+                            <li><a href="vetement.html">Sacs à main</a></li>
+                            <li><a href="vetement.html">Sacs à dos</a></li>
+                            <li><a href="vetement.html">Sacs en bandolière</a></li>
+                        </ul>
+                    </li>
+                    <li><a id="chaussures"  href="#" >Chaussures</a>
+                        <ul class="petite-categorie" id="listeChaussures">
+                            <li><a href="vetement.html">Mocassins</a></li>
+                            <li><a href="vetement.html">Sandales</a></li>
+                            <li><a href="vetement.html">Escarpins</a></li>
+                            <li><a href="vetement.html">Chaussures plates</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
 
-      <a href="#" class="pc"><h3>Nouveautés</h3></a>
-      <a href="#" class="pc"><h3 class="promo">Promotions</h3></a>
+        <a href="#" class="pc"><h3>Nouveautés</h3></a>
+        <a href="#" class="pc"><h3 class="promo">Promotions</h3></a>
 
-  </div>
- 
+    </div>
+   
 <!-- LOGO -->
-  <a href="index.html"><img class="LOGO " src="images/LOGO.png" alt="logo Jeanne" title="Accueil"></a>
+    <a href="index.html"><img class="LOGO " src="images/LOGO.png" alt="logo Jeanne" title="Accueil"></a>
 
 
 
 
-  <div class="header-right flex pc">
-      <input type="search" name="recherche" id="recherche" placeholder="Recherche" class="pc">
-  </div>
-        <!-- PICTO -->
-  <div class="picto">
-      <a href="panier.html" target="_blank"><img src="images/coeur1.png" alt="picto coeur" title="Favoris"></a>
-      <a href="panier.html"  target="_blank"><img src="images/panier1.png" alt="picto panier" title="Panier"></a>
-      <a href=""><img src="images/connexion1.png" alt="picto connexion" title="Connexion"></a>
-  </div>
+    <div class="header-right flex pc">
+        <input type="search" name="recherche" id="recherche" placeholder="Recherche" class="pc">
+    </div>
+          <!-- PICTO -->
+    <div class="picto">
+        <a href="panier.html" target="_blank"><img src="images/coeur1.png" alt="picto coeur" title="Favoris"></a>
+        <a href="panier.html"  target="_blank"><img src="images/panier1.png" alt="picto panier" title="Panier"></a>
+        <a href=""><img src="images/connexion1.png" alt="picto connexion" title="Connexion"></a>
+    </div>
 </header>
 
 <!-- FIN HEADER------------------------->
