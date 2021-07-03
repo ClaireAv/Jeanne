@@ -362,11 +362,11 @@ main h2 {
 
 #nouveautes h2 {
     color: black;
-    text-shadow: 0px 4px 4px rgba(68, 68, 68, 0.25);
+    /* text-shadow: 0px 4px 4px rgba(68, 68, 68, 0.25); */
 }
 
 #nouveautes h2:hover {
-    font-size: 42px;
+    font-size: clamp(20px, 8vw, 42px);
 }
 
 /* !------------------------ NOUVEAUTES ---------------------- */
@@ -408,7 +408,7 @@ main h2 {
 }
 
 #grande-cat h2:hover {
-    font-size: 42px;
+    font-size: clamp(20px, 8vw, 42px);
 }
 
 /* !------------------------ GRANDE_CATEGORIE ---------------------- */
@@ -425,7 +425,7 @@ main h2 {
 
 #intemporels h2 {
     color: black;
-    text-shadow: 0px 4px 4px rgba(68, 68, 68, 0.25);
+    /* text-shadow: 0px 4px 4px rgba(68, 68, 68, 0.25); */
 }
 
 #intemporels h2:hover {
@@ -572,7 +572,7 @@ main h2 {
 }
 
 @media(max-width: 600px) {
-    
+
     #grande-cat {
         height: 500px;
     }
@@ -640,6 +640,22 @@ main h2 {
 
     #intemporels h2, #nouveautes h2 {
         margin-bottom: 20px;
+    }
+
+    #intemporels h2:hover {
+        text-shadow: 0px 4px 4px rgba(68, 68, 68, 0.25);
+    }
+
+    #nouveautes h2:hover {
+        text-shadow: 0px 4px 4px rgba(68, 68, 68, 0.25);
+    }
+
+    #intemporels h2:active {
+        text-shadow: 0px 4px 4px rgba(68, 68, 68, 0.25);
+    }
+
+    #nouveautes h2:active {
+        text-shadow: 0px 4px 4px rgba(68, 68, 68, 0.25);
     }
 } 
 
