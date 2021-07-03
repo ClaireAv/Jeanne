@@ -240,7 +240,9 @@ header form input{
     #topnav_menu ul li {
         line-height: 5px;
         font-size: 14px;
-
+    }
+    .petite-categorie{
+        display: none;
     }
 
 
