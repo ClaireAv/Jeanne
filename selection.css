@@ -190,7 +190,6 @@ h2{
 .s3{
     display: flex;
     justify-content: space-around;
-<<<<<<< HEAD
 }
 
 .s3 img{
@@ -256,33 +255,14 @@ h2{
     gap: 20px;
 }
 
-
-=======
-    gap: 104px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ! HEADER FOOTER */
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+@font-face{
+    font-family: 'Caslon', serif;
+    src: url(Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
 }
 a{
     cursor: pointer;
@@ -304,6 +284,7 @@ header img{
     margin: 10px;
 }
 header .LOGO{
+    position: relative;
     width: 150px;
 }
 header .picto img{
@@ -327,7 +308,7 @@ header form input{
     justify-content: flex-start;
     align-items: center;
     gap: 70px;
-    padding: 0 40px;
+    /* padding: 0 40px; */
 }
 .header-left h3 {
     color: black;
@@ -394,7 +375,7 @@ header form input{
 
     width: 100%;
     /* height: 100%; */
-    padding: 30px 70px 0;
+    padding: 30px 50px ;
 
     text-align: left;
 
@@ -596,4 +577,3 @@ footer a{
 
 }
 /*---------------------FIN FOOTER----------------------- */
->>>>>>> ed7beec61f82a8c8d4a7b9ccea8315b443f60f17
