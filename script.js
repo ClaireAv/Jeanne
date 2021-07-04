@@ -1,4 +1,4 @@
-//  Menu souris
+
   function showMenu() {
     var menu = document.getElementById("topnav_menu");
     var icon = document.getElementById("topnav_icon");
@@ -10,18 +10,9 @@
     } else {
       menu.className = "";                    
       icon.className = "";
-    } 
+    }
     
   }
-
-//  MENU RESPONSIVE
-// var menu = document.getElementById("topnav_menu");
-// var icon = document.getElementById("topnav_icon");
-
-
-burger.addEventListener ('click', ()=>{
-  menu.classList.toggle('open');
-});
 
  
 // Chaussures
@@ -55,7 +46,8 @@ var bijoux = document.getElementById("bijoux");
     bijoux.addEventListener ('click', ()=>{
     listeBijoux.classList.toggle('open');
 });
-  
+
+   
 
 // Burger  croix
 const burger = document.querySelector('.burger');
@@ -64,9 +56,20 @@ burger.addEventListener ('click', ()=>{
     burger.classList.toggle('active');
 });
 
-
-
 // ESSAI GSAP
+
+//  MENU RESPONSIVE
+var menu = document.getElementById("topnav_menu");
+var icon = document.getElementById("topnav_icon");
+
+
+burger.addEventListener ('click', ()=>{
+  menu.classList.toggle('open');
+});
+
+
+
+
 
 
 const logo = document.querySelector('.LOGO');
@@ -84,44 +87,3 @@ window.addEventListener('load', () => {
   TL.play();
 
 })
-
-
-//  MENU RESPONSIVE
-// var menu = document.getElementById("topnav_menu");
-// var icon = document.getElementById("topnav_icon");
-
-
-burger.addEventListener ('click', ()=>{
-  menu.classList.toggle('open');
-});
-
-
-
-
-
-
-// ! test menu claire
-//   var menu = document.getElementById("topnav_menu");
-//   var icon = document.getElementById("topnav_icon");
-
-//   icon.addEventListener ('mouseover', ()=>{
-//     menu.classList.toggle('open');
-// });
-// menu.addEventListener ('mouseover', ()=>{
-//   menu.classList.toggle('');
-// });
-
-
-// ! test API
-
-//  let observer = new IntersectionObserver(function(entries){
-//    console.log(entries)
-//  },{
-//   threshold: [0.5]
-//  })
-
-// let item = document.querySelector('.yeah')
-// item.forEach(function(item){
-//   observer.observe(item)
-// })
-
