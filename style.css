@@ -118,7 +118,7 @@ header form input{
 
     width: 100%;
     /* height: 100%; */
-    padding: 30px 70px 0;
+    padding: 30px 70px;
 
     text-align: left;
 
@@ -526,10 +526,13 @@ main h2 {
 
 #engagements .flex {
     flex-wrap: wrap;
+    gap: 10px;
 }
 
-#engagements .icon {
-    align-self: center;
+#engagements .icon a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -691,6 +694,10 @@ main h2 {
 
     #nouveautes h2:active {
         text-shadow: 0px 4px 4px rgba(68, 68, 68, 0.25);
+    }
+
+    #engagements .vs-mob {
+        width: 50%;
     }
 } 
 
