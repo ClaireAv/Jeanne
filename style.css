@@ -532,10 +532,13 @@ opacity: 0!important;
 
 #engagements .flex {
     flex-wrap: wrap;
+    gap: 10px;
 }
 
-#engagements .icon {
-    align-self: center;
+#engagements .icon a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -556,6 +559,7 @@ opacity: 0!important;
 @media(max-width: 1100px) {
     #grande-cat h2 {
         padding: 50px 40px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     #grande-cat .r h2 {
@@ -564,6 +568,7 @@ opacity: 0!important;
 
     #petite-cat h2 {
         padding: 50px 40px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     #petite-cat .r h2 {
@@ -695,6 +700,10 @@ opacity: 0!important;
 
     #nouveautes h2:active {
         text-shadow: 0px 4px 4px rgba(68, 68, 68, 0.25);
+    }
+
+    #engagements .vs-mob {
+        width: 50%;
     }
 } 
 
