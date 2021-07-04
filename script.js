@@ -10,7 +10,7 @@
     } else {
       menu.className = "";                    
       icon.className = "";
-    }
+    } 
     
   }
 
@@ -88,6 +88,11 @@ window.addEventListener('load', () => {
 
 
 
+
+
+
+
+
 // ! test menu claire
 //   var menu = document.getElementById("topnav_menu");
 //   var icon = document.getElementById("topnav_icon");
@@ -101,71 +106,15 @@ window.addEventListener('load', () => {
 
 
 // ! test API
-// const options = {
-//   root : null,
-//   rootMargin: '0px',
-//   threshold: 0.5
-// }
-// let observer;
-// let target = document.querySelector('.yeah');
-// // observer.observe(target);
 
-// let callback = (entries, observer) => {
-//   entries.forEach(entry => {
-    
-//     // Each entry describes an intersection change for one observed
-//     // target element:
-//       // entry.boundingClientRect
-//       // entry.intersectionRatio
-//       // entry.intersectionRect
-//       // entry.isIntersecting
-//       // entry.rootBounds
-//       entry.observe(target)
-//       entry.time
-//   });
-// };
-// observer = new IntersectionObserver(callback, options);
+ let observer = new IntersectionObserver(function(entries){
+   console.log(entries)
+ },{
+  threshold: [0.5]
+ })
 
-
-
-
-
-
-
-
-
-// const handleIntersect = function (entries, observer) {
-//   entries.forEach(function (entry){
-//     if(entry.intersectionRatio> threshold) {
-//       entry.target.classList.remove('yeah')
-//       observer.unobserve(entry.target)
-//     }
-//   })
-// }
-// document.documentElement.classList.add('API')
-
-//   const observer = new IntersectionObserver(handleIntersect, options)
-//   const targets = document.querySelectorAll('.yeah')
-//   targets.forEach(function (target) {
-//     observer.observe(target)
-//   })
-
-
-
-
-
-
-
-
-
-// let observer = new IntersectionObserver ((entries) =>
-// {
-//   entries.forEach((entry) => {
-//     threshold: 0.5
-//   });
-// })
-
-// let API= document.querySelector('.API');
-// observer.observe(API, 'yeah');
-
+let item = document.querySelector('.yeah')
+item.forEach(function(item){
+  observer.observe(item)
+})
 
