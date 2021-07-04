@@ -4,262 +4,79 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Caslon";
+    src: url(./Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
+    font-size: 20px;
+}
+
+
 img{
     display: block;
     max-width: 100%;
-  }
-
-@font-face {
-    font-family: "Caslon";
-    src: url("./Libre_Caslon_Text/LibreCaslonText-Regular.ttf");
+   
 }
 
-main{
-    font-family: "Caslon";
-    margin: auto;
+p{
+  font-weight: lighter;  
+  
 }
 
-section{
-    margin-bottom:40px;
+body{
+    border: 4px solid black;
 }
 
-.s1{
-    display: flex;
-    justify-content: space-around;
-}
-
-.vues{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.vues img, .mainPhoto img{
-    box-shadow: 0px 4px 10px #b17f4a;
-}
-
-.details{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 406px;
-}
-
-.nomFav{
+.box1{
+    border: green 4px solid;
     display: flex;
     justify-content: space-between;
-    font-size: 25px;
-    margin-bottom: 25px;
-}
-
-.nom span{
-    font-size: 40px;
-    color:#b17f4a;
-}
-
-.fav{
-    width: 68px;
-    height: 68px;
-    background: red;
-}
-
-.nomFav span{
-    font-size: 40px;
-}
-
-.prix{
-    margin-bottom: 20px;
-    font-size: 40px;
-    /* color:#b17f4a; */
-}
-
-.livraison{
-    margin-bottom: 64px;
-    font-size: 25px;
-}
-
-.livraison a{
-    text-decoration: none;
-    color: black;
-}
-
-.livraison a:hover{
-    color : #b17f4a;
-    /* font-weight: bold; */
-}
-
-.couleur{
-    margin-bottom: 50px;
-    font-size: 25px ;
-}
-
-.couleur span{
-    color:#b17f4a;
-    font-size:32px;
-}
-
-.robes{
-    display: flex;
-    justify-content: space-between;
-    gap: 34px;
-    margin-bottom: 30px;
-}
-
-.boutons{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;   
-}
-
-select{
-    background: white;
-    color: #b17f4a;
-}
-
-.panier, select{
-    font-weight: bold;
-    font-size: 25px;
-    font-family: "Caslon";
-    text-align: center;
-    width: 400px;
-    height: 70px;
-    box-shadow: 0px 4px 10px #b17f4a;
-    border: none;
-    padding: 10px;
-    margin: auto;
-}
-
-select .t, select .t0{
-    color: black;
-    font-weight: normal;
-    font-size: 22px;
-}
-
-.panier {
-    color: white;
-    background: #efbb7e;
-    text-decoration: none;
-}
-
-.s2{
-    display: flex;
-    justify-content: space-around;  
-   }
-
-.description{
-    text-align: left;
-    font-size: 20px;
-    background: #f3ede3;
-    width: 360px;
-    height: 525px;
-    line-height: 30px;
-    padding: 15px;
-}  
-
-h3{
-    color:#b17f4a;
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-ul{
-    margin-left:20px;
-    line-height: 40px;
-}
-
-.p1 {
-    margin-bottom: 20px;
-}
-
-.s2 .coupes{
-    line-height: 25px;
-}
-
-.coupes p{
-    margin-bottom: 18px;
 }
 
 h2{
-    font-size: 50px;
-    font-weight: bold;
-    margin-left: 20px;
-    margin-bottom: 40px;
+    margin: auto;
 }
 
-.s3{
+
+/* SECTION 2 */
+
+
+/* BOX 2 */
+
+
+.box2{
+    border: pink 4px solid;
     display: flex;
-    justify-content: space-around;
-<<<<<<< HEAD
+    justify-content: space-between;
+ 
+   
+
 }
 
-.s3 img{
-    width:auto;
+/* BOX 3 */
+
+.box3{
+    border: indigo 4px solid;
+    display: flex;    
 }
 
-.boucles{
-    background: url("./images/sélection/boucles.png") no-repeat center/cover;
-}
+/* BOX 4 */
 
-.chaussures{
-    background: url("./images/sélection/chaussures.png") no-repeat center/cover;
-}
-
-.bague{
-    background: url("./images/sélection/bague.png") no-repeat center/cover ;
-}
-
-.boucles, .chaussures, .bague{
+.box4{
+    border: blue 4px solid;
     display: flex;
-    justify-content: flex-end;
-    width: 354px;
-    height: 354px;
-}
-
-.hover {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 10px;
-    opacity:0;
-    width: 100%;
-    transition: 0.5s ease;
-    background:rgba(255, 255, 255, 0.7);
-}
-
-.hover a{
-    color: black;
-    text-decoration: none;
-}
-.hover a:hover{
-    color: #b17f4a;
-}
-.hover:hover{
-    opacity:1;
-}
-
-.p2, .p3{
-    font-weight: bold;
-}
-.p2{
-    font-size: 22px;
-}
-
-.p2, .p3, .p4, .p5{
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.boutonsHover{
-    display: flex;
-    gap: 20px;
 }
 
 
-=======
-    gap: 104px;
+/* BOX 5 */
+
+.box5{
+    border: yellow 4px solid;
+    display: flex;  
 }
+   
+
+
+
 
 
 
@@ -596,4 +413,3 @@ footer a{
 
 }
 /*---------------------FIN FOOTER----------------------- */
->>>>>>> ed7beec61f82a8c8d4a7b9ccea8315b443f60f17

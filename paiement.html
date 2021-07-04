@@ -1,12 +1,247 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link rel="stylesheet" href="paye.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paiement</title>
+    <title>JEANNE</title>
 </head>
 <body>
+ <!----------------------- HEADER------------------------->
+
+<header id="haut">   
+
+  <div class="responseive mob">
+      <div class="burger mob" id="burger" href="javascript:void(0);" onclick="showResponsiveMenu()">
+          <span></span>
+      </div> 
+  </div>
+
+  <div class="header-left flex ">
+
+      <div id="root ">
+          <a class="pc" id="topnav_icon" href="javascript:void(0);" onmouseover="showMenu()" >
+              <h3 class="pc">Collection</h3></a>
+
+          <!-- MENU DEROULANT -->
+          <nav role="navigation" id="topnav_menu" >
+              <ol class="grande-categorie" href="javascript:void(0);" onmouseleave="showMenu()">
+                  <li><a href="#" id="robes">Robes</a>
+                      <ul class="petite-categorie" id="listeRobes">
+                          <li><a href="vetement.html">Robes blanches</a></li>
+                          <li><a href="vetement.html">Robes denim</a></li>
+                          <li><a href="vetement.html">Robes à fleurs</a></li>
+                          <li><a href="vetement.html">Robes longues</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#" id="bijoux">Bijoux</a>
+                      <ul class="petite-categorie" id="listeBijoux">
+                          <li><a href="vetement.html">Boucles d'oreilles</a></li>
+                          <li><a href="vetement.html">Colliers</a></li>
+                          <li><a href="vetement.html">Bracelets</a></li>
+                          <li><a href="vetement.html">Bagues</a></li>
+                      </ul>
+                  </li>
+                  <li  ><a id="sacs" href="#" >Sacs</a>
+                      <ul class="petite-categorie" id="listeSacs">
+                          <li><a href="vetement.html">Sacs à main</a></li>
+                          <li><a href="vetement.html">Sacs à dos</a></li>
+                          <li><a href="vetement.html">Sacs en bandolière</a></li>
+                      </ul>
+                  </li>
+                  <li><a id="chaussures"  href="#" >Chaussures</a>
+                      <ul class="petite-categorie" id="listeChaussures">
+                          <li><a href="vetement.html">Mocassins</a></li>
+                          <li><a href="vetement.html">Sandales</a></li>
+                          <li><a href="vetement.html">Escarpins</a></li>
+                          <li><a href="vetement.html">Chaussures plates</a></li>
+                      </ul>
+                  </li>
+                  
+              </ul>
+          </nav>
+      </div>
+
+      <a href="#" class="pc"><h3>Nouveautés</h3></a>
+      <a href="#" class="pc"><h3 class="promo">Promotions</h3></a>
+
+  </div>
+ 
+<!-- LOGO -->
+  <a href="index.html"><img class="LOGO " src="images/LOGO.png" alt="logo Jeanne" title="Accueil"></a>
+
+
+
+
+  <div class="header-right flex pc">
+      <input type="search" name="recherche" id="recherche" placeholder="Recherche" class="pc">
+  </div>
+        <!-- PICTO -->
+  <div class="picto">
+      <a href="panier.html" target="_blank"><img src="images/coeur1.png" alt="picto coeur" title="Favoris"></a>
+      <a href="panier.html"  target="_blank"><img src="images/panier1.png" alt="picto panier" title="Panier"></a>
+      <a href=""><img src="images/connexion1.png" alt="picto connexion" title="Connexion"></a>
+  </div>
+</header>
+
+<!-- FIN HEADER------------------------->
+
+
+
+    <Section class="container">
+
+<div class="box1">
+        <p class="payer">Panier<b> >PAYER</b> >Confirmation</p>
+
+        <img src="images/Polygon 1.png" alt="triangle">
+       <a href="# Retour sur le résumé de la commande">Retour sur le résumé de la commande</a>
+
+       
+
+        <h1 class="adf">Adresse de facturation</h1>
+        <span>Veuillez vérifier que l'adresse de facturation correspond au nom et à l'adresse associée à la carte de crédit que vous utilisez pour cet achat.</span></p>
+      
+
+        <!-- FORMULAIRE ADRESSE NOM TELEPHONE-->
+
     
+      <ol>
+        <li>
+          <label for=nom>Nom</label>
+          <input id=nom name=nom type=text placeholder="Prénom et nom" required autofocus>
+        </li>
+        <li>
+          <label for=email>Email</label>
+          <input id=email name=email type=email placeholder="exemple@domaine.com" required>
+        </li>
+        <li>
+          <label for=telephone>Téléphone</label>
+          <input id=telephone name=telephone type=tel placeholder="par ex&nbsp;: +3375500000000" required>
+        </li>
+      </ol>
+    </fieldset>
+  
+    <fieldset>
+      <legend>Adresse de livraison</legend>
+        <ol>
+          <li>
+            <label for=adresse>Adresse</label>
+            <textarea id=adresse name=adresse rows=5 required> </textarea>
+          </li>
+          <li>
+            <label for=codepostal>Code postal</label>
+            <input id=codepostal name=codepostal type=text required>
+          </li>
+            <li>
+            <label for=pays>Pays</label>
+            <input id=pays name=pays type=text required>
+          </li>
+          <div class="background">
+
+      <p>Informations sur la carte:</p>
+
+      <img src="images/Rectangle 9 (1).png" alt="">
+
+      <!-- IMAGES LOGOS MOYEN DE PAIEMENT -->
+
+      <div class="infos-carte">
+
+      <p>Numéro de la carte*</p>
+      <input type="text">
+
+      <p>Date d'expiration*</p>
+      <input type="month">
+      
+      <p>Code de sécurité*</p>
+      <input type="password">Qu'est ce que le code de sécurité?
+      <br><br>
+
+      <input type="checkbox" name="name" id="id">Rappelez-vous cette carte pour une utilisation ultérieure
+    </div>
+  </div>
+
+</div>
+
+    <div class="box2">
+
+     <h2><b>Résumé de votre commande</b></h2> 
+     <table>
+       <tr>
+         <td>Numéro de commande</td>
+         <td>GSHMHL00N000TVJ</td>
+       </tr>
+       <tr>
+          <td>Sous-total</td>
+          <td>89.90</td>
+        </tr>
+        <tr>
+          <td>Frais de livraison</td>
+          <td>5.50</td>
+       </tr>
+       <tr>
+         <td>TOTAL</td>
+         <td>95.40</td>
+  
+       </tr>
+     </table>
+     <input type="button" value="PAYER">
+
+    <h1>Paiement sécurisé:</h1>
+
+    <img src="images/Rectangle 19.png" alt="logos cartes"><br>
+
+    <img src="images/Rectangle 14.png" alt="robe">
+
+  </div>
+    </Section>
+
+
+
+
+<!-----------------------FOOTER------------------------->
+
+<footer>
+  <div class="picto">
+      <a href=""><img src="images/fb.png" alt="picto facebook" title="Notre Facebook"></a>
+      <a href=""><img src="images/insta.png" alt="picto instagram" title="Notre Instagram"></a>
+      <a href=""><img src="images/twitter.png" alt="picto instagram" title="Notre Twitter"></a>
+  </div>
+<div class="bloc">
+  <div class="bloc1">
+      <h1> AIDE & INFORMATION</h1>
+          <ul>
+              <li><a href="">Assistance</a></li>
+              <li><a href="">Suivi de commande</a></li>
+              <li><a href="">Livraison & retours</a></li>
+              <li><a href="">Livraison Premier</a></li>
+          </ul>
+  </div>
+  <div class="bloc2">
+      <h1>À PROPOS DE  JEANNE</h1>
+          <ul>
+              <li><a href=""> À propos de JEANNE</a></li>
+              <li><a href="">JEANNE recrute</a></li>
+              <li><a href=""> Responsabilité des entreprises</a></li>
+              <li><a href=""> Investisseurs</a></li>                    
+          </ul>
+  </div>
+  <div class="bloc3">
+      <h1>ENCORE PLUS DE JEANNE</h1>
+          <ul>
+              <li><a href="">Chèques cadeaux</a></li>
+              <li><a href="">French Days</a></li>
+              <li><a href="">Soldes</a></li>
+              <li><a href="">Black Friday</a></li>
+          </ul>
+  </div>
+</div>      
+  <a class="logobas" href="#haut"><img src="images/LOGO.png" alt="logo Jeanne"></a>
+  <a href="">© 2021 Jeanne</a>
+</footer>
+<!-----------FIN FOOTER------------------------->   
+
+
+ <script src="script.js "></script>    
 </body>
 </html>

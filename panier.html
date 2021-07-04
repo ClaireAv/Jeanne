@@ -7,9 +7,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-panier.css">
     <title>Panier</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+<!----------------------- HEADER------------------------->
+
+<header id="haut">   
+
+    <div class="responseive mob">
+        <div class="burger mob" id="burger" href="javascript:void(0);" onclick="showResponsiveMenu()">
+            <span></span>
+        </div> 
+    </div>
+
+    <div class="header-left flex ">
+
+        <div id="root ">
+            <a class="pc" id="topnav_icon" href="javascript:void(0);" onmouseover="showMenu()" >
+                <h3 class="pc">Collection</h3></a>
+
+            <!-- MENU DEROULANT -->
+            <nav role="navigation" id="topnav_menu" >
+                <ol class="grande-categorie" href="javascript:void(0);" onmouseleave="showMenu()">
+                    <li><a href="#" id="robes">Robes</a>
+                        <ul class="petite-categorie" id="listeRobes">
+                            <li><a href="vetement.html">Robes blanches</a></li>
+                            <li><a href="vetement.html">Robes denim</a></li>
+                            <li><a href="vetement.html">Robes à fleurs</a></li>
+                            <li><a href="vetement.html">Robes longues</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" id="bijoux">Bijoux</a>
+                        <ul class="petite-categorie" id="listeBijoux">
+                            <li><a href="vetement.html">Boucles d'oreilles</a></li>
+                            <li><a href="vetement.html">Colliers</a></li>
+                            <li><a href="vetement.html">Bracelets</a></li>
+                            <li><a href="vetement.html">Bagues</a></li>
+                        </ul>
+                    </li>
+                    <li  ><a id="sacs" href="#" >Sacs</a>
+                        <ul class="petite-categorie" id="listeSacs">
+                            <li><a href="vetement.html">Sacs à main</a></li>
+                            <li><a href="vetement.html">Sacs à dos</a></li>
+                            <li><a href="vetement.html">Sacs en bandolière</a></li>
+                        </ul>
+                    </li>
+                    <li><a id="chaussures"  href="#" >Chaussures</a>
+                        <ul class="petite-categorie" id="listeChaussures">
+                            <li><a href="vetement.html">Mocassins</a></li>
+                            <li><a href="vetement.html">Sandales</a></li>
+                            <li><a href="vetement.html">Escarpins</a></li>
+                            <li><a href="vetement.html">Chaussures plates</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+        <a href="#" class="pc"><h3>Nouveautés</h3></a>
+        <a href="#" class="pc"><h3 class="promo">Promotions</h3></a>
+
+    </div>
+   
+<!-- LOGO -->
+    <a href="index.html"><img class="LOGO " src="images/LOGO.png" alt="logo Jeanne" title="Accueil"></a>
+
+
+
+
+    <div class="header-right flex pc">
+        <input type="search" name="recherche" id="recherche" placeholder="Recherche" class="pc">
+    </div>
+          <!-- PICTO -->
+    <div class="picto">
+        <a href="panier.html" target="_blank"><img src="images/coeur1.png" alt="picto coeur" title="Favoris"></a>
+        <a href="panier.html"  target="_blank"><img src="images/panier1.png" alt="picto panier" title="Panier"></a>
+        <a href=""><img src="images/connexion1.png" alt="picto connexion" title="Connexion"></a>
+    </div>
+</header>
+
+<!-- FIN HEADER------------------------->
+
+
+
     <!------------ CONTAINERGRAND ------------>
     <section class="containergrand">
 
@@ -23,7 +105,7 @@
             </div>
 
             <div class="div1">
-                <img src="images/panier.img/Robe.png" alt="">
+                <img src="images/panier.img/Robe.png" alt="photo robe">
 
                 <article>
                     <h2>ROBE NORA</h2>
@@ -39,17 +121,14 @@
                     </ul>
                 </article>
             </div>
-            <hr>
-            <div class="h2">
-                <h2>SOUS-TOTAL...70 €</h2>
 
+            <div class="h2">
+                <h2>Sous-Total</h2>
+                <h2>70 €</h2>
             </div>
 
-
-
-
             <div class="bas">
-                <h1>Livraison prémier France</h1>
+                <h1>Livraison première France</h1>
             </div>
 
         </section>
@@ -59,55 +138,47 @@
         <!------------ S2 ------------>
 
         <section class="s2">
+
             <div class="haut">
                 <h1>TOTAL</h1>
             </div>
 
-<!----------- fin - LIVRAISON ------------>
+            <!----------- LIVRAISON ------------>
 
             <div class="livraison">
                 <div class="p">
                     <p>Livraison standard en point relais </p>
                     <p>3,99 €</p>
-
                 </div>
+                <hr>
                 <div class="titre">
                     <h2>Total</h2>
                     <p>73,99 €</p>
-
                 </div>
+                <hr>
 
                 <form action="">
-
                     <input type="text" placeholder="Votre code promotionnel" id="nom" />
-
                     <input type="submit" value="Appliquer" />
                 </form>
-
-                <button class="paye1">PAIEMENT</button>
             </div>
 
-<!----------- fin - LIVRAISON ------------>
+            <button class="paye1">PAIEMENT</button>
+
+            <!----------- fin - LIVRAISON ------------>
 
 
-                <div class="paye2">
-                    <p>Nous acceptons</p>
+            <div class="paye2">
+                <p>Nous acceptons</p>
 
+                <div class="img">
+                    <img src="images/panier.img/visa.png" alt="icon visa">
+                    <img src="images/panier.img/master.png" alt="icon mastercard">
+                    <img src="images/panier.img/visaclasic.png" alt="icon visa classic">
+                    <img src="images/panier.img/paypal.png" alt="icon paypal">
+                    <img src="images/panier.img/amerexpres.png" alt="icon american express">
                 </div>
-
-        
-
-            <div class="img">
-                <img src="images/panier.img/visa.png" alt="">
-                <img src="images/panier.img/master.png" alt="">
-                <img src="images/panier.img/visaclasic.png" alt="">
-                <img src="images/panier.img/paypal.png" alt="">
-                <img src="images/panier.img/amerexpres.png" alt="">
-
-
             </div>
-
-
 
             <div class="footer">
                 <p>Bénéficiez du livraison 24h à domicile ou en <br>
@@ -118,8 +189,51 @@
 
         <!------------ fin - S2 ------------>
 
-
     </section>
+
+
+<!-----------------------FOOTER------------------------->
+
+<footer>
+    <div class="picto">
+        <a href=""><img src="images/fb.png" alt="picto facebook" title="Notre Facebook"></a>
+        <a href=""><img src="images/insta.png" alt="picto instagram" title="Notre Instagram"></a>
+        <a href=""><img src="images/twitter.png" alt="picto instagram" title="Notre Twitter"></a>
+    </div>
+<div class="bloc">
+    <div class="bloc1">
+        <h1> AIDE & INFORMATION</h1>
+            <ul>
+                <li><a href="">Assistance</a></li>
+                <li><a href="">Suivi de commande</a></li>
+                <li><a href="">Livraison & retours</a></li>
+                <li><a href="">Livraison Premier</a></li>
+            </ul>
+    </div>
+    <div class="bloc2">
+        <h1>À PROPOS DE  JEANNE</h1>
+            <ul>
+                <li><a href=""> À propos de JEANNE</a></li>
+                <li><a href="">JEANNE recrute</a></li>
+                <li><a href=""> Responsabilité des entreprises</a></li>
+                <li><a href=""> Investisseurs</a></li>                    
+            </ul>
+    </div>
+    <div class="bloc3">
+        <h1>ENCORE PLUS DE JEANNE</h1>
+            <ul>
+                <li><a href="">Chèques cadeaux</a></li>
+                <li><a href="">French Days</a></li>
+                <li><a href="">Soldes</a></li>
+                <li><a href="">Black Friday</a></li>
+            </ul>
+    </div>
+</div>      
+    <a class="logobas" href="#haut"><img src="images/LOGO.png" alt="logo Jeanne"></a>
+    <a href="">© 2021 Jeanne</a>
+</footer>
+<!-----------FIN FOOTER------------------------->
+<script src="script.js "></script> 
 </body>
 
 </html>
