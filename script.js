@@ -86,7 +86,14 @@ window.addEventListener('load', () => {
 })
 
 
+//  MENU RESPONSIVE
+// var menu = document.getElementById("topnav_menu");
+// var icon = document.getElementById("topnav_icon");
 
+
+burger.addEventListener ('click', ()=>{
+  menu.classList.toggle('open');
+});
 
 
 
