@@ -15,8 +15,8 @@
   }
 
 //  MENU RESPONSIVE
-var menu = document.getElementById("topnav_menu");
-var icon = document.getElementById("topnav_icon");
+// var menu = document.getElementById("topnav_menu");
+// var icon = document.getElementById("topnav_icon");
 
 
 burger.addEventListener ('click', ()=>{
@@ -107,14 +107,14 @@ window.addEventListener('load', () => {
 
 // ! test API
 
- let observer = new IntersectionObserver(function(entries){
-   console.log(entries)
- },{
-  threshold: [0.5]
- })
+//  let observer = new IntersectionObserver(function(entries){
+//    console.log(entries)
+//  },{
+//   threshold: [0.5]
+//  })
 
-let item = document.querySelector('.yeah')
-item.forEach(function(item){
-  observer.observe(item)
-})
+// let item = document.querySelector('.yeah')
+// item.forEach(function(item){
+//   observer.observe(item)
+// })
 
