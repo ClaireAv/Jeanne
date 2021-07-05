@@ -6,11 +6,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sélection vétement</title>
     <link rel="stylesheet" href="selection.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/rond.png" />
+
 </head>
 
 <body>
-    
-    <section class="s1"></section>
+        <!-- ASSENCEUR -->
+
+        <div id="scroll_to_top">
+            <a href="#haut"><img src="images/chevrons.png" alt="haut"></a>
+        </div>
+<!----------------------- HEADER------------------------->
+
+<header id="haut">   
+
+    <div class="responsive mob">
+        <div class="burger mob" id="burger" >
+            <span></span>
+        </div> 
+    </div>
+
+    <div class="header-left flex ">
+
+        <div id="root ">
+            <a class="pc" id="topnav_icon" href="javascript:void(0);" onmouseover="showMenu()" >
+                <h3 class="pc anim">Collection</h3></a>
+
+            <!-- MENU DEROULANT -->
+            <nav role="navigation" id="topnav_menu" >
+                <ol class="grande-categorie" href="javascript:void(0);" onmouseleave="showMenu()">
+                    <li><a href="#" id="robes">Robes</a>
+                        <ul class="petite-categorie" id="listeRobes">
+                            <li><a href="vetement.html">Robes blanches</a></li>
+                            <li><a href="vetement.html">Robes denim</a></li>
+                            <li><a href="vetement.html">Robes à fleurs</a></li>
+                            <li><a href="vetement.html">Robes longues</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" id="bijoux">Bijoux</a>
+                        <ul class="petite-categorie" id="listeBijoux">
+                            <li><a href="vetement.html">Boucles d'oreilles</a></li>
+                            <li><a href="vetement.html">Colliers</a></li>
+                            <li><a href="vetement.html">Bracelets</a></li>
+                            <li><a href="vetement.html">Bagues</a></li>
+                        </ul>
+                    </li>
+                    <li  ><a id="sacs" href="#" >Sacs</a>
+                        <ul class="petite-categorie" id="listeSacs">
+                            <li><a href="vetement.html">Sacs à main</a></li>
+                            <li><a href="vetement.html">Sacs à dos</a></li>
+                            <li><a href="vetement.html">Sacs en bandolière</a></li>
+                        </ul>
+                    </li>
+                    <li><a id="chaussures"  href="#" >Chaussures</a>
+                        <ul class="petite-categorie" id="listeChaussures">
+                            <li><a href="vetement.html">Mocassins</a></li>
+                            <li><a href="vetement.html">Sandales</a></li>
+                            <li><a href="vetement.html">Escarpins</a></li>
+                            <li><a href="vetement.html">Chaussures plates</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+        <a href="#" class="pc"><h3 class="anim">Nouveautés</h3></a>
+        <a href="#" class="pc anim"><h3 class="promo anim">Promotions</h3></a>
+
+    </div>
+   
+<!-- LOGO -->
+    <a href="index.html"><img class="LOGO" src="images/LOGO.png" alt="logo Jeanne" title="Accueil"></a>
+
+
+
+
+    <div class="header-right flex pc">
+        <input type="search" name="recherche" id="recherche" placeholder="Recherche" class="pc anim">
+    </div>
+          <!-- PICTO -->
+    <div class="picto">
+        <a href="panier.html" target="_blank"><img class="anim" src="images/coeur1.png" alt="picto coeur" title="Favoris"></a>
+        <a href="panier.html"  target="_blank"><img class="anim" src="images/panier1.png" alt="picto panier" title="Panier"></a>
+        <a href=""><img class="anim" src="images/connexion1.png" alt="picto connexion" title="Connexion"></a>
+    </div>
+</header>
+
+<!-- FIN HEADER------------------------->
+<main>
+
+    <section class="s1">
+
+        <div class="vues">
+            <a href="#"><img src="./images/sélection/vue 1.png" alt="vue 1"></a>
+            <a href="#"><img src="./images/sélection/vue 2.png" alt="vue 2"></a>
+            <a href="#"><img src="./images/sélection/vue 3.png" alt="vue 3"></a>
+            <a href=""><img src="./images/sélection/vue 4.png" alt="vue 4"></a>
+        </div>
+        
+       
+        <div class="mainPhoto">
+            <a href="#"><img src="./images/sélection/main view.png" alt="photo principale"></a>
+        </div>
+        
+        <div class="details">
+            
+            <div class="nomFav">
+                <p class="nom"><span>ROBE MAYA</span><br>Pois écru fond café</p>
+                <button class="fav">coeur</button>
+            </div>
+
+            <div class="prix">70 €</div>
+
+            <div class="livraison"><a href="#">Livraison et retours gratuits<br>(Offre soumise à conditions)</a></div>
+
+            <div class="couleur"><span>Couleur :</span> Pois écru fond café</div>
+
+            <div class="robes">
+                <a href="#"><img src="./images/sélection/robe écrue.png" alt="robe écrue"></a>  
+                <a href="#"><img src="./images/sélection/robe noire.png" alt="robe noire">
+                <a href="#"><img src="./images/sélection/robe verte.png" alt="robe verte"></a>
+                
+                
+            </div>
+
+            <div class="boutons">
+
+                <select>
+                    <option class="t0">Sélectionner une taille</option>
+                    <option class="t">EU 34</option>
+                    <option class="t">EU 36</option>
+                    <option class="t">EU 38</option>
+                    <option class="t">EU 40</option>
+                    <option class="t">EU 42</option>
+                    <option class="t">EU 44</option>
+                </select>
+                
+                <button class="panier">AJOUTER AU PANIER</button>
+            
+            </div>
+   
+    </section>
 
     <section class="s2">
 
@@ -18,80 +155,149 @@
 
             <h3>DESCRIPTION</h3>
 
-            <div class="texte">
-
                 <ul>
                     <li>Robe longue midi</li>
                     <li>Bretelles tressées à nouer</li>
                     <li>Cintrée à la taille avec jupe plissée</li>
                     <li>Décolleté plongeant</li>
                     <li>Doublée</li>
-                    <li>Longueur depuis l'épaule : 107 cm<br>(pour un 36)</li>
+                    <li>Longueur depuis l'épaule : 107 cm (pour un 36)</li>
                 </ul>
 
-            </div>
-
         </div>
-
-        
-
             
         <div class="description">
 
             <h3>PRODUCTION ETHIQUE</h3>
 
-            <div class="texte">
+                <p class="p1">Les deux tiers de nos modèles sont réalisés en Europe, le reste partout dans le monde en fonction du savoir-faire, des bonnes pratiques sociales et environnementales, et de l'origine des matières.<p>
 
-                <p>Les deux tiers de nos modèles sont<br>réalisés en Europe, le reste partout dans<br>le monde en fonction du savoir-faire, des bonnes pratiques sociales et environnementales, et de l'origine des matières.</p>
-
-                <p>L'intégralité de nos ateliers sont audités<br>par des experts indépendants, dans le<br>respect des standards que nous avons<br>sélectionnés (audits BSCI, SMETA, ICS ou WCA).</p>
-
-            </div>
-
+                <p>L'intégralité de nos ateliers sont audités par des experts indépendants, dans le respect des standards que nous avons sélectionnés (audits BSCI, SMETA, ICS ou WCA).</p>
 
         </div>
 
         
-        <div class="description">
+        <div class="description coupes">
             
             <h3>TAILLES & COUPES</h3>
-
-            <div class="texte">
-                
-               <p>Le mannequin porte une taille UK 8/<br>EU 36/ US 4.<br>Le mannequin porte une taille UK 8/ EU 36/ US 4.</p>
+              
+               <p>Le mannequin porte une taille UK 8/ EU 36/ US 4.<br>Le mannequin mesure 177 cm.</p>
 
                <p>COMPOSITION</p>
 
                <p>Matière principale : 100 % polyester<br>recyclé<br>Doublure : 100 % viscose</p>
 
-               <p>Pièce fabriquée en Chine</p>
+               <p>Pièce fabriquée au Portugal</p>
 
                <p>ENTRETIEN</p>
 
                <p>Lavage à la main dans l’eau froide</p>
-
-               <p>CODE PRODUIT<br>1965176</p>
-
-            </div>
+ 
+               <p>CODE PRODUIT : 1965176</p>
 
         </div>
-    
-        
-
+     
     </section>
 
     <h2>VOUS AIMEREZ AUSSI</h2>
 
     <section class="s3">
-        
-        <img src="./images/sélection/boucles.png" alt="photo boucles">
 
-        <img src="./images/sélection/chaussures.png" alt="photos chaussures">
+        <div class="boucles">
 
-        <img src="./images/sélection/bague.png" alt="photo bague">
+            <div class="hover">
+                <p class="p2">BOUCLES D'OREILLES MILA</p>
+                <p class="p3">30 €</p>
+                <p class="p4">DISPONIBLE EN <a href="#">ÉCRU </a>|<a href="#"> CAFÉ </a>|<a href="#"> VERT </a>|<a href="#"> BLEU </a>|<br><a href="#"> NUDE </a>|<a href="#"> FUSCHIA</a></p>
+                <a class="p5" href="#">TU</a>
+                <div class="boutonsHover">
+                    <button>FAV</button>
+                    <button>AJOUTER AU PANIER</button>  
+                </div>
+            </div>
+
+        </div>
+
+        <div class="chaussures">
+
+            <div class="hover">
+                <p class="p2">SANDALES HIGH ALIX</p>
+                <p class="p3">65 €</p>
+                <p class="p4">DISPONIBLE EN <a href="#">DORÉ </a>|<a href="#"> FRAMBROISE </a>|<a href="#"> ÉCRU</a></p>
+                <p class="p5"><a href="#">35</a> <a href="#">36</a> <a href="#">37</a> <a href="#">38</a> <a href="#">39</a> <a href="#">40</a> <a href="#">41</a> <a href="#">42</a></p>
+                <div class="boutonsHover">
+                    <button>FAV</button>
+                    <button>AJOUTER AU PANIER</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bague">
+
+            <div class="hover">
+                <p class="p2">BAGUE LUCIA</p>
+                <p class="p3">30 €</p>
+                <p class="p4">DISPONIBLE EN <a href="#">DORÉ</a></p>
+                <a class="p5" href="#">TU</a>
+                <div class="boutonsHover">
+                    <button>FAV</button>
+                    <button>AJOUTER AU PANIER</button>
+                </div>
+            </div>
+
+        </div>
 
     </section>
- 
+
+</main>
+<!-----------------------FOOTER------------------------->
+
+<footer>
+    <div class="picto">
+        <a href=""><img src="images/fb.png" alt="picto facebook" title="Notre Facebook"></a>
+        <a href=""><img src="images/insta.png" alt="picto instagram" title="Notre Instagram"></a>
+        <a href=""><img src="images/twitter.png" alt="picto instagram" title="Notre Twitter"></a>
+    </div>
+<div class="bloc">
+    <div class="bloc1">
+        <h1> AIDE & INFORMATION</h1>
+            <ul class="pc">
+                <li><a href="">Assistance</a></li>
+                <li><a href="">Suivi de commande</a></li>
+                <li><a href="">Livraison & retours</a></li>
+                <li><a href="">Livraison Premier</a></li>
+            </ul>
+    </div>
+    <div class="bloc2">
+        <h1>À PROPOS DE  JEANNE</h1>
+            <ul class="pc">
+                <li><a href=""> À propos de JEANNE</a></li>
+                <li><a href="">JEANNE recrute</a></li>
+                <li><a href=""> Responsabilité des entreprises</a></li>
+                <li><a href=""> Investisseurs</a></li>                    
+            </ul>
+    </div>
+    <div class="bloc3">
+        <h1>ENCORE PLUS DE JEANNE</h1>
+            <ul class="pc">
+                <li><a href="">Chèques cadeaux</a></li>
+                <li><a href="">French Days</a></li>
+                <li><a href="">Soldes</a></li>
+                <li><a href="">Black Friday</a></li>
+            </ul>
+    </div>
+</div>      
+    <a class="logobas" href="#haut"><img src="images/LOGO.png" alt="logo Jeanne"></a>
+    <a href="">© 2021 Jeanne</a>
+</footer>
+<!-----------FIN FOOTER------------------------->
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+<script src="script.js "></script> 
 </body>
 
-</html>
+</html>  
