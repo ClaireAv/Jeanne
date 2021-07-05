@@ -56,7 +56,7 @@ burger.addEventListener ('click', ()=>{
     burger.classList.toggle('active');
 });
 
-// ESSAI GSAP
+
 
 //  MENU RESPONSIVE
 var menu = document.getElementById("topnav_menu");
@@ -70,7 +70,7 @@ burger.addEventListener ('click', ()=>{
 
 
 
-
+// ESSAI GSAP
 
 const logo = document.querySelector('.LOGO');
 const vit = document.querySelector('.vit');
@@ -87,3 +87,27 @@ window.addEventListener('load', () => {
   TL.play();
 
 })
+
+
+
+// TEST API
+
+let observer = new IntersectionObserver(function (observables) {
+  observables.forEach(function (observable) {
+    // L'élément devient visible
+    if (observable.intersectionRatio > 0.5) {
+      observable.target.classList.remove('not-visible')
+      // observer.unobserve(observable.target)
+      console.log(observables)
+    }
+  })
+}, {
+  threshold: [0.5]
+});
+
+// On observe nos éléments
+let items = document.querySelectorAll('.yeah')
+items.forEach(function (item) {
+  item.classList.add('not-visible')
+  observer.observe(item)
+});
