@@ -12,6 +12,33 @@ a{
     text-decoration: none;
 }
 
+/*  Test API */
+.yeah{
+    transform: translateX(0);
+    opacity: 1;
+    transition: opacity 2s;   
+}
+.yeah.not-visible{
+    transform: translateX(50px);
+    opacity: 0;    
+}
+
+
+
+
+/* ASSENCEURS */
+#scroll_to_top{
+    position: fixed; 
+    bottom: 50px;
+    right: 30px;
+    z-index: 100;
+  }
+ 
+
+
+
+
+
 /*--------------------- HEADER----------------------- */
 header{
     font-family: 'Caslon', serif;
@@ -51,7 +78,7 @@ header form input{
     justify-content: flex-start;
     align-items: center;
     gap: 70px;
-    padding: 0 40px;
+    /* padding: 0 40px; */
 }
 .header-left h3 {
     color: black;
@@ -118,7 +145,7 @@ header form input{
 
     width: 100%;
     /* height: 100%; */
-    padding: 30px 70px;
+    padding: 30px 50px ;
 
     text-align: left;
 
@@ -397,6 +424,8 @@ main h2 {
 #nouveautes h2:hover {
     font-size: clamp(30px, 4vw, 42px);
 }
+
+
 
 /* !------------------------ NOUVEAUTES ---------------------- */
 

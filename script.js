@@ -1,17 +1,4 @@
-function showResponsiveMenu() {
-    var menu = document.getElementById("topnav_menu");
-    var icon = document.getElementById("topnav_icon");
-    var root = document.getElementById("root");
 
-    if (menu.className === "") {
-      menu.className = "open";
-      icon.className = "open";
-    } else {
-      menu.className = "";                    
-      icon.className = "";
-    }
-    
-  }
   function showMenu() {
     var menu = document.getElementById("topnav_menu");
     var icon = document.getElementById("topnav_icon");
@@ -26,6 +13,7 @@ function showResponsiveMenu() {
     }
     
   }
+
  
 // Chaussures
     var chaussures = document.getElementById("chaussures");
@@ -68,6 +56,20 @@ burger.addEventListener ('click', ()=>{
     burger.classList.toggle('active');
 });
 
+
+
+//  MENU RESPONSIVE
+var menu = document.getElementById("topnav_menu");
+var icon = document.getElementById("topnav_icon");
+
+
+burger.addEventListener ('click', ()=>{
+  menu.classList.toggle('open');
+});
+
+
+
+
 // ESSAI GSAP
 
 const logo = document.querySelector('.LOGO');
@@ -84,6 +86,28 @@ window.addEventListener('load', () => {
 
   TL.play();
 
+})
+
+
+
+// TEST API
+
+let observer = new IntersectionObserver(function (observables) {
+  observables.forEach(function (observable) {
+    // L'élément devient visible
+    if (observable.intersectionRatio > 0.5) {
+      observable.target.classList.remove('not-visible')
+      observer.unobserve(observable.target)
+      console.log(observables)
+    }
+  })
+}, {
+  threshold: [0.5]
 });
 
-
+// On observe nos éléments
+let items = document.querySelectorAll('.yeah')
+items.forEach(function (item) {
+  item.classList.add('not-visible')
+  observer.observe(item)
+});
