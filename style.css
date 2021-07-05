@@ -14,12 +14,12 @@ a{
 
 /*  Test API */
 .yeah{
-    /* transform: translateX(0); */
+    transform: translateX(0);
     opacity: 1;
-    /* transition: transform 0.4s, opacity 0.4s; */   
+    transition: opacity 2s;   
 }
 .yeah.not-visible{
-    /* transform: translateX(50px); */
+    transform: translateX(50px);
     opacity: 0;    
 }
 
