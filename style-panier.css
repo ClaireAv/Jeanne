@@ -20,30 +20,33 @@ img {
     font-family: 'Caslon', serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
+     background:rgba(255, 255, 255, 0.85);
+    }
+
+  .s1 .haut h1{
+  font-size: 25px;
 }
 
-
-h1{
-  font-size: 30px;
-}
-
-h2{
+ .h2 h2{
   display:flex;
   justify-content:center;
   align-items:center;
+  font-size: 20px;
 }
 
 p{
-  font-size:20px;
+  font-size:17px;
+  
 }
 
 .haut{
   display:flex;
- margin:0px;
+  margin:0px;
   justify-content:space-evenly;
   align-items:center;
-  border: black solid 1px;
-  background:rgb(190, 148, 106); ;
+  border: #EFBB7E ;
+  background:#EFBB7E ;
+  height:52px;
 
 }
 
@@ -53,8 +56,9 @@ p{
 }
 
 ul{
-  font-size:20px;
+  font-size:15px;
   list-style:none;
+  padding:20px;
 }
 
 .div1{
@@ -64,10 +68,13 @@ ul{
   margin:30px;
 }
 
-.h2{
+article h2{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size:25px;
+  padding: 35px;
+  color:#B17F4A ;
 }
 
 article {
@@ -78,19 +85,21 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: bisque 1px solid;
-  height:87vh;    
+   height:87vh;    
 }
 
 .bas{
+  height: 52px;
   margin:0px;
-  background:rgb(190, 148, 106);
-
+  background:#EFBB7E;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: black solid 1px;
+  border:  #EFBB7E;
 }
+
+
+
 
 /* ------------------- fin - S1 ------------------- */
 
@@ -101,17 +110,21 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: bisque 1px solid;
+  border-left: #EFBB7E 1px solid;
   height:87vh;
 }
 
+.s2 h1{
+  font-size: 25px;
+}
+
 .livraison{
-  
+  padding:20px; 
   width:auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  line-height: 1.6;
+  line-height:1.6;
 }
 
 .livraison .p, .titre{
@@ -119,12 +132,24 @@ article {
   justify-content: space-between;
   align-items: center;
 }
+
+.titre h1{
+  font-size: 20px;
+}
+
 form{
   height:30px;
   width:auto;
-  display: flex;
+  display:flex;
   justify-content: space-between;
-  margin: 10px 0;
+  margin:10px;
+
+}
+
+input{
+  
+  font-size: 16px;
+
 }
 
 .paye2 p{
@@ -150,7 +175,7 @@ form{
     /* height:20px; */
     /* width: fit-content; */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: none;
+    border: 15px;
     background-color: #EFBB7E;
     font-family: 'Caslon';
     padding: 20px 40px;
@@ -160,15 +185,48 @@ form{
 
 .paye1:hover {
   box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
-  font-size: 21px;
+  font-size: 20px;
 }
 
 .footer{
-  background:rgb(190, 148, 106);
+  background:#EFBB7E;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: black solid 1px;
+  border: #EFBB7E;
+  height:52px;
+}
+
+@media(max-width:609px){
+  .containergrand{
+    display:grid;
+    grid-template-columns: 1fr;
+
+  }
+     .s1 .haut h1{
+    font-size: 20px;
+  }
+
+  .s1 .haut p{
+    font-size: 15px;
+  }
+  .s1 .div1 img{
+    height:250px;
+    width:200px;
+
+  }
+
+  .s2 h1{
+    font-size: 20px;
+    
+  }
+  article h2{
+    font-size: 20px;
+  }
+
+  .h2 h2{
+    font-size: 15px;
+  }
 }
 
 /* ------------------- fin - S2 ------------------- */
