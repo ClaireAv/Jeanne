@@ -12,6 +12,33 @@ a{
     text-decoration: none;
 }
 
+/*  Test API */
+.yeah{
+    transform: translateX(0);
+    opacity: 1;
+    transition: opacity 2s;   
+}
+.yeah.not-visible{
+    transform: translateX(50px);
+    opacity: 0;    
+}
+
+
+
+
+/* ASSENCEURS */
+#scroll_to_top{
+    position: fixed; 
+    bottom: 50px;
+    right: 30px;
+    z-index: 100;
+  }
+ 
+
+
+
+
+
 /*--------------------- HEADER----------------------- */
 header{
     font-family: 'Caslon', serif;
@@ -27,6 +54,7 @@ header img{
     margin: 10px;
 }
 header .LOGO{
+    position: relative;
     width: 150px;
 }
 header .picto img{
@@ -50,7 +78,7 @@ header form input{
     justify-content: flex-start;
     align-items: center;
     gap: 70px;
-    padding: 0 40px;
+    /* padding: 0 40px; */
 }
 .header-left h3 {
     color: black;
@@ -116,8 +144,8 @@ header form input{
     top: 0;
 
     width: 100%;
-    height: 100%;
-    padding: 30px 70px 0;
+    /* height: 100%; */
+    padding: 30px 50px ;
 
     text-align: left;
 
@@ -232,7 +260,25 @@ header form input{
     }
     header .picto{
         margin-right: 20px;
-    }}
+    }
+    #topnav_menu ol {
+        grid-template-columns:1fr;
+        grid-template-rows: repeat (4, auto);
+    }
+    #topnav_menu ul li {
+        line-height: 5px;
+        font-size: 14px;
+    }
+    .petite-categorie{
+        display: none;
+    }
+    .petite-categorie.open{
+        display: block;
+    }
+   
+
+
+}
 /*---- responsive----------------------------- */
 
 
@@ -290,7 +336,16 @@ footer a{
     color: white;
     margin: 30px;
 }
+@media(max-width: 600px){
+    footer .bloc{
+        flex-direction: column;
+      
+    }
+    footer .bloc h1{
+          font-size: 15px;
+    }
 
+}
 /*---------------------FIN FOOTER----------------------- */
 
 /* --------------------- DEBUT PAGE ACCUEIL -----------------------  */
@@ -335,8 +390,8 @@ a {
     text-align: center;
 }
 
-h2 {
-    font-size: 40px;
+main h2 {
+    font-size: clamp(30px, 4vw, 40px);
 }
 
 
@@ -345,7 +400,12 @@ h2 {
 
 #vitrine img {
     width: 100vw;
+    position: relative;
     /* height: 100vh; */
+}
+
+.mob700 {
+    display: none;
 }
 
 /* !------------------------ VITRINE ------------------------ */
@@ -353,17 +413,19 @@ h2 {
 /* !------------------------ NOUVEAUTES ---------------------- */
 
 #nouveautes img, #nouveautes a {
-    padding: 30px;
+    margin: 30px;
 }
 
 #nouveautes h2 {
     color: black;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* text-shadow: 0px 4px 4px rgba(68, 68, 68, 0.25); */
 }
 
 #nouveautes h2:hover {
-    font-size: 42px;
+    font-size: clamp(30px, 4vw, 42px);
 }
+
+
 
 /* !------------------------ NOUVEAUTES ---------------------- */
 
@@ -404,7 +466,7 @@ h2 {
 }
 
 #grande-cat h2:hover {
-    font-size: 42px;
+    font-size: clamp(32px, 4vw, 42px);
 }
 
 /* !------------------------ GRANDE_CATEGORIE ---------------------- */
@@ -412,16 +474,20 @@ h2 {
 /* !------------------------ INTEMPORELS ------------------------ */
 
 #intemporels img, #intemporels a {
-    padding: 30px;
+    margin: 30px;
+}
+
+#intemporels img, #nouveautes img {
+    box-shadow: 0px 4px 10px #b17f4a;
 }
 
 #intemporels h2 {
     color: black;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* text-shadow: 0px 4px 4px rgba(68, 68, 68, 0.25); */
 }
 
 #intemporels h2:hover {
-    font-size: 42px;
+    font-size: clamp(30px, 4vw, 42px);
 }
 
 /* !------------------------ INTEMPORELS ------------------------ */
@@ -464,7 +530,7 @@ h2 {
 }
 
 #petite-cat h2:hover {
-    font-size: 42px;
+    font-size: clamp(32px, 4vw, 42px);
 }
 
 /* !------------------------ PETITE_CATEGORIE ---------------------- */
@@ -487,8 +553,15 @@ h2 {
     gap: 50px;
 }
 
-#engagements .icon {
-    align-self: center;
+#engagements .flex {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#engagements .icon a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -503,6 +576,159 @@ h2 {
 
 
 /* !------------------------ ENGAGEMENTS ---------------------- */
+
+/* !--------------------- RESPONSIVE - PAGE ACCUEIL -----------------------  */
+
+@media(max-width: 1100px) {
+    #grande-cat h2 {
+        padding: 50px 40px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    #grande-cat .r h2 {
+        padding: 50px 0;
+    }
+
+    #petite-cat h2 {
+        padding: 50px 40px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    #petite-cat .r h2 {
+        padding: 50px 0;
+    }
+}
+
+@media(max-width: 1000px) {
+    #grande-cat {
+        grid-template-columns: repeat(2, 1fr);
+        height: 720px;
+    }
+    #grande-cat .robes {
+        background: url(images/gde-cat/img-mob/media1000/robes-categorie.png) no-repeat center/cover; 
+    }
+
+    #petite-cat {
+        grid-template-columns: repeat(2, 1fr);
+        height: 720px;
+    }
+    #petite-cat .robes-blanches {
+        background: url(images/ptte-cat/img-mob/media1000/robe-blanche.png) no-repeat center/cover;
+    }
+    
+    #petite-cat .robes-denim {
+        background: url(images/ptte-cat/img-mob/media1000/robe-denim\ 1.png) no-repeat center/cover; 
+    }
+    
+    #petite-cat .robes-fleurs {
+        background: url(images/ptte-cat/img-mob/media1000/robe-fleurs\ 1.png) no-repeat center/cover; 
+    }
+    
+    #petite-cat .robes-longues {
+        background: url(images/ptte-cat/img-mob/media1000/robe-a-pois\ 1.png) no-repeat center/cover; 
+    }
+}
+
+@media(max-width: 700px) {
+    .pc1000 {
+        display: none;
+    }
+    .mob700 {
+        display: block;
+    }
+}
+
+@media(max-width: 600px) {
+
+    #grande-cat {
+        height: 500px;
+    }
+    #grande-cat .bijoux {
+        background: url(images/gde-cat/img-mob/Bijoux.png) no-repeat center/cover;
+    }
+    
+    #grande-cat .sacs {
+        background: url(images/gde-cat/img-mob/sac.png) no-repeat center/cover; 
+    }
+    
+    #grande-cat .chaussures {
+        background: url(images/gde-cat/img-mob/chaussures.png) no-repeat center/cover;
+    }
+    
+    #grande-cat .robes {
+        background: url(images/gde-cat/img-mob/robes-categorie.png) no-repeat center/cover; 
+    }
+
+    #petite-cat {
+        height: 500px;
+    }
+
+    #grande-cat h2, #grande-cat .r h2, #petite-cat .r h2 {
+        padding: 40px 0;
+    }
+
+    #petite-cat {
+        height: 500px;
+    }
+    #petite-cat .robes-blanches {
+        background: url(images/ptte-cat/img-mob/robe-blanche.png) no-repeat center/cover;
+    }
+    
+    #petite-cat .robes-denim {
+        background: url(images/ptte-cat/img-mob/robe-denim\ 1.png) no-repeat center/cover; 
+    }
+    
+    #petite-cat .robes-fleurs {
+        background: url(images/ptte-cat/img-mob/robe-fleurs\ 1.png) no-repeat center/cover; 
+    }
+    
+    #petite-cat .robes-longues {
+        background: url(images/ptte-cat/img-mob/robe-a-pois\ 1.png) no-repeat center/cover; 
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    #intemporels img, #intemporels a {
+        width: 95%;
+        margin: 10px auto 0;
+    }
+
+    #nouveautes img, #nouveautes a {
+        width: 95%;
+        margin: 10px auto 0;
+    }
+
+    #intemporels h2, #nouveautes h2 {
+        margin-bottom: 20px;
+    }
+
+    #intemporels h2:hover {
+        text-shadow: 0px 4px 4px rgba(68, 68, 68, 0.25);
+    }
+
+    #nouveautes h2:hover {
+        text-shadow: 0px 4px 4px rgba(68, 68, 68, 0.25);
+    }
+
+    #intemporels h2:active {
+        text-shadow: 0px 4px 4px rgba(68, 68, 68, 0.25);
+    }
+
+    #nouveautes h2:active {
+        text-shadow: 0px 4px 4px rgba(68, 68, 68, 0.25);
+    }
+
+    #engagements .vs-mob {
+        width: 50%;
+    }
+} 
 
 /* --------------------- FIN PAGE ACCUEIL -----------------------  */
 
