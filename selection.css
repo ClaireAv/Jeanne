@@ -307,3 +307,352 @@ h2{
     margin-left: 0;
 }
 }   
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'Caslon', serif;
+    src: url(Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*  Test API */
+.yeah{
+    transform: translateX(0);
+    opacity: 1;
+    transition: opacity 2s;   
+}
+.yeah.not-visible{
+    transform: translateX(50px);
+    opacity: 0;    
+}
+
+
+
+
+/* ASSENCEURS */
+#scroll_to_top{
+    position: fixed; 
+    bottom: 50px;
+    right: 30px;
+    z-index: 100;
+  }
+ 
+
+
+
+
+
+/*--------------------- HEADER----------------------- */
+header{
+    font-family: 'Caslon', serif;
+    box-shadow: 0px 0px 10px #B17F4A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: 90px;
+    width: 100%;
+}
+header img{
+    margin: 10px;
+}
+header .LOGO{
+    position: relative;
+    width: 150px;
+}
+header .picto img{
+    height: 40px;
+    margin: 15px ;
+}
+header .picto{
+    display: flex;
+}
+header form input{
+    border:none;
+    text-decoration: underline;
+    width: 120px;
+    font-family: 'Caslon', serif;
+    margin-left: 30px;
+    font-size: 18px;
+    color: black;
+}
+.header-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 70px;
+    /* padding: 0 40px; */
+}
+.header-left h3 {
+    color: black;
+    font-size: 20px;
+}
+
+.header-left .promo {
+    color: #B17F4A;
+}
+.header-right input {
+    border: none;
+    font-family: 'Caslon';
+    font-size: 20px;
+    color: black;
+    width: 150px;
+    height: 40px;
+}
+
+.header-right input:hover {
+    border-bottom: 2px solid black;
+    background: url(images/Vector.png) no-repeat 95%; 
+}
+
+
+
+/*---------------------FIN HEADER----------------------- */
+
+
+
+
+/* MENU DEROULANT------------------------------------------ */
+#topnav_menu {
+    display : block;
+    position: absolute;
+    left   : 0;
+    top     : 90px;
+    margin  : 0;
+    width   : 800px;
+    height  : 100vh;
+
+    z-index: 99;
+
+    transform-origin: 0% 0%;
+    transform       : translate(-200%, 0);
+
+    transition: transform 1s ;
+}
+
+/* and let's slide it in from the left */
+#topnav_menu.open {
+    transform: none;
+    position: fixed;
+}
+
+#topnav_menu ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    /* height: 100%; */
+    padding: 30px 50px ;
+
+    text-align: left;
+
+    background:rgba(255, 255, 255, 0.85);
+    list-style-type: none;
+}
+
+#topnav_menu ul {
+    position: relative;
+    padding: 0 80px;
+    list-style-type: none;
+}
+
+#topnav_menu ol li {
+    padding: 10px;
+    font-size: 20px;
+}
+
+#topnav_menu ul li {
+    font-size: 16px;
+}
+
+#topnav_menu a {
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+}
+
+#topnav_menu a:hover {
+    font-weight: 700;
+}
+
+#topnav_icon {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/*---- FIN MENU DEROULANT------------------------- */
+
+
+/*---- responsive----------------------------- */
+.pc{
+    display: block;
+}
+.mob{
+    display:none;
+}
+@media(max-width: 1100px){
+    .pc{
+        display: none;
+    }
+    .mob{
+        display: block;
+    }
+    .root a {
+        display: none;
+    }
+    .responsive{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .burger{
+        height: 24px;
+        width: 42px;
+        cursor: pointer;
+        position: relative;
+        margin: 15px;
+    }
+    .burger span{
+        width: 100%;
+        height: 4px;
+        background-color: #B17F4A;
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: background-color 0.5s ease-in-out;
+        border-radius: 15px;
+    }
+    .burger span::before, .burger span::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #B17F4A;
+        transition: transform 0.5s ease-in-out;
+        border-radius: 15px;}
+    .burger span::before{
+        transform: translateY(-10px);
+    }
+    .burger span::after{
+        transform: translateY(10px);
+    }
+    .burger.active span{
+        background-color: transparent;
+    }
+    .burger.active span::before{
+        transform: translateY(0px) rotateZ(45deg);
+    }
+    .burger.active span::after{
+        transform: translateY(0px) rotateZ(-45deg);
+    }   
+    header .LOGO {      
+        padding-right: 30px;
+    }}  
+
+    @media(max-width: 600px){
+    header .picto a img{
+        height: 30px;
+        margin: 8px;
+    }
+    header .picto{
+        margin-right: 20px;
+    }
+    #topnav_menu ol {
+        grid-template-columns:1fr;
+        grid-template-rows: repeat (4, auto);
+    }
+    #topnav_menu ul li {
+        line-height: 5px;
+        font-size: 14px;
+    }
+    .petite-categorie{
+        display: none;
+    }
+    .petite-categorie.open{
+        display: block;
+    }
+   
+
+
+}
+/*---- responsive----------------------------- */
+
+
+/*---------------------FOOTER----------------------- */
+footer{
+    width: 100%;
+    background-color:#FFDBB0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    }
+footer .bloc{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+footer .bloc > *{
+    margin: 20px;
+}
+footer .bloc1, footer .bloc2, footer .bloc3{
+    text-align: center;
+    margin: 15px;
+}
+footer h1{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+footer li{
+    list-style-type: none;
+    line-height: 170%;
+}
+footer li a{
+    text-decoration: none;
+    color: black;
+}
+footer li a:visited{
+    color: black;
+}
+footer li a:hover{
+    color: brown;
+}
+footer .picto img{
+    height: 30px;
+    margin: 15px;
+}
+footer .picto{
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    text-align: center;
+    color: white;
+    margin: 30px;
+}
+@media(max-width: 600px){
+    footer .bloc{
+        flex-direction: column;
+      
+    }
+    footer .bloc h1{
+          font-size: 15px;
+    }
+
+}
+/*---------------------FIN FOOTER----------------------- */
