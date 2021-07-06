@@ -29,7 +29,9 @@ h2{
     text-align: center;
 }
 
-
+.triangle{
+    display: flex;
+}
 
 
 
