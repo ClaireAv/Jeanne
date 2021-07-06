@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="stylesheet" href="paye.css">
+    <link rel="stylesheet" href="paiement.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JEANNE</title>
+   
+
+    <!------------------------- ENLEVER LES PUCES DE LA LISTE ----------------------------->
+    <style>
+      .nolist {
+      list-style: none ;
+      }
+    </style>
+<!----------------------------------FIN DU STYLE PUCES DE LISTE----------------------- -->
     <link rel="shortcut icon" type="image/x-icon" href="images/rond.png" />
 
 </head>
@@ -98,81 +107,111 @@
 
     <Section class="container">
 
-<div class="box1">
-        <p class="payer">Panier<b> >PAYER</b> >Confirmation</p>
+<!----------------------------- ETAPES PANIER> PAYER> CONFIRMATION ------------------------>
+     
+      <div class="box1">
 
-        <img src="images/Polygon 1.png" alt="triangle">
-       <a href="# Retour sur le résumé de la commande">Retour sur le résumé de la commande</a>
+        <p>Panier<span> >PAYER </span>>Confirmation</p>
 
-       
+      </div>
 
-        <h1 class="adf">Adresse de facturation</h1>
-        <span>Veuillez vérifier que l'adresse de facturation correspond au nom et à l'adresse associée à la carte de crédit que vous utilisez pour cet achat.</span></p>
+    <!------------------------- LIEN VERS PANIER GABY ---------------------------------------->
+
+      <div class="box2"> 
+        
+
+        <img src="images/Polygon 1.png" alt="triangle" >
+        <a href="#panier">Retour sur le résumé de la commande</a>
       
 
-        <!-- FORMULAIRE ADRESSE NOM TELEPHONE-->
+        <h1 class="adf">Adresse de facturation:</h1>
 
+        <span>Veuillez vérifier que l'adresse de facturation correspond au nom et à l'adresse associée à la carte de crédit que vous utilisez pour cet achat.</span>
+      </div>
     
-      <ol>
+
+    <!---------------------------- FORMULAIRE ADRESSE NOM TELEPHONE---------------------->
+      
+    
+      <div class="box4">
+      
+        <div class="formulaire">
+
+      <ul class="nolist">
         <li>
-          <label for=nom>Nom</label>
-          <input id=nom name=nom type=text placeholder="Prénom et nom" required autofocus>
+          <label for=nom></label>
+          <input id=nom name=nom type=text placeholder="Prénom et nom" required autofocus> 
         </li>
         <li>
-          <label for=email>Email</label>
+          <label for=email></label>
           <input id=email name=email type=email placeholder="exemple@domaine.com" required>
         </li>
         <li>
-          <label for=telephone>Téléphone</label>
+          <label for=telephone></label>
           <input id=telephone name=telephone type=tel placeholder="par ex&nbsp;: +3375500000000" required>
         </li>
-      </ol>
+      </ul>
     </fieldset>
   
     <fieldset>
       <legend>Adresse de livraison</legend>
-        <ol>
+        <ul class="nolist">
           <li>
-            <label for=adresse>Adresse</label>
-            <textarea id=adresse name=adresse rows=5 required> </textarea>
+            <label for=adresse></label>
+            <textarea id=adresse name=adresse rows=5 placeholder="Adresse de livraison" required> </textarea>
           </li>
           <li>
-            <label for=codepostal>Code postal</label>
-            <input id=codepostal name=codepostal type=text required>
+            <label for=codepostal></label>
+            <input id=codepostal name=codepostal type=text placeholder= "Code postal"required>
           </li>
             <li>
-            <label for=pays>Pays</label>
-            <input id=pays name=pays type=text required>
+            <label for=pays></label>
+            <input id=pays name=pays type=text placeholder="Pays"required>
           </li>
-          <div class="background">
+          </ul>
+        </div><br>
+        
+       
+        <p class="infos">
+      
+       <h2>Informations sur la carte:<img src="images/Rectangle 15.png" alt="CADENAS COEUR"></h2>
+        
+      </p>
+    
+    </div>
+  
 
-      <p>Informations sur la carte:</p>
+      <!----------------- IMAGES LOGOS MOYEN DE PAIEMENT----------------->
+      
+    
+      <div class="box5">
 
-      <img src="images/Rectangle 9 (1).png" alt="">
-
-      <!-- IMAGES LOGOS MOYEN DE PAIEMENT -->
-
-      <div class="infos-carte">
-
+        <img src="images/Rectangle 9 (1).png" alt="LOGOS CARTES">
+  
       <p>Numéro de la carte*</p>
-      <input type="text">
+      <input type="text" >
 
       <p>Date d'expiration*</p>
       <input type="month">
+
+      <div id="infobulle">
       
-      <p>Code de sécurité*</p>
-      <input type="password">Qu'est ce que le code de sécurité?
-      <br><br>
-
+        <p>Code de sécurité*</p><input type="password" name="secu"><a href="images/schema-cvv-cartes-bancaires.jpeg" target="_blank"> Qu'est ce que le code de sécurité?
+        </a></div>
+      
+    <br><br><br>
       <input type="checkbox" name="name" id="id">Rappelez-vous cette carte pour une utilisation ultérieure
+    
     </div>
-  </div>
+ 
+<!----------------------------- COLONNE 2 droite--------------------->
 
-</div>
+<div class="box6">
 
-    <div class="box2">
 
      <h2><b>Résumé de votre commande</b></h2> 
+     <br>
+
      <table>
        <tr>
          <td>Numéro de commande</td>
@@ -180,25 +219,52 @@
        </tr>
        <tr>
           <td>Sous-total</td>
-          <td>89.90</td>
+          <td>70.00€</td>
         </tr>
         <tr>
           <td>Frais de livraison</td>
-          <td>5.50</td>
+          <td>5.50€</td>
        </tr>
        <tr>
          <td>TOTAL</td>
-         <td>95.40</td>
+         <td>75.50€</td>
   
        </tr>
      </table>
-     <input type="button" value="PAYER">
+    </div>
+    <!-- <div class="hide">
+      <p>Le numéro de votre commande est GSHMHL00N000TVJ</p>
+      <p>Livraison premier 5.50€</p>
+      <p>Votre total s'éleve à 75.50€</p>
+    </div> -->
+    
+    <div class="box7">
 
-    <h1>Paiement sécurisé:</h1>
+      
+     <button>PAYER</button><br><br>
 
-    <img src="images/Rectangle 19.png" alt="logos cartes"><br>
+    
+    <!-- </div> -->
+    <h1>Paiement sécurisé:</h1><br>
+    
+<div class="box8">
+  
+    <img src="images/Rectangle 19.png" alt="logos visa/securecode"><br>
+  </div>
+  
+  <div class="box9">
 
-    <img src="images/Rectangle 14.png" alt="robe">
+   <div class="card card1"><div class="px"><p class="ha">Merci de votre confiance</p><P>Jeanne</P></div></div> 
+
+  <!-- </div> -->
+<!-- </div>
+</div> -->
+
+
+
+</Section>
+
+
 
   </div>
     </Section>
