@@ -351,15 +351,15 @@ header form input{
 }
 
 =======
->>>>>>> 93d64f311ddf7fce34d45c5e3186ff044d9e11e4
+/* >>>>>>> 93d64f311ddf7fce34d45c5e3186ff044d9e11e4
     border: none;
-}
+} */
 
 <<<<<<< HEAD
 .miniPanier {
     background: #efbb7e;
-=======
->>>>>>> e8a3612667acec5f788cf8a294ef06bbbf0f13d6
+/* =======
+>>>>>>> e8a3612667acec5f788cf8a294ef06bbbf0f13d6 */
 .header-right input:hover {
     border-bottom: 2px solid black;
     background: url(images/Vector.png) no-repeat 95%; 
