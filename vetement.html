@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="vetement.css" />
-   
+
     <title>Jeanne - La mode Parisienne</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/rond.png" />
 
   </head>
   <body>
-          <!-- ASSENCEUR -->
+    <!-- -------------------------DEBUT HEADER  -->
+       <!-- ASSENCEUR -->
 
-    <div id="scroll_to_top">
+       <div id="scroll_to_top">
         <a href="#haut"><img src="images/chevrons.png" alt="haut"></a>
     </div>
 <!----------------------- HEADER------------------------->
 
 <header id="haut">   
 
-    <div class="responseive mob">
-        <div class="burger mob" id="burger" href="javascript:void(0);" onclick="showResponsiveMenu()">
+    <div class="responsive mob">
+        <div class="burger mob" id="burger" >
             <span></span>
         </div> 
     </div>
@@ -30,7 +31,7 @@
 
         <div id="root ">
             <a class="pc" id="topnav_icon" href="javascript:void(0);" onmouseover="showMenu()" >
-                <h3 class="pc">Collection</h3></a>
+                <h3 class="pc anim">Collection</h3></a>
 
             <!-- MENU DEROULANT -->
             <nav role="navigation" id="topnav_menu" >
@@ -71,145 +72,154 @@
             </nav>
         </div>
 
-        <a href="#" class="pc"><h3>Nouveautés</h3></a>
-        <a href="#" class="pc"><h3 class="promo">Promotions</h3></a>
+        <a href="#" class="pc"><h3 class="anim">Nouveautés</h3></a>
+        <a href="#" class="pc anim"><h3 class="promo anim">Promotions</h3></a>
 
     </div>
    
 <!-- LOGO -->
-    <a href="index.html"><img class="LOGO " src="images/LOGO.png" alt="logo Jeanne" title="Accueil"></a>
+    <a href="index.html"><img class="LOGO" src="images/LOGO.png" alt="logo Jeanne" title="Accueil"></a>
 
 
 
 
     <div class="header-right flex pc">
-        <input type="search" name="recherche" id="recherche" placeholder="Recherche" class="pc">
+        <input type="search" name="recherche" id="recherche" placeholder="Recherche" class="pc anim">
     </div>
           <!-- PICTO -->
     <div class="picto">
-        <a href="panier.html" target="_blank"><img src="images/coeur1.png" alt="picto coeur" title="Favoris"></a>
-        <a href="panier.html"  target="_blank"><img src="images/panier1.png" alt="picto panier" title="Panier"></a>
-        <a href=""><img src="images/connexion1.png" alt="picto connexion" title="Connexion"></a>
+        <a href="panier.html" target="_blank"><img class="anim" src="images/coeur1.png" alt="picto coeur" title="Favoris"></a>
+        <a href="panier.html"  target="_blank"><img class="anim" src="images/panier1.png" alt="picto panier" title="Panier"></a>
+        <a href=""><img class="anim" src="images/connexion1.png" alt="picto connexion" title="Connexion"></a>
     </div>
 </header>
 
 <!-- FIN HEADER------------------------->
 
-    
-      <!------------------------------------- BOX 1 ---------------------------------------->
+    <!-- ---------------------------FIN HEADER------------------------->
 
-      <div class="box1">
-          <div>
-              <a href="#" alt="robepois">
-               <img  src="./images vetements/robe a pois.jpeg"alt="robe marron à pois"/>
-             </a>
-         </div>
-         <h2>LES ROBES LONGUES</h2>     
-     </div>
+    <!------------------------------------- BOX 1 ---------------------------------------->
 
+  
 
-     <!---------------------------------- BOX 2 ------------------------------------------->
+<main>
+
+    <div class="box1">
+
+      <div class="box1bis">
+
+      <figure class="container-img">
+
+        <a href="selection.html">
+          <img class="pois"src="./images vetements/robe a pois.jpeg" alt="robe à pois" />
+          <div class="infos-hover"> 
+          <p> <b>ROBE MAYA</b></p>
+          <p>70€</p> 
+          <p>Disponible en noir </p> 
+          <p>34  <strike>36</strike> 38 40 42 <strike>44</strike>  46</p> </div>
+        </a>    
+      </figure>
+      <a href="./selection.html"> <figcaption>Robe Maya - 70€ </figcaption></a>
      
-    <section class="section2">
-
-
-        <!-- BOX 2 -->
-
-     <div class="box2">
-
-         <div class="photo1">
-             <a href="#"><img src="./images vetements/robe bleu.png" alt="robebleu"></a>
-             <p>Robe Maya - 50€</p>
-        </div>
-            
-       
-        <div class="photo2">
-            <a href="#"><img src="./images vetements/robe dos nue.png" alt="robedosnue"></a>
-            <p>Robe Lea - 50€</p>
-        </div>
-      
-
-      <div class="photo3">
-        <a href="#"><img src="./images vetements/robe blanche.png" alt="robeblanche"></a>
-        <p>Robe Rosa - 70€</p>
     </div>
-        
+     
+      <h2>
+          LES ROBES <br />
+          LONGUES
+      </h2>
     </div>
+    
 
+    <!---------------------------------- BOX 2 ------------------------------------------->
 
-     <!-- BOX 3-->
+    <div class="box2 box">
+      <figure>
+        <a href="selection. html"
+          ><img src="./images vetements/robe bleu.png" alt="robe bleu" />
+          <figcaption>Robe Ayda - 60 €</figcaption></a>
+      </figure>
 
-     <div class="box3">
+      <figure>
+        <a href="selection.html"
+          ><img src="./images vetements/robe dos nue.png" alt="robe dos nu" />
+          <figcaption>Robe Léa - 60 €</figcaption></a>
+      </figure>
 
-     <div class="photo4">
-        <a href="#"><img src="./images vetements/robe croisée.png" alt="robecroisée"></a>
-        <p>Robe Juliette - 70€</p>
+      <figure>
+        <a href="selection.html"
+          ><img src="./images vetements/robe blanche.png" alt="robe blanche" />
+          <figcaption>Robe Rosa - 60 €</figcaption></a>
+      </figure>
     </div>
 
-    <div class="photo5">
-        <a href="#"><img src="./images vetements/robe marron.png" alt="robemarron"></a>
-        <p>Robe Marie - 70€</p>
+    <!-- BOX 3-->
+
+    <div class="box3">
+      <figure>
+        <a href="selection.html"
+          ><img src="images vetements/robe croisée.png" alt="robe croisee" />
+          <figcaption>Robe Juliette - 70 €</figcaption></a
+        >
+      </figure>
+
+      <figure>
+        <a href="selection.html"
+          ><img src="./images vetements/robe marron.png" alt="robe marron" />
+          <figcaption>Robe Marie - 80 €</figcaption>
+          </a>
+      </figure>
     </div>
-
-   </div>  
-
 
     <!-- BOX 4 -->
 
     <div class="box4">
+      <figure>
+        <a href="selection.html"
+          ><img src="./images vetements/robe noire.png" alt="robe noire" />
+          <figcaption>Robe Lola - 50 €</figcaption></a
+        >
+      </figure>
 
-        <div class="photo6">
-            <a href="#"><img src="./images vetements/robe noire.png" alt="robenoire"></a>
-            <p>Robe Lola - 50€</p>
-       </div>
-           
-      
-       <div class="photo7">
-           <a href="#"><img src="./images vetements/robe fleurie.png" alt="robefleurie"></a>
-           <p>Robe Lou - 50€</p>
-       </div>
-     
+      <figure>
+        <a href="selection.html"
+          ><img src="./images vetements/robe fleurie.png" alt="robe fleurie" />
+          <figcaption>Robe Lou - 50 €</figcaption></a
+        >
+      </figure>
 
-     <div class="photo8">
-       <a href="#"><img src="./images vetements/robe violette.png" alt="robeviolette"></a>
-       <p>Robe Luce - 70€</p>
-   </div>     
-   </div>
-   
+      <figure>
+        <a href="selection.html"
+          ><img
+            src="./images vetements/robe violette.png"
+            alt="robe violette"
+          />
+          <figcaption>Robe Luce - 70 €</figcaption></a
+        >
+      </figure>
+    </div>
 
     <!-- BOX 5 -->
 
     <div class="box5">
+      <figure>
+        <a href="selection.html"
+          ><img
+            src="./images vetements/robe blanche brodee.png"
+            alt="robe brodée"
+          />
+          <figcaption>Robe Léa - 60 €</figcaption></a
+        >
+      </figure>
 
-        <div class="photo9">
-           <a href="#"><img src="./images vetements/robe blanche brodee.png" alt="robebrodée"></a>
-           <p>Robe lisa - 70€</p>
-       </div>
-   
-       <div class="photo10">
-           <a href="#"><img src="./images vetements/robe noire sexy.png" alt="robesextnoire"></a>
-           <p> Robe Elena - 70€</p>
-       </div>
-   
-      </div>  
+      <figure>
+        <a href="selection.html"
+          ><img src="./images vetements/robe noire sexy.png" alt="robesexy" />
+          <figcaption>Robe Elena - 70 €</figcaption></a
+        >
+      </figure>
+    </div>
 
-
-
-   
-
-
-
-
-
-
-</section> 
-
-
-
-
-
-
-   
+  </main>
 
 <!-----------------------FOOTER------------------------->
 
