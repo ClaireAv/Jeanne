@@ -111,3 +111,9 @@ items.forEach(function (item) {
   item.classList.add('not-visible')
   observer.observe(item)
 });
+
+// bouton coeur
+
+
+let coeur = document.getElementById("coeur");
+coeur.addEventListener ('click', ()=>{coeur.classList.toggle('active');});

@@ -17,7 +17,7 @@ img{
 main{
     font-family: "Caslon";
     margin: auto;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 section{
@@ -39,6 +39,10 @@ section{
     box-shadow: 0px 4px 10px #b17f4a;
 }
 
+.vues-responsive-1000px{
+    display: none;
+}
+
 .details{
     display: flex;
     flex-direction: column;
@@ -50,7 +54,7 @@ section{
     display: flex;
     justify-content: space-between;
     font-size: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .nom span{
@@ -58,14 +62,16 @@ section{
     color:#b17f4a;
 }
 
-.fav{
-    width: 68px;
-    height: 68px;
-    background: white;
+.coeur{
+    width: 27px;
+    height:25px;
+    background: url("./images/sélection/coeur\ favori\ 1.png") no-repeat center/cover;
 }
 
-.fav:hover{
-    background: tomato;
+.coeur.active{
+    width: 28px;
+    height:25px;
+    background: url("./images/sélection/coeur\ favori\ 2.png") no-repeat center/cover;
 }
 
 .nomFav span{
@@ -270,3 +276,34 @@ h2{
     font-size: 20px;
     margin-bottom: 20px;
 }
+
+@media (max-width:1000px){
+.s1, .s2, .s3{
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+}
+
+.mainPhoto{
+    order: -1;
+}
+
+.vues{
+    display: none;
+}
+
+.vues-responsive-1000px{
+    display: block;
+    width:90%
+}
+
+.vues-responsive-1000px img{
+    margin-bottom: 20px;
+    max-width: 535px;
+}
+
+h2{
+    font-size: 30px;
+    margin-left: 0;
+}
+}   
