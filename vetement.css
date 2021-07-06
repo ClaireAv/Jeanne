@@ -37,14 +37,17 @@
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-.container-img .infos-hover i{
-  margin-top:60px;
+.container-img .infos-hover{
   font-size:50px;
 
 }
 .container-img .infos-hover p{
   text-align:center;
   font-size:medium;
+  font-weight: normal;
+  text-align: center;
+  display: block;
+  margin-top: 4px;
   line-height: 180%;
 }
 .container-img:hover .infos-hover{
@@ -52,7 +55,7 @@
 }   
 
 
-img{
+main img{
   display: block;
   max-width: 100%;
   box-shadow: 0px 4px 10px #b17f4a;
@@ -65,15 +68,6 @@ img{
 }
 
 
-
-
-p {
-  font-size: 25px;
-  font-weight: normal;
-  text-align: center;
-  display: block;
-  
-}
 
 a{
   text-decoration: none; 
@@ -168,9 +162,9 @@ h2 {
   }
 
   .pois{
+
     width: 50%;
-    
-    
+
   }
 
 
@@ -189,7 +183,14 @@ h2 {
   .box1{
     flex-direction: column-reverse;
     justify-content: space-around;
+    margin: 20px;
+
   }
+
+  .container-img:hover .infos-hover{
+    height:25%;
+  } 
+
 
   
 
@@ -215,10 +216,6 @@ h2 {
   .box5{
    flex-direction: column ;
   }
-
-
-
-
 
 }
 
