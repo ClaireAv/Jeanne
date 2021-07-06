@@ -307,6 +307,16 @@ h2{
     margin-left: 0;
 }
 }   
+
+
+
+
+
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -321,16 +331,7 @@ a{
     text-decoration: none;
 }
 
-/*  Test API */
-.yeah{
-    transform: translateX(0);
-    opacity: 1;
-    transition: opacity 2s;   
-}
-.yeah.not-visible{
-    transform: translateX(50px);
-    opacity: 0;    
-}
+
 
 
 
