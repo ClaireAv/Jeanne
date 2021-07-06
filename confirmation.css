@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+body{
+	font-family: "Caslon"
+
+}
+
+@font-face {
+	font-family: "Caslon";
+	src: url(Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
+	
+}
+.thx{
+    background-image: url(images/coeur1.png)cover;
+    border:rgba(255, 127, 80, 0.479) 4px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    height: 50vh;
+    width: auto;
+    color: saddlebrown;
+  
+}
+    
