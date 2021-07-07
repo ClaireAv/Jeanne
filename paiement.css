@@ -122,6 +122,11 @@ body {
 .box6 .total {
 	color: #b17f4a;
 }
+
+.box6hide{
+
+	display: none;
+}
 /* ---------------BOUTON PAYER à LOGOS VERIFIED BY VISA/ MASTERCARD SECURECODE---------- */
 .box7 {
 	grid-area: b7;
@@ -142,7 +147,7 @@ body {
 	display: flex;
 	font-size: 23px;
 	color: #b17f4a;
-	padding-left: 80px;
+	padding-left: 100px;
 }
 /*---------------------------- IMAGE DE LA ROBE + MESSAGE------------------------------ */
 .box8 {
@@ -152,7 +157,7 @@ body {
 .box8 img {
 	margin-bottom: 40px;
 	margin-top: 2px;
-	/* margin-left: 150px; */
+	margin-left: 120px;
 	height: 7vh;
 }
 a {
@@ -220,7 +225,7 @@ a {
 	border: #a38a44 3px solid;
 	BOX-shadow: 1px 1px 2px rgb(255, 187, 0), 0 0 1em rgb(212, 164, 58);
 	justify-content: center;
-	margin-left: 99px;
+	margin-left: 50px;
 	margin-bottom: 50px;
 }
 
@@ -251,6 +256,8 @@ a {
 @media (max-width: 458px) {
 	.container {
 		grid-gap: 50px;
+		grid-template-areas:"b1""b2""b3""b4""b5""bH""b7""b8""b9" ;
+		
 	}
 
 	.box1 {
@@ -286,6 +293,21 @@ a {
 	.box6 td {
 		display: none;
 	}
+	.box6hide{
+		display: block;
+	}
+	.box6hide{
+		grid-area: bH;
+		padding-left: 70px;
+		font-size: 15px;
+	}
+	
+	.box6hide span{
+		color:#b17f4a;
+		font-style: oblique;
+		gap: 10px;
+		font-size: 17px;
+	}
 
 	.box7 h1 {
 		margin-left: 80px;
@@ -318,24 +340,29 @@ a {
 		margin-top: 30px;
 	}
 }
-@media (min-width: 437px) {
+@media (max-width: 437px) {
 	.box1 {
-		margin-right: 100px;
+		/* margin-right: 100px; */
 		justify-content: center;
+		padding-right: 50px;
 	}
 	.box2 {
 		margin-left: 20px;
+		padding-right: 100px;
 	}
 	.box2 span {
 		gap: 10px;
 	}
-
+	
 	.box7 h1 {
-		margin-left: 10px;
+		margin-right: 50px;
+		padding-left: 50px;
+		
 	}
+	
+	.box9 .card1{
+		margin-right:20px ;
 
-	.box8 img {
-		padding-left: 100px;
 	}
 }
 

@@ -15,12 +15,12 @@ body{
 	
 }
 .thx{
-    background-image: url(images/coeur1.png)cover;
     border:rgba(255, 127, 80, 0.479) 4px solid;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 150px;
     height: 50vh;
     width: auto;
     color: saddlebrown;
