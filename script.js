@@ -117,3 +117,18 @@ items.forEach(function (item) {
 
 let coeur = document.getElementById("coeur");
 coeur.addEventListener ('click', ()=>{coeur.classList.toggle('active');});
+
+// Slider à supprimer si besoin
+
+var slide = new Array("./images/sélection/responsive/vue1-1000px.jpg","./images/sélection/responsive/vue2-1000px.jpg", "./images/sélection/responsive/vue3-1000px.jpg", "./images/sélection/responsive/vue4-1000px.jpg");
+
+var numero = 0;
+
+function ChangeSlide(sens) {
+    numero = numero + sens;
+    if (numero < 0)
+        numero = slide.length - 1;
+    if (numero > slide.length - 1)
+        numero = 0;
+    document.getElementById("slide").src = slide[numero];
+}

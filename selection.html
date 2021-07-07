@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sélection vétement</title>
+    <title>Sélection vêtement</title>
     <link rel="stylesheet" href="selection.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/rond.png" />
 
@@ -113,17 +113,17 @@
             <a href=""><img src="./images/sélection/responsive/vue4-1000px.jpg" alt="vue 4 responsive"></a>
         </div>
        
-        <div class="mainPhoto">
-            <a href="#"><img src="./images/sélection/main view.png" alt="photo principale"></a>
+        <div class="mainPhoto" id="slider">
+            <img src="./images/sélection/responsive/vue1-1000px.jpg" alt="photo vue 1" id="slide">
+            <div id="precedent" onclick="ChangeSlide(-1)"></div>
+            <div id="suivant" onclick="ChangeSlide(1)"></div>
         </div>
-        
+
         <div class="details">
             
             <div class="nomFav">
                 <p class="nom"><span>ROBE MAYA</span><br>Pois écru fond café</p>
-                <div class="coeur" id="coeur">
-            </div>
-                
+                <div class="coeur" id="coeur"></div>
             </div>
 
             <div class="prix">70 €</div>
@@ -136,8 +136,6 @@
                 <a href="#"><img src="./images/sélection/robe écrue.png" alt="robe écrue"></a>  
                 <a href="#"><img src="./images/sélection/robe noire.png" alt="robe noire">
                 <a href="#"><img src="./images/sélection/robe verte.png" alt="robe verte"></a>
-                
-                
             </div>
 
             <div class="boutons">
@@ -157,6 +155,8 @@
                 </form> 
                            
             </div>
+        
+        </div>
    
     </section>
 
