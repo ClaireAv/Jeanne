@@ -11,19 +11,19 @@ body{
 
 @font-face {
 	font-family: "Caslon";
-	src: url(Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
+	src: url(./Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
 	
 }
 .thx{
-    border:rgba(255, 127, 80, 0.479) 4px solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top:#efbb7e 4px solid;
+    border-bottom:#efbb7e 4px solid;
     margin-top: 150px;
     height: 50vh;
     width: auto;
-    color: saddlebrown;
-  
+    color: #b17f4a; 
 }
     
