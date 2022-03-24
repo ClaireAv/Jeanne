@@ -1,346 +1,270 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="stylesheet" href="paiement.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JEANNE</title>
-   
-
-    <!------------------------- ENLEVER LES PUCES DE LA LISTE ----------------------------->
-    <style>
-      .nolist {
-      list-style: none ;
-      }
-    </style>
-<!----------------------------------FIN DU STYLE PUCES DE LISTE----------------------- -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/rond.png" />
-    <link rel="stylesheet" href="paye.css">
+    <title>Jeanne Paris</title>
+    <link rel="stylesheet" href="paiement.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/rond.png" />
 </head>
 
 <body>
-      <!-- ASSENCEUR -->
-
-      <div id="scroll_to_top">
-        <a href="#haut"><img src="images/chevrons.png" alt="haut"></a>
+    <!-- ASCENSEUR -->
+    <div id="scroll_to_top">
+        <a href="#haut"><img src="./images/chevrons.png" alt="haut"></a>
     </div>
- <!----------------------- HEADER------------------------->
 
+<!----------------------- HEADER------------------------->
 <header id="haut">   
 
-  <div class="responseive mob">
-      <div class="burger mob" id="burger" href="javascript:void(0);" onclick="showResponsiveMenu()">
-          <span></span>
-      </div> 
-  </div>
+    <div class="responsive mob">
+        <div class="burger mob" id="burger" >
+            <span></span>
+        </div> 
+    </div>
 
-  <div class="header-left flex ">
+    <div class="header-left flex ">
 
-      <div id="root ">
-          <a class="pc" id="topnav_icon" href="javascript:void(0);" onmouseover="showMenu()" >
-              <h3 class="pc">Collection</h3></a>
+        <div id="root ">
+            <a class="pc" id="topnav_icon" href="javascript:void(0);" onmouseover="showMenu()" >
+                <h3 class="pc anim">Collection</h3></a>
 
-          <!-- MENU DEROULANT -->
-          <nav role="navigation" id="topnav_menu" >
-              <ol class="grande-categorie" href="javascript:void(0);" onmouseleave="showMenu()">
-                  <li><a href="#" id="robes">Robes</a>
-                      <ul class="petite-categorie" id="listeRobes">
-                          <li><a href="vetement.html">Robes blanches</a></li>
-                          <li><a href="vetement.html">Robes denim</a></li>
-                          <li><a href="vetement.html">Robes à fleurs</a></li>
-                          <li><a href="vetement.html">Robes longues</a></li>
-                      </ul>
-                  </li>
-                  <li><a href="#" id="bijoux">Bijoux</a>
-                      <ul class="petite-categorie" id="listeBijoux">
-                          <li><a href="vetement.html">Boucles d'oreilles</a></li>
-                          <li><a href="vetement.html">Colliers</a></li>
-                          <li><a href="vetement.html">Bracelets</a></li>
-                          <li><a href="vetement.html">Bagues</a></li>
-                      </ul>
-                  </li>
-                  <li  ><a id="sacs" href="#" >Sacs</a>
-                      <ul class="petite-categorie" id="listeSacs">
-                          <li><a href="vetement.html">Sacs à main</a></li>
-                          <li><a href="vetement.html">Sacs à dos</a></li>
-                          <li><a href="vetement.html">Sacs en bandolière</a></li>
-                      </ul>
-                  </li>
-                  <li><a id="chaussures"  href="#" >Chaussures</a>
-                      <ul class="petite-categorie" id="listeChaussures">
-                          <li><a href="vetement.html">Mocassins</a></li>
-                          <li><a href="vetement.html">Sandales</a></li>
-                          <li><a href="vetement.html">Escarpins</a></li>
-                          <li><a href="vetement.html">Chaussures plates</a></li>
-                      </ul>
-                  </li>
-                  
-              </ul>
-          </nav>
-      </div>
+            <!-- MENU DEROULANT -->
+            <nav role="navigation" id="topnav_menu" >
+                <ol class="grande-categorie" href="javascript:void(0);" onmouseleave="showMenu()">
+                    <li><a href="#" id="robes">Robes</a>
+                        <ul class="petite-categorie" id="listeRobes">
+                            <li><a href="vetement.html">Robes blanches</a></li>
+                            <li><a href="vetement.html">Robes denim</a></li>
+                            <li><a href="vetement.html">Robes à fleurs</a></li>
+                            <li><a href="vetement.html">Robes longues</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" id="bijoux">Bijoux</a>
+                        <ul class="petite-categorie" id="listeBijoux">
+                            <li><a href="vetement.html">Boucles d'oreilles</a></li>
+                            <li><a href="vetement.html">Colliers</a></li>
+                            <li><a href="vetement.html">Bracelets</a></li>
+                            <li><a href="vetement.html">Bagues</a></li>
+                        </ul>
+                    </li>
+                    <li  ><a id="sacs" href="#" >Sacs</a>
+                        <ul class="petite-categorie" id="listeSacs">
+                            <li><a href="vetement.html">Sacs à main</a></li>
+                            <li><a href="vetement.html">Sacs à dos</a></li>
+                            <li><a href="vetement.html">Sacs en bandolière</a></li>
+                        </ul>
+                    </li>
+                    <li><a id="chaussures"  href="#" >Chaussures</a>
+                        <ul class="petite-categorie" id="listeChaussures">
+                            <li><a href="vetement.html">Mocassins</a></li>
+                            <li><a href="vetement.html">Sandales</a></li>
+                            <li><a href="vetement.html">Escarpins</a></li>
+                            <li><a href="vetement.html">Chaussures plates</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
-      <a href="#" class="pc"><h3>Nouveautés</h3></a>
-      <a href="#" class="pc"><h3 class="promo">Promotions</h3></a>
+        <a href="#" class="pc"><h3 class="anim">Nouveautés</h3></a>
+        <a href="#" class="pc anim"><h3 class="promo anim">Promotions</h3></a>
 
-  </div>
- 
-<!-- LOGO -->
-  <a href="index.html"><img class="LOGO " src="images/LOGO.png" alt="logo Jeanne" title="Accueil"></a>
+    </div>
+   
+    <!-- LOGO -->
+    <a href="index.html"><img class="LOGO" src="./images/LOGO.png" alt="logo Jeanne" title="Accueil"></a>
 
+    <div class="header-right flex pc">
+        <input type="search" name="recherche" id="recherche" placeholder="Recherche" class="pc anim">
+    </div>
 
+    <!-- PICTO -->
+    <div class="picto">
+        <a href="panier.html"><img class="anim" src="./images/coeur1.png" alt="picto coeur" title="Favoris"></a>
+        <a href="panier.html"><img class="anim" src="./images/panier1.png" alt="picto panier" title="Panier"></a>
+        <a href="index.html"><img class="anim" src="./images/connexion1.png" alt="picto connexion" title="Connexion"></a>
+    </div>
 
-
-  <div class="header-right flex pc">
-      <input type="search" name="recherche" id="recherche" placeholder="Recherche" class="pc">
-  </div>
-        <!-- PICTO -->
-  <div class="picto">
-      <a href="panier.html" target="_blank"><img src="images/coeur1.png" alt="picto coeur" title="Favoris"></a>
-      <a href="panier.html"  target="_blank"><img src="images/panier1.png" alt="picto panier" title="Panier"></a>
-      <a href=""><img src="images/connexion1.png" alt="picto connexion" title="Connexion"></a>
-  </div>
 </header>
-
 <!-- FIN HEADER------------------------->
 
 
+<!-- CONTAINER PRINCIPAL -->
+<main class="container">
+    <!--------------SECTION 1 --------------->
+    <section class="s1">
 
-    <Section class="container">
+        <div class="etapes-paiement">
+            <div>PANIER</div>
+            <span>></span>
+            <div class="payer">PAIEMENT</div>
+            <span>></span>
+            <div>CONFIRMATION</div>   
+        </div>
 
-<!----------------------------- ETAPES PANIER> PAYER> CONFIRMATION ------------------------>
-     
-      <div class="box1">
+        <div class="retour-panier">
+            <a href="panier.html"><img class="triangle" src="./images/Polygon 1.png" alt="triangle"></a>
+            <a href="panier.html">Retour au panier</a>
+        </div>
 
-        <p>Panier<span> >PAYER </span>>Confirmation</p>
+        <p class="attention">Veuillez vérifier que les informations de facturation ci-dessous correspondent au nom et à l'adresse associés à la carte de crédit que vous utilisez pour cet achat.</p>
 
-      </div>
+        <form action="" name="">
+            <label class="adf" for="">Adresse de facturation</label>
+            <input class="nom" type="text" name="nom" placeholder="Marie Dupont">
+            <input class="adresse" type="email" name="email" placeholder="1 rue du Paradis, 75000 Paris, FRANCE">          
+            <input class="mail" type="email" name="email" placeholder="exemple@domaine.com"> 
+            <input class="telephone" type="email" name="email" placeholder="+33750000000"> 
+            <div class="btn-form">
+                <input class="envoi" type="submit" value="Modifier">
+                <input class="envoi" type="submit" value="Supprimer">
+            </div>
+        </form>
 
-    <!------------------------- LIEN VERS PANIER GABY ---------------------------------------->
+        <form action="" name="">
+            <label for="">Adresse de livraison</label>
+            <input class="nom" type="text" name="nom" placeholder="Marie Dupont">         
+            <input class="adresse" type="email" name="email" placeholder="1 rue du Paradis, 75000 Paris, FRANCE">
+            <input class="telephone" type="email" name="email" placeholder="+33750000000"> 
+            <div class="btn-form">
+                <input class="envoi" type="submit" value="Modifier">
+                <input class="envoi" type="submit" value="Supprimer">
+            </div>
+        </form> 
 
-      <div class="box2"> 
-        
-<div class="triangle">
-        <img src="images/Polygon 1.png" alt="triangle" >
-        <a href="panier.html">Retour sur le résumé de la commande</a>
-      </div>
+    </section>
+    <!---------------FIN SECTION 1---------------->
 
-        <h1 class="adf">Adresse de facturation:</h1>
+    <!--------------- SECTION 2 ------------------>
+    <section class="s2">
 
-        <span>Veuillez vérifier que l'adresse de facturation correspond au nom et à l'adresse associée à la carte de crédit que vous utilisez pour cet achat.</span>
-      </div>
-    
+        <!-- Résumé commande -->
+        <div class="resume-commande">
+            <h3>Récapitulatif de la commande</h3>
+            <div class="box-recap">
+                <div class="panier">Panier (1)</div>
+                <div class="numero">
+                    <p>Numéro de commande</p>
+                    <p>GSHMHL00N000TVJ</p>
+                </div>
+                <div class="article">
+                    <p>Sous-total</p>
+                    <p>70,00 €</p>
+                </div>
+                <div class="frais-livraison">
+                    <p>Frais de livraison</p>
+                    <p>5,50 €</p>
+                </div>
+                <div class="total">
+                    <p>TOTAL <span>(TVA incluse)</span></p>
+                    <p>75,50 €</p>  
+                </div>
+            </div>      
+        </div>
 
-    <!---------------------------- FORMULAIRE ADRESSE NOM TELEPHONE---------------------->
-      
-    
-      <div class="box4">
-      
-        <div class="formulaire">
+        <!-- Infos paiement -->            
+        <div class="infos-paiement">
 
-      <ul class="nolist">
-        <li>
-          <label for=nom></label>
-          <input id=nom name=nom type=text placeholder="Prénom et nom" required autofocus> 
-        </li>
-        <li>
-          <label for=email></label>
-          <input id=email name=email type=email placeholder="exemple@domaine.com" required>
-        </li>
-        <li>
-          <label for=telephone></label>
-          <input id=telephone name=telephone type=tel placeholder="par ex&nbsp;: +3375500000000" required>
-        </li>
-      </ul>
-    </fieldset>
-  
-    <fieldset>
-      <legend>Adresse de livraison</legend>
-        <ul class="nolist">
-          <li>
-            <label for=adresse></label>
-            <textarea id=adresse name=adresse rows=5 placeholder="Adresse de livraison" required> </textarea>
-          </li>
-          <li>
-            <label for=codepostal></label>
-            <input id=codepostal name=codepostal type=text placeholder= "Code postal"required>
-          </li>
-            <li>
-            <label for=pays></label>
-            <input id=pays name=pays type=text placeholder="Pays"required>
-          </li>
-          </ul>
-        </div><br>
-        
-       
-        <p class="infos">
-      
-       <h2>Informations sur la carte:<img src="images/Rectangle 15.png" alt="CADENAS COEUR"></h2>
-        
-      </p>
-    
-    </div>
-  
+            <h3>Informations sur le paiement</h3>
 
-      <!----------------- IMAGES LOGOS MOYEN DE PAIEMENT----------------->
-      
-    
-      <div class="box5">
+            <!---------- Box paiement----------->
+            <div class="box-cb">
 
-        <img src="images/Rectangle 9 (1).png" alt="LOGOS CARTES">
-  
-      <p>Numéro de la carte*</p>
-      <input type="text" >
+                <div class="cards">
+                    <a href="#" ><img class="paypal" src="./images/paypal-img.png" alt=""></a>
+                    <img class="all-cards-img" src="./images/cb-sans-paypal.jpg" alt="cb sans paypal"/> 
+                </div>   
+                                         
+                <br/> 
 
-      <p>Date d'expiration*</p>
-      <input type="month">
+                <div class="card-holder">Titulaire de la carte :<br>
+                    <input type="text" placeholder="Nom et prénom du titulaire">
+                </div>
 
-      <div id="infobulle">
-      
-        <p>Code de sécurité*</p><input type="password" name="secu"><a href="images/schema-cvv-cartes-bancaires.jpeg" target="_blank"> Qu'est ce que le code de sécurité?
-        </a></div>
-      
-    <br><br><br>
-      <input type="checkbox" name="name" id="id">Rappelez-vous cette carte pour une utilisation ultérieure
-    
-    </div>
- 
-<!----------------------------- COLONNE 2 droite--------------------->
+                <div class="card-number">Numéro de carte :<br/>
+                    <input class="firstfour" placeholder="1111" maxlength="4"/>
+                    <input placeholder="2222" maxlength="4"/>
+                    <input placeholder="3333" maxlength="4"/>
+                    <input placeholder="4444" maxlength="4"/>
+                </div>
 
-<div class="box6">
+                <div class="card-expiration">Date d'expiration :<br/>
+                    <input class="month" placeholder="MM" maxlength="2"/> / <input class="year" placeholder="AA" maxlength="4"/>
+                </div>
 
+                <div class="card-security">Cryptogramme :<br/>
+                    <input class="security" placeholder="CVV" maxlength="3"/>
+                    <small><span class="tooltip">Où le trouver?</span><span class="help">Le cryptogramme à 3 chiffres se trouve au verso de votre carte, à droite de la zone de signature</span></small>
+                </div>
 
-     <h2><b>Résumé de votre commande</b></h2> 
-     <br>
+                <a class="pay" href="confirmation.html">PAYER MAINTENANT</a>
 
-     <table>
-       <tr>
-         <td>Numéro de commande</td>
-         <td>GSHMHL00N000TVJ</td>
-       </tr>
-       <tr>
-          <td>Sous-total</td>
-          <td>70.00€</td>
-        </tr>
-        <tr>
-          <td>Frais de livraison</td>
-          <td>5.50€</td>
-       </tr>
-       <tr>
-         <td>TOTAL</td>
-         <td>75.50€</td>
-  
-       </tr>
-     </table>
-    </div>
-    <div class="box6hide">
-      <table>
-        <tr>
-          <td><span>RESUME DE VOTRE COMMANDE</span></td><br>
-          </tr>
-        <tr>
-          <td>Numéro de commande</td>
-          </tr><tr>
-          <td>GSHMHL00N000TVJ</td>
-        </tr>
-        <tr>
-           <td>Sous-total</td></tr><tr>
-           <td>70.00€</td>
-         </tr>
-         <tr>
-           <td>Frais de livraison</td></tr><tr>
-           <td>5.50€</td>
-        </tr>
-        <tr>
-          <td>TOTAL</td></tr><tr>
-          <td>75.50€</td>
-   
-        </tr>
-      </table>
-    
-    </div>
-    </div>
-    
-    <div class="box7">
-
-      
-     <a href="confirmation.html"><button>PAYER</button></a><br><br>
-
-    
-    <!-- </div> -->
-    <h1>Paiement sécurisé:</h1><br>
-    
-<div class="box8">
-  
-    <img src="images/Rectangle 19.png" alt="logos visa/securecode"><br>
-  </div>
-  
-  <div class="box9">
-
-   <div class="card card1"><div class="px"><p class="ha">Merci de votre confiance</p><P>Jeanne</P></div></div> 
-
-  <!-- </div> -->
-<!-- </div>
-</div> -->
-
-
-
-</Section>
-
-
-
-  </div>
-    </Section>
-
-
-
+            </div> 
+            <!-- Fin box paiement -->
+                
+        </div>
+    <!-------------- Fin infos paiement -------------->
+    </section>
+    <!---------------FIN SECTION 2 ---------------------->      
+</main>
+<!-- FIN CONTAINER PRINCIPAL -->
 
 <!-----------------------FOOTER------------------------->
-
 <footer>
-  <div class="picto">
-      <a href=""><img src="images/fb.png" alt="picto facebook" title="Notre Facebook"></a>
-      <a href="https://www.instagram.com/jeanne_parisienne/?hl=fr"><img src="images/insta.png" alt="picto instagram" title="Notre Instagram"></a>
-      <a href=""><img src="images/twitter.png" alt="picto instagram" title="Notre Twitter"></a>
-  </div>
-<div class="bloc">
-  <div class="bloc1">
-      <h1> AIDE & INFORMATION</h1>
-          <ul class="pc">
-              <li><a href="">Assistance</a></li>
-              <li><a href="">Suivi de commande</a></li>
-              <li><a href="">Livraison & retours</a></li>
-              <li><a href="">Livraison Premier</a></li>
-          </ul>
-  </div>
-  <div class="bloc2">
-      <h1>À PROPOS DE  JEANNE</h1>
-          <ul class="pc">
-              <li><a href=""> À propos de JEANNE</a></li>
-              <li><a href="">JEANNE recrute</a></li>
-              <li><a href=""> Responsabilité des entreprises</a></li>
-              <li><a href=""> Investisseurs</a></li>                    
-          </ul>
-  </div>
-  <div class="bloc3">
-      <h1>ENCORE PLUS DE JEANNE</h1>
-          <ul class="pc">
-              <li><a href="">Chèques cadeaux</a></li>
-              <li><a href="">French Days</a></li>
-              <li><a href="">Soldes</a></li>
-              <li><a href="">Black Friday</a></li>
-          </ul>
-  </div>
-</div>      
-  <a class="logobas" href="#haut"><img src="images/LOGO.png" alt="logo Jeanne"></a>
-  <a href="">© 2021 Jeanne</a>
-</footer>
-<!-----------FIN FOOTER------------------------->
 
+    <div class="picto">
+        <a href=""><img src="./images/fb.png" alt="picto facebook" title="Notre Facebook"></a>
+        <a href=""><img src="./images/insta.png" alt="picto instagram" title="Notre Instagram"></a>
+        <a href=""><img src="./images/twitter.png" alt="picto instagram" title="Notre Twitter"></a>
+    </div>
+  
+    <div class="bloc">
+  
+        <div class="bloc1">
+            <h1> AIDE & INFORMATION</h1>
+            <ul class="pc">
+                <li><a href="">Assistance</a></li>
+                <li><a href="">Suivi de commande</a></li>
+                <li><a href="">Livraison & retours</a></li>
+                <li><a href="">Livraison Premier</a></li>
+            </ul>
+        </div>
+  
+        <div class="bloc2">
+            <h1>À PROPOS DE  JEANNE</h1>
+            <ul class="pc">
+                <li><a href=""> À propos de JEANNE</a></li>
+                <li><a href="">JEANNE recrute</a></li>
+                <li><a href=""> Responsabilité des entreprises</a></li>
+                <li><a href=""> Investisseurs</a></li>                    
+            </ul>    
+        </div>
+  
+        <div class="bloc3">
+            <h1>ENCORE PLUS DE JEANNE</h1>
+            <ul class="pc">
+                <li><a href="">Chèques cadeaux</a></li>
+                <li><a href="">French Days</a></li>
+                <li><a href="">Soldes</a></li>
+                <li><a href="">Black Friday</a></li>
+            </ul>
+        </div>
+  
+    </div> 
+  
+    <a class="logobas" href="#haut"><img src="./images/LOGO.png" alt="logo Jeanne"></a>
+    <a href="">© 2021 Jeanne</a>
+  
+  </footer>
+  <!-----------FIN FOOTER------------------------->
+  
+  <!-- JAVASCRIPT -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+  <script src="script.js "></script> 
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
-<script src="script.js "></script>   
 </body>
+
 </html>
