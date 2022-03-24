@@ -23,6 +23,7 @@ body{
   display: grid;
   grid-template-columns: 1fr 1fr;
   background:rgba(255, 255, 255, 0.85);
+  max-width: 100%;
 }
 
 .s1 .haut h1{
@@ -69,6 +70,7 @@ li{
   font-size:20px;
   padding: 20px;
   gap: 40px;
+  width: 100%;
 }
 
 .contenu h2{
@@ -88,7 +90,7 @@ li{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-   height:87vh;    
+  height:87vh;    
 }
 
 .bas{
@@ -219,11 +221,20 @@ input{
   height:52px;
 }
 
+/************* Media Queries ****************/
 @media(max-width:609px){
   .containergrand{
     display:grid;
     grid-template-columns: 1fr;
+    text-align: center;
   }
+  .s1,.s2, .footer{
+    height : auto;
+  }
+  .div1{
+    flex-direction: column;
+  }
+
   .s1 .haut h1{
     font-size: 20px;
   }
@@ -237,15 +248,24 @@ input{
   .s2 h1{
   font-size: 20px;
   }
- .contenu h2{
+  .cb{
+    margin-bottom: 20px;
+  }
+
+  .contenu h2{
   font-size: 20px;
  }
  .h2 h2{
   font-size: 15px;
   }
+  .livraison{
+    font-size: 15px;
+  }
+  .bas, .footer{
+    font-size: 18px;
+  }
 }
 
-/* ------------------- fin - S2 ------------------- */
 @media (max-width: 1000px) {
   .containergrand{
     grid-template-columns: 1fr;  
@@ -410,7 +430,6 @@ user-select: none;
 }
 
 /*---- FIN MENU DEROULANT------------------------- */
-
 
 /*---- responsive----------------------------- */
 .pc{
