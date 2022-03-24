@@ -26,4 +26,15 @@ body{
     width: auto;
     color: #b17f4a; 
 }
+
+/************** Media Queries **************/
+@media(max-width: 600px){
+    h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    h2, h3{
+        font-size: 20px;
+    }
+  }
     
