@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-panier.css">
-    <title>Panier</title>
-    <link rel="shortcut icon" type="image/x-icon" href="images/rond.png" />
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="panier.css">
+    <title>Jeanne Paris</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/rond.png" />
 </head>
 
 <body>
-        <!-- ASSENCEUR -->
+    <!-- ASCENSEUR -->
 
-        <div id="scroll_to_top">
-            <a href="#haut"><img src="images/chevrons.png" alt="haut"></a>
-        </div>
+    <div id="scroll_to_top">
+        <a href="#haut"><img src="./images/chevrons.png" alt="haut"></a>
+    </div>
+
 <!----------------------- HEADER------------------------->
-
 <header id="haut">   
 
-    <div class="responseive mob">
-        <div class="burger mob" id="burger" href="javascript:void(0);" onclick="showResponsiveMenu()">
+    <div class="responsive mob">
+        <div class="burger mob" id="burger" >
             <span></span>
         </div> 
     </div>
@@ -32,7 +29,7 @@
 
         <div id="root ">
             <a class="pc" id="topnav_icon" href="javascript:void(0);" onmouseover="showMenu()" >
-                <h3 class="pc">Collection</h3></a>
+                <h3 class="pc anim">Collection</h3></a>
 
             <!-- MENU DEROULANT -->
             <nav role="navigation" id="topnav_menu" >
@@ -68,77 +65,68 @@
                             <li><a href="vetement.html">Chaussures plates</a></li>
                         </ul>
                     </li>
-                    
                 </ul>
             </nav>
         </div>
 
-        <a href="#" class="pc"><h3>Nouveautés</h3></a>
-        <a href="#" class="pc"><h3 class="promo">Promotions</h3></a>
+        <a href="#" class="pc"><h3 class="anim">Nouveautés</h3></a>
+        <a href="#" class="pc anim"><h3 class="promo anim">Promotions</h3></a>
 
     </div>
    
-<!-- LOGO -->
-    <a href="index.html"><img class="LOGO " src="images/LOGO.png" alt="logo Jeanne" title="Accueil"></a>
-
-
-
+    <!-- LOGO -->
+    <a href="index.html"><img class="LOGO" src="./images/LOGO.png" alt="logo Jeanne" title="Accueil"></a>
 
     <div class="header-right flex pc">
-        <input type="search" name="recherche" id="recherche" placeholder="Recherche" class="pc">
+        <input type="search" name="recherche" id="recherche" placeholder="Recherche" class="pc anim">
     </div>
-          <!-- PICTO -->
+
+    <!-- PICTO -->
     <div class="picto">
-        <a href="panier.html" target="_blank"><img src="images/coeur1.png" alt="picto coeur" title="Favoris"></a>
-        <a href="panier.html"  target="_blank"><img src="images/panier1.png" alt="picto panier" title="Panier"></a>
-        <a href=""><img src="images/connexion1.png" alt="picto connexion" title="Connexion"></a>
+        <a href="panier.html"><img class="anim" src="./images/coeur1.png" alt="picto coeur" title="Favoris"></a>
+        <a href="panier.html"><img class="anim" src="./images/panier1.png" alt="picto panier" title="Panier"></a>
+        <a href="index.html"><img class="anim" src="./images/connexion1.png" alt="picto connexion" title="Connexion"></a>
     </div>
+
 </header>
 
 <!-- FIN HEADER------------------------->
 
-
-
-    <!------------ CONTAINERGRAND ------------>
+    <!------------ CONTAINER GRAND ------------>
     <section class="containergrand">
 
         <!------------ S1 ------------>
         <section class="s1">
+
             <div class="haut">
-
                 <h1>Mon Panier</h1>
-
             </div>
 
             <div class="div1">
-                <img src="images/panier.img/Robe.png" alt="photo robe">
+                <img src="./images vetements/robe a pois.jpeg" alt="photo robe">
 
-                <article>
-                    <h2>Robe Nora</h2>
-                    <hr>
+                <div class="contenu">
+                    <h2>Robe Maya</h2>
                     <ul>
-                        <li>70 €</li>
-                        <hr>
-                        <li>Taille :L ... Qté:1</li>
-                        <hr>
-                        <li> Sauvegarder pour plus tard</li>
-                        
-
+                        <li>Prix : 70,00 €</li>
+                        <!-- <hr> -->
+                        <li>Taille : L ... Qté: 1</li>
+                        <!-- <hr> -->
                     </ul>
-                </article>
+                    <input class="btn" type="submit" value="Sauvegarder pour plus tard">
+                    <input class="btn-1" type="submit" value="Poursuivre mes achats">
+                </div>
 
             </div>
 
             <div class="bas">
-                <p></p>Les articles seront reservés pendant 60 minutes</p>
+                <p></p>Les articles seront reservés pendant 60 minutes.</p>
             </div>
 
         </section>
-
         <!------------ fin - S1 ------------>
 
         <!------------ S2 ------------>
-
         <section class="s2">
 
             <div class="haut">
@@ -146,101 +134,105 @@
             </div>
 
             <!----------- LIVRAISON ------------>
-
             <div class="livraison">
-                <div class="p">
-                    <p>Livraison standard en point relais </p>
+                <div class="mode-livraison">
+                    <p>Livraison standard en point relais</p>
                     <p>5,50 €</p>
                 </div>
-                <hr>
-                <div class="titre">
+                <div class="total">
                     <h1>Total</h1>
                     <p>75,50 €</p>
-                </div>
-                <hr>
+                </div>   
+            </div>
+                <!-- <hr> -->
+            
+                <!-- <hr> -->
 
                 <form action="">
-                    <input class="promo" type="text" placeholder="Votre code promotionnel" id="nom" />
-                    <input class="button" type="submit" value="Appliquer" />
+                    <input type="text" placeholder="Votre code promotionnel" id="nom" />
+                    <input class="btn-2" type="submit" value="Appliquer"/>
                 </form>
             </div>
 
             <a class="lien-paiement" href="paiement.html"><button class="paye1">PAIEMENT</button></a>
-
             <!----------- fin - LIVRAISON ------------>
 
-
+            <!-- MOYENS DE PAIEMENT -->
             <div class="paye2">
-                <p>Nous acceptons</p>
 
-                <div class="img">
-                    <img src="images/panier.img/visa.png" alt="icon visa">
-                    <img src="images/panier.img/master.png" alt="icon mastercard">
-                    <img src="images/panier.img/visaclasic.png" alt="icon visa classic">
-                    <img src="images/panier.img/paypal.png" alt="icon paypal">
-                    <img src="images/panier.img/amerexpres.png" alt="icon american express">
+                <h3>Nous acceptons</h3>
+
+                <div class="cb">
+                    <img src="./images/panier.img/cb-img.png" alt="cartes">
                 </div>
+
             </div>
 
             <div class="footer">
-                <p> Bénéficiez  de la livraison à domicile ou en point relais <br>
-
-                    en 24h, pendant un an, pour seulement pour 10,00 €. </p>
+                <p> Bénéficiez  de la livraison à domicile ou en point relais <br>en 24h pendant un an pour seulement 10 €.
+                </p>
             </div>
+
         </section>
-
         <!------------ fin - S2 ------------>
-
     </section>
+    <!----------- fin CONTAINER GRAND ------------->
 
 
 <!-----------------------FOOTER------------------------->
-
 <footer>
+
     <div class="picto">
-        <a href=""><img src="images/fb.png" alt="picto facebook" title="Notre Facebook"></a>
-        <a href=""><img src="images/insta.png" alt="picto instagram" title="Notre Instagram"></a>
-        <a href=""><img src="images/twitter.png" alt="picto instagram" title="Notre Twitter"></a>
+        <a href=""><img src="./images/fb.png" alt="picto facebook" title="Notre Facebook"></a>
+        <a href=""><img src="./images/insta.png" alt="picto instagram" title="Notre Instagram"></a>
+        <a href=""><img src="./images/twitter.png" alt="picto instagram" title="Notre Twitter"></a>
     </div>
-<div class="bloc">
-    <div class="bloc1">
-        <h1> AIDE & INFORMATION</h1>
+
+    <div class="bloc">
+
+        <div class="bloc1">
+            <h1> AIDE & INFORMATION</h1>
             <ul class="pc">
                 <li><a href="">Assistance</a></li>
                 <li><a href="">Suivi de commande</a></li>
                 <li><a href="">Livraison & retours</a></li>
                 <li><a href="">Livraison Premier</a></li>
             </ul>
-    </div>
-    <div class="bloc2">
-        <h1>À PROPOS DE  JEANNE</h1>
+        </div>
+
+        <div class="bloc2">
+            <h1>À PROPOS DE  JEANNE</h1>
             <ul class="pc">
                 <li><a href=""> À propos de JEANNE</a></li>
                 <li><a href="">JEANNE recrute</a></li>
                 <li><a href=""> Responsabilité des entreprises</a></li>
                 <li><a href=""> Investisseurs</a></li>                    
-            </ul>
-    </div>
-    <div class="bloc3">
-        <h1>ENCORE PLUS DE JEANNE</h1>
+            </ul>    
+        </div>
+
+        <div class="bloc3">
+            <h1>ENCORE PLUS DE JEANNE</h1>
             <ul class="pc">
                 <li><a href="">Chèques cadeaux</a></li>
                 <li><a href="">French Days</a></li>
                 <li><a href="">Soldes</a></li>
                 <li><a href="">Black Friday</a></li>
             </ul>
-    </div>
-</div>      
-    <a class="logobas" href="#haut"><img src="images/LOGO.png" alt="logo Jeanne"></a>
+        </div>
+
+    </div> 
+
+    <a class="logobas" href="#haut"><img src="./images/LOGO.png" alt="logo Jeanne"></a>
     <a href="">© 2021 Jeanne</a>
+
 </footer>
 <!-----------FIN FOOTER------------------------->
 
-
-
+<!-- JAVASCRIPT -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
 <script src="script.js "></script> 
+ 
 </body>
 
 </html>
