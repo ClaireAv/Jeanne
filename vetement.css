@@ -11,19 +11,37 @@
  
 }
 
+a{
+  text-decoration: none; 
+}
+
+main img{
+  display: block;
+  max-width: 100%;
+  box-shadow: 0px 4px 10px #b17f4a;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
 .container-img{
   display:block;
   position:relative;
   overflow:hidden;
+  width:100%
+}
 
+.pois{
+  margin-top: 20px; 
+  margin-left: 20px; 
 }
-.container-img img{
-  width:100%;
-  height:100%;
-}
-.container-img .infos-hover{
-  display:block;
-  position:absolute;
+
+ .infos-hover{
+  display: block;
+  position: absolute;
   left:0;
   bottom:0;
   width:100%;
@@ -38,7 +56,7 @@
   transition: all 0.5s;
 }
 
-.container-img .infos-hover p{
+.infos-hover p{
   text-align:center;
   font-size:medium;
   font-weight: normal;
@@ -48,35 +66,14 @@
   line-height: 180%;
 }
 .container-img:hover .infos-hover{
-  height:10%;
+  height:12%;
 }   
-
-main img{
-  display: block;
-  max-width: 100%;
-  box-shadow: 0px 4px 10px #b17f4a;
-  margin-bottom: 5px;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-a{
-  text-decoration: none; 
-}
 
 figcaption{
   color: black;
   text-align: center;
   font-size: 20px;
   overflow: hidden;
-}
-
-.pois{
-  margin: 20px;
-  
 }
 
 /* BOX 1 */
@@ -134,10 +131,13 @@ h2 {
   gap: 20px;
   padding: 20px;
 }
-/* ---------------------------- MEDIA----------------------------------- */
+/* ---------- Media Queries ---------------- */
 
-@media (max-width:1000px){
+@media (max-width:992px){
 
+    .container-img:hover .infos-hover, .infos-hover {
+   display: none;
+  } 
 
   h2{
     font-size: 30px;
@@ -147,24 +147,16 @@ h2 {
     font-size: 18px;
     text-align: center;
   }
-
-  .pois{
-
-    width: 50%;
-
-  }
  
 }
 
-@media (max-width:500px){
+@media (max-width:766px){
   .box1{
     flex-direction: column-reverse;
     justify-content: space-around;
     margin: 20px;
   }
-  .container-img:hover .infos-hover{
-    height:25%;
-  } 
+
   h2{
     margin-bottom: 20px;
   }
@@ -185,12 +177,8 @@ h2 {
   }
 }
 
-/* ! HEADER FOOTER */
-
-a{
-    cursor: pointer;
-    text-decoration: none;
-}
+/*-------- Fin Media Queries Main ------- */
+/* ! HEADER AND FOOTER */
 
 /* ASCENSEUR */
 #scroll_to_top{
@@ -200,14 +188,14 @@ a{
   z-index: 100;
 }
 
-main, section, header,footer{
+main, header,footer{
   max-width: 100%;
 }
 
-/*--------------------- HEADER----------------------- */
+/*--------- HEADER -------- */
 header{
   font-family: 'Caslon', serif;
-  box-shadow: 0px 0px 10px #B17F4A;
+  box-shadow: 0 0 10px #B17F4A;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -215,13 +203,9 @@ header{
   height: 90px;
 }
 
-header img{
-  margin: 10px;
-}
-
 header .LOGO{
   position: relative;
-  width: 150px;
+  width: 130px;
 }
 
 header .picto img{
@@ -272,7 +256,6 @@ header form input{
   border-bottom: 2px solid black;
   background: url(./images/Vector.png) no-repeat 95%; 
 }
-
 /*---------------------FIN HEADER----------------------- */
 
 
@@ -341,11 +324,10 @@ header form input{
   user-select: none;
   -webkit-user-select: none;
 }
+/*-------- FIN MENU DEROULANT ---------- */
 
-/*---- FIN MENU DEROULANT------------------------- */
 
-
-/*---- responsive----------------------------- */
+/*----- Responsive header ------ */
 .pc{
   display: block;
 }
@@ -439,9 +421,9 @@ header form input{
       display: block;
   }
 }
-/*---- responsive----------------------------- */
+/*------- Fin responsive header ----------- */
 
-/*---------------------FOOTER----------------------- */
+/*------------ FOOTER ---------------- */
 footer{
   /* width: 100%; */
   background-color:#FFDBB0;
@@ -449,7 +431,7 @@ footer{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 30px;
+  /* padding: 30px; */
   }
 
 footer .bloc{
@@ -493,12 +475,12 @@ footer li a:hover{
 
 footer .picto img{
   height: 30px;
-  margin: 15px;
 }
 
 footer .picto{
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 footer a{
@@ -506,13 +488,13 @@ footer a{
   color: white;
   margin: 30px;
 }
-
+/* Responsive footer */
 @media(max-width: 600px){
   footer .bloc{
-    flex-direction: column;  
+      flex-direction: column;  
   }
   footer .bloc h1{
-    font-size: 15px;
+        font-size: 15px;
   }
 }
-/*---------------------FIN FOOTER----------------------- */
+/*---------- FIN FOOTER ------------- */

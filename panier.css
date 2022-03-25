@@ -443,11 +443,10 @@ user-select: none;
 
 /*---- FIN MENU DEROULANT------------------------- */
 
-/*---- responsive----------------------------- */
+/*---- Header responsive----------------------------- */
 .pc{
 display: block;
 }
-
 .mob{
 display:none;
 }
@@ -537,9 +536,9 @@ header .picto{
     display: block;
 }
 }
-/*---- responsive----------------------------- */
+/*------- Fin header responsive -------------- */
 
-/*---------------------FOOTER----------------------- */
+/*-------------- FOOTER ---------------- */
 footer{
 /* width: 100%; */
 background-color:#FFDBB0;
@@ -602,4 +601,4 @@ margin: 30px;
     font-size: 15px;
   }
 }
-/*---------------------FIN FOOTER----------------------- */
+/*---------- FIN FOOTER --------------- */

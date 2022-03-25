@@ -307,7 +307,8 @@ small {
   box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* ! HEADER FOOTER */
+
+/* ! HEADER AND FOOTER */
 
 /* ASCENSEUR */
 #scroll_to_top{
@@ -457,53 +458,10 @@ header form input{
   user-select: none;
   -webkit-user-select: none;
 }
-/*---- FIN MENU DEROULANT------------------------- */
+/*-------- FIN MENU DEROULANT ---------- */
 
-/************* Media Queries *************/
-@media screen and (max-width:600px) {
-  .container{
-    flex-direction: column;
-  }
-  .s1{
-    border-right: none;
-  }
-  .s1, .s2,.etapes-paiement, form input, .box-cb, .numero {
-    width: 100%
-  }
-  .etapes-paiement, .etapes-paiement span{
-    font-size: 12px;
-  }
-  .box-recap{
-    font-size: 20px;
-  }
-  .numero{
-    display: flex;
-    flex-direction: column;  
-  }
-  .total{
-    line-height: 1.3;
-    font-size: 21px;
-    
-  }
-  .tva{
-    width: 60%;
-  }
-  .prix{
-    width: 40%;
-    text-align: right;
-  }
-  h3{
-    font-size: 22px;
-  }
-  .resume-commande h3{
-    line-height: 1.2;
-  }
-  .infos-paiement h3 {
-    margin-top: 20px;
-  }
-}
 
-/*---- responsive----------------------------- */
+/*------- Responsive ------------ */
 .pc{
   display: block;
 }
@@ -597,9 +555,9 @@ header form input{
       display: block;
   }
 }
-/*---- responsive----------------------------- */
+/*------- responsive ----------- */
 
-/*---------------------FOOTER----------------------- */
+/*------------ FOOTER ---------------- */
 footer{
   /* width: 100%; */
   background-color:#FFDBB0;
@@ -674,3 +632,49 @@ footer a{
   }
 }
 /*---------------------FIN FOOTER----------------------- */
+
+/************* Media Queries *************/
+@media screen and (max-width:600px) {
+  .container{
+    flex-direction: column;
+  }
+  .s1{
+    border-right: none;
+  }
+  .s1, .s2,.etapes-paiement, form input, .box-cb, .numero {
+    width: 100%
+  }
+  .etapes-paiement, .etapes-paiement span{
+    font-size: 12px;
+  }
+  .box-recap{
+    font-size: 20px;
+  }
+  .numero{
+    display: flex;
+    flex-direction: column;  
+  }
+  .total{
+    line-height: 1.3;
+    font-size: 21px;
+    
+  }
+  .tva{
+    width: 60%;
+  }
+  .prix{
+    width: 40%;
+    text-align: right;
+  }
+  h3{
+    font-size: 22px;
+  }
+  .resume-commande h3{
+    line-height: 1.2;
+  }
+  .infos-paiement h3 {
+    margin-top: 20px;
+  }
+}
+
+
