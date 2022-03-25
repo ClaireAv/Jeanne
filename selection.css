@@ -7,6 +7,7 @@
 img{
     display: block;
     max-width: 100%;
+    height: auto;
   }
 
 @font-face {
@@ -636,11 +637,47 @@ h2{
           font-size: 15px;
     }
   }
-  /*---------- FIN FOOTER ------------- */
+/* ------------- FIN FOOTER -------------- */
   
 /*************** Media queries ***************/
 
-@media (max-width:1000px){
+@media (max-width: 766px){
+    h2{
+        font-size: 30px;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .nom span {
+        font-size: 30px;
+    }
+    .nom, .couleur, .couleur span, select, form{
+        font-size: 22px;
+    }
+    .prix{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .livraison{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .description{
+        max-width: 
+        100%;
+    }
+    .boucles, .chaussures, .bague {
+        width: 100%;
+    }
+}
+
+@media (min-width:767px) and (max-width:1129px){
+    .description {
+        width: 60%;
+    }  
+}
+
+@media (max-width:1130px){
     .s1, .s2, .s3{
         flex-direction: column;
         align-items: center;
@@ -676,37 +713,20 @@ h2{
     .nom, .couleur{
         margin-bottom: 10px;
     }
-    .nom span {
-        font-size: 30px;
-    }
-    .nom, .couleur, .couleur span, select, form{
-        font-size: 22px;
-    }
-    .prix{
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-    .livraison{
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
-
-    .description{
+    
+    .description {
         height: auto;
     }
     
-    select, form, .panier, .description, .boucles, .chaussures, .bague{
+    select, form, .panier {
         width: 100%;
     }
     
     h2{
-        font-size: 30px;
-        margin-left: 0;
         text-align: center;
         margin-bottom: 0;
-    }
-    
-    }   
+    }  
+}   
     
 
 
