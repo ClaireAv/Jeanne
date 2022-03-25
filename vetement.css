@@ -66,7 +66,7 @@ main img{
   line-height: 180%;
 }
 .container-img:hover .infos-hover{
-  height:12%;
+  height: 12%;
 }   
 
 figcaption{
@@ -135,7 +135,7 @@ h2 {
 
 @media (max-width:992px){
 
-    .container-img:hover .infos-hover, .infos-hover {
+  .container-img:hover .infos-hover, .infos-hover {
    display: none;
   } 
 
@@ -176,8 +176,8 @@ h2 {
    flex-direction: column ;
   }
 }
-
 /*-------- Fin Media Queries Main ------- */
+
 /* ! HEADER AND FOOTER */
 
 /* ASCENSEUR */
@@ -190,6 +190,7 @@ h2 {
 
 main, header,footer{
   max-width: 100%;
+  overflow: hidden;
 }
 
 /*--------- HEADER -------- */
@@ -256,10 +257,10 @@ header form input{
   border-bottom: 2px solid black;
   background: url(./images/Vector.png) no-repeat 95%; 
 }
-/*---------------------FIN HEADER----------------------- */
+/*--------- FIN HEADER ------------- */
 
 
-/* MENU DEROULANT------------------------------------------ */
+/* ----------- MENU DEROULANT -------- */
 #topnav_menu {
   display: block;
   position: absolute;
@@ -399,13 +400,12 @@ header form input{
 }  
 
 @media(max-width: 600px){
+
   header .picto a img{
       height: 30px;
       margin: 8px;
   }
-  header .picto{
-      margin-right: 20px;
-  }
+  
   #topnav_menu ol {
       grid-template-columns:1fr;
       grid-template-rows: repeat (4, auto);
@@ -425,13 +425,11 @@ header form input{
 
 /*------------ FOOTER ---------------- */
 footer{
-  /* width: 100%; */
   background-color:#FFDBB0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  /* padding: 30px; */
   }
 
 footer .bloc{
