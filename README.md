@@ -1,5 +1,4 @@
 # Jeanne
-
 ### An online store showcase website created in HTML, CSS and JavaScript
 
 ## https://jesselessa.github.io/Jeanne/
