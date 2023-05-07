@@ -1,8 +1,7 @@
-//  Menu
+// Menu
 function showMenu() {
   var menu = document.getElementById("topnav_menu");
   var icon = document.getElementById("topnav_icon");
-  var root = document.getElementById("root");
 
   if (menu.className === "") {
     menu.className = "open";
@@ -29,7 +28,7 @@ sacs.addEventListener("click", () => {
   listeSacs.classList.toggle("open");
 });
 
-//  Robes
+// Robes
 var robes = document.getElementById("robes");
 var listeRobes = document.getElementById("listeRobes");
 
@@ -38,7 +37,6 @@ robes.addEventListener("click", () => {
 });
 
 // Bijoux
-
 var bijoux = document.getElementById("bijoux");
 var listeBijoux = document.getElementById("listeBijoux");
 
@@ -46,14 +44,14 @@ bijoux.addEventListener("click", () => {
   listeBijoux.classList.toggle("open");
 });
 
-// Burger  croix
+// Burger croix
 const burger = document.querySelector(".burger");
 
 burger.addEventListener("click", () => {
   burger.classList.toggle("active");
 });
 
-//  Menu responsive
+// Menu responsive
 var menu = document.getElementById("topnav_menu");
 var icon = document.getElementById("topnav_icon");
 
@@ -61,7 +59,7 @@ burger.addEventListener("click", () => {
   menu.classList.toggle("open");
 });
 
-// Essai GSAP
+// GSAP
 const logo = document.querySelector(".LOGO");
 const vit = document.querySelector(".vit");
 const anim = document.querySelectorAll(".anim");
@@ -82,8 +80,7 @@ window.addEventListener("load", () => {
   TL.play();
 });
 
-// Test API
-
+// Intersection Observer API
 let observer = new IntersectionObserver(
   function (observables) {
     observables.forEach(function (observable) {
@@ -107,14 +104,13 @@ items.forEach(function (item) {
   observer.observe(item);
 });
 
-// Bouton coeur
+// Bouton coeur page vêtement
 let coeur = document.getElementById("coeur");
 coeur.addEventListener("click", () => {
   coeur.classList.toggle("active");
 });
 
 // Slideshow vêtement sélectionné
-
 var slide = new Array(
   "./images/sélection/responsive/vue1-1000px.jpg",
   "./images/sélection/responsive/vue2-1000px.jpg",

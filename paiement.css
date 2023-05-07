@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 
-/* CONTAINER PRINCIPAL */
+/** CONTAINER PRINCIPAL */
 .container {
   display: flex;
   font-size: 20px;
@@ -47,8 +47,7 @@ input {
   text-align: center;
 }
 
-/* SECTION 1 */
-
+/** SECTION 1 */
 .s1 {
   border-right: 1px solid #efbb7e;
 }
@@ -141,8 +140,7 @@ textarea {
   gap: 20px;
 }
 
-/* SECTION 2 */
-
+/** SECTION 2 */
 /* Résumé commande et infos paiement */
 .resume-commande,
 .infos-paiement {
@@ -336,7 +334,7 @@ footer {
   max-width: 100%;
 }
 
-/*--------------------- HEADER----------------------- */
+/* --------------------- HEADER----------------------- */
 header {
   font-family: "Caslon", serif;
   box-shadow: 0px 0px 10px #b17f4a;
@@ -404,9 +402,8 @@ header form input {
   border-bottom: 2px solid black;
   background: url(./images/Vector.png) no-repeat 95%;
 }
-/*---------------------FIN HEADER----------------------- */
 
-/* MENU DEROULANT------------------------------------------ */
+/* --------------------- MENU DEROULANT--------------------- */
 #topnav_menu {
   display: block;
   position: absolute;
@@ -471,9 +468,8 @@ header form input {
   user-select: none;
   -webkit-user-select: none;
 }
-/*-------- FIN MENU DEROULANT ---------- */
 
-/*------- Responsive ------------ */
+/* -------- RESPONSIVE HEADER ----------*/
 .pc {
   display: block;
 }
@@ -568,11 +564,9 @@ header form input {
     display: block;
   }
 }
-/*------- responsive ----------- */
 
 /*------------ FOOTER ---------------- */
 footer {
-  /* width: 100%; */
   background-color: #ffdbb0;
   display: flex;
   flex-direction: column;
@@ -646,7 +640,6 @@ footer a {
     font-size: 15px;
   }
 }
-/*---------------------FIN FOOTER----------------------- */
 
 /************* Media Queries *************/
 @media screen and (max-width: 1100px) {
