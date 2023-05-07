@@ -340,14 +340,14 @@ header form input {
     justify-content: flex-start;
     align-items: center;
   }
-  .burger {
+  #burger {
     height: 24px;
     width: 42px;
     cursor: pointer;
     position: relative;
     margin: 15px;
   }
-  .burger span {
+  #burger span {
     width: 100%;
     height: 4px;
     background-color: #b17f4a;
@@ -358,8 +358,8 @@ header form input {
     transition: background-color 0.5s ease-in-out;
     border-radius: 15px;
   }
-  .burger span::before,
-  .burger span::after {
+  #burger span::before,
+  #burger span::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -368,19 +368,19 @@ header form input {
     transition: transform 0.5s ease-in-out;
     border-radius: 15px;
   }
-  .burger span::before {
+  #burger span::before {
     transform: translateY(-10px);
   }
-  .burger span::after {
+  #burger span::after {
     transform: translateY(10px);
   }
-  .burger.active span {
+  #burger.active span {
     background-color: transparent;
   }
-  .burger.active span::before {
+  #burger.active span::before {
     transform: translateY(0px) rotateZ(45deg);
   }
-  .burger.active span::after {
+  #burger.active span::after {
     transform: translateY(0px) rotateZ(-45deg);
   }
   header .LOGO {
