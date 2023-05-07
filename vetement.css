@@ -2,20 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:"Caslon", Arial, Helvetica, sans-serif;
+  font-family: "Caslon", Arial, Helvetica, sans-serif;
 }
 
 @font-face {
   font-family: "Caslon";
   src: url(./Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
- 
 }
 
-a{
-  text-decoration: none; 
+a {
+  text-decoration: none;
 }
 
-main img{
+main img {
   display: block;
   max-width: 100%;
   box-shadow: 0px 4px 10px #b17f4a;
@@ -27,28 +26,28 @@ main img{
   transition: all 0.2s;
 }
 
-.container-img{
-  display:block;
-  position:relative;
-  overflow:hidden;
-  width:100%
+.container-img {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
-.pois{
-  margin-top: 20px; 
-  margin-left: 20px; 
+.pois {
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
- .infos-hover{
+.infos-hover {
   display: block;
   position: absolute;
-  left:0;
-  bottom:0;
-  width:100%;
-  height:0;
-  color:black;
-  text-align:center;
-  background:rgba(247, 247, 247, 0.8);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  color: black;
+  text-align: center;
+  background: rgba(247, 247, 247, 0.8);
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -56,20 +55,21 @@ main img{
   transition: all 0.5s;
 }
 
-.infos-hover p{
-  text-align:center;
-  font-size:medium;
+.infos-hover p {
+  text-align: center;
+  font-size: medium;
   font-weight: normal;
   text-align: center;
   display: block;
   margin-top: 4px;
   line-height: 180%;
 }
-.container-img:hover .infos-hover{
-  height: 12%;
-}   
 
-figcaption{
+.container-img:hover .infos-hover {
+  height: 12%;
+}
+
+figcaption {
   color: black;
   text-align: center;
   font-size: 20px;
@@ -84,9 +84,9 @@ figcaption{
   margin-bottom: 40px;
 }
 
-.box1bis{
+.box1bis {
   display: flex;
-  flex-direction: column  ;
+  flex-direction: column;
 }
 
 h2 {
@@ -133,47 +133,46 @@ h2 {
 }
 /* ---------- Media Queries ---------------- */
 
-@media (max-width:992px){
-
-  .container-img:hover .infos-hover, .infos-hover {
-   display: none;
-  } 
-
-  h2{
+@media screen and (max-width: 992px) {
+  .container-img:hover .infos-hover,
+  .infos-hover {
+    display: none;
+  }
+  h2 {
     font-size: 30px;
   }
-
-  figcaption{
+  figcaption {
     font-size: 18px;
     text-align: center;
   }
- 
 }
 
-@media (max-width:766px){
-  .box1{
+@media screen and (max-width: 766px) {
+  .box1 {
     flex-direction: column-reverse;
     justify-content: space-around;
     margin: 20px;
   }
-
-  h2{
+  h2 {
     margin-bottom: 20px;
   }
-    figcaption{
+  figcaption {
     font-size: 15px;
   }
-  .box2{
+  .pois {
+    margin-left: 0;
+  }
+  .box2 {
     flex-direction: column;
   }
-  .box3{
-   flex-direction: column ;
+  .box3 {
+    flex-direction: column;
   }
-  .box4{
-   flex-direction: column ;
+  .box4 {
+    flex-direction: column;
   }
-  .box5{
-   flex-direction: column ;
+  .box5 {
+    flex-direction: column;
   }
 }
 /*-------- Fin Media Queries Main ------- */
@@ -181,22 +180,24 @@ h2 {
 /* ! HEADER AND FOOTER */
 
 /* ASCENSEUR */
-#scroll_to_top{
-  position: fixed; 
+#scroll_to_top {
+  position: fixed;
   bottom: 50px;
   right: 30px;
   z-index: 100;
 }
 
-main, header,footer{
+main,
+header,
+footer {
   max-width: 100%;
   overflow: hidden;
 }
 
 /*--------- HEADER -------- */
-header{
-  font-family: 'Caslon', serif;
-  box-shadow: 0 0 10px #B17F4A;
+header {
+  font-family: "Caslon", serif;
+  box-shadow: 0 0 10px #b17f4a;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -204,25 +205,25 @@ header{
   height: 90px;
 }
 
-header .LOGO{
+header .LOGO {
   position: relative;
   width: 130px;
 }
 
-header .picto img{
+header .picto img {
   height: 40px;
-  margin: 15px ;
+  margin: 15px;
 }
 
-header .picto{
+header .picto {
   display: flex;
 }
 
-header form input{
-  border:none;
+header form input {
+  border: none;
   text-decoration: underline;
   width: 120px;
-  font-family: 'Caslon', serif;
+  font-family: "Caslon", serif;
   margin-left: 30px;
   font-size: 18px;
   color: black;
@@ -241,12 +242,12 @@ header form input{
 }
 
 .header-left .promo {
-  color: #B17F4A;
+  color: #b17f4a;
 }
 
 .header-right input {
   border: none;
-  font-family: 'Caslon';
+  font-family: "Caslon";
   font-size: 20px;
   color: black;
   width: 150px;
@@ -255,10 +256,9 @@ header form input{
 
 .header-right input:hover {
   border-bottom: 2px solid black;
-  background: url(./images/Vector.png) no-repeat 95%; 
+  background: url(./images/Vector.png) no-repeat 95%;
 }
 /*--------- FIN HEADER ------------- */
-
 
 /* ----------- MENU DEROULANT -------- */
 #topnav_menu {
@@ -272,10 +272,10 @@ header form input{
   z-index: 99;
   transform-origin: 0% 0%;
   transform: translate(-200%, 0);
-  transition: transform 1s ;
+  transition: transform 1s;
 }
 
-/* and let's slide it in from the left */
+/* And let's slide it inside from the left */
 #topnav_menu.open {
   transform: none;
   position: fixed;
@@ -290,9 +290,9 @@ header form input{
   left: 0;
   top: 0;
   width: 100%;
-  padding: 30px 50px ;
+  padding: 30px 50px;
   text-align: left;
-  background:rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.85);
   list-style-type: none;
 }
 
@@ -327,172 +327,172 @@ header form input{
 }
 /*-------- FIN MENU DEROULANT ---------- */
 
-
 /*----- Responsive header ------ */
-.pc{
+.pc {
   display: block;
 }
 
-.mob{
-  display:none;
+.mob {
+  display: none;
 }
 
-@media(max-width: 1100px){
-  .pc{
-      display: none;
+@media screen and (max-width: 1100px) {
+  .pc {
+    display: none;
   }
-  .mob{
-      display: block;
+  .mob {
+    display: block;
   }
   .root a {
-      display: none;
+    display: none;
   }
-  .responsive{
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
+  .responsive {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
-  .burger{
-      height: 24px;
-      width: 42px;
-      cursor: pointer;
-      position: relative;
-      margin: 15px;
+  .burger {
+    height: 24px;
+    width: 42px;
+    cursor: pointer;
+    position: relative;
+    margin: 15px;
   }
-  .burger span{
-      width: 100%;
-      height: 4px;
-      background-color: #B17F4A;
-      display: block;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      transition: background-color 0.5s ease-in-out;
-      border-radius: 15px;
+  .burger span {
+    width: 100%;
+    height: 4px;
+    background-color: #b17f4a;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.5s ease-in-out;
+    border-radius: 15px;
   }
-  .burger span::before, .burger span::after{
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 4px;
-      background-color: #B17F4A;
-      transition: transform 0.5s ease-in-out;
-      border-radius: 15px;
+  .burger span::before,
+  .burger span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #b17f4a;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 15px;
   }
-  .burger span::before{
-      transform: translateY(-10px);
+  .burger span::before {
+    transform: translateY(-10px);
   }
-  .burger span::after{
-      transform: translateY(10px);
+  .burger span::after {
+    transform: translateY(10px);
   }
-  .burger.active span{
-      background-color: transparent;
+  .burger.active span {
+    background-color: transparent;
   }
-  .burger.active span::before{
-      transform: translateY(0px) rotateZ(45deg);
+  .burger.active span::before {
+    transform: translateY(0px) rotateZ(45deg);
   }
-  .burger.active span::after{
-      transform: translateY(0px) rotateZ(-45deg);
-  } 
-  header .LOGO {      
-      padding-right: 30px;
+  .burger.active span::after {
+    transform: translateY(0px) rotateZ(-45deg);
   }
-}  
+  header .LOGO {
+    padding-right: 30px;
+  }
+}
 
-@media(max-width: 600px){
-
-  header .picto a img{
-      height: 30px;
-      margin: 8px;
+@media screen and (max-width: 600px) {
+  header .picto a img {
+    height: 30px;
+    margin: 8px;
   }
-  
   #topnav_menu ol {
-      grid-template-columns:1fr;
-      grid-template-rows: repeat (4, auto);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (4, auto);
   }
   #topnav_menu ul li {
-      line-height: 5px;
-      font-size: 14px;
+    line-height: 5px;
+    font-size: 14px;
   }
-  .petite-categorie{
-      display: none;
+  .petite-categorie {
+    display: none;
   }
-  .petite-categorie.open{
-      display: block;
+  .petite-categorie.open {
+    display: block;
   }
 }
 /*------- Fin responsive header ----------- */
 
 /*------------ FOOTER ---------------- */
-footer{
-  background-color:#FFDBB0;
+footer {
+  background-color: #ffdbb0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  }
+}
 
-footer .bloc{
+footer .bloc {
   width: 90%;
   display: flex;
   justify-content: space-between;
-  align-items: center;    
+  align-items: center;
 }
 
-footer .bloc > *{
+footer .bloc > * {
   margin: 20px;
 }
 
-footer .bloc1, footer .bloc2, footer .bloc3{
+footer .bloc1,
+footer .bloc2,
+footer .bloc3 {
   text-align: center;
   margin: 15px;
 }
 
-footer h1{
+footer h1 {
   font-size: 20px;
   margin-bottom: 15px;
 }
 
-footer li{
+footer li {
   list-style-type: none;
   line-height: 170%;
 }
 
-footer li a{
+footer li a {
   text-decoration: none;
   color: black;
 }
 
-footer li a:visited{
+footer li a:visited {
   color: black;
 }
 
-footer li a:hover{
+footer li a:hover {
   color: brown;
 }
 
-footer .picto img{
+footer .picto img {
   height: 30px;
 }
 
-footer .picto{
+footer .picto {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-footer a{
+footer a {
   text-align: center;
   color: white;
   margin: 30px;
 }
 /* Responsive footer */
-@media(max-width: 600px){
-  footer .bloc{
-      flex-direction: column;  
+@media screen and (max-width: 600px) {
+  footer .bloc {
+    flex-direction: column;
   }
-  footer .bloc h1{
-        font-size: 15px;
+  footer .bloc h1 {
+    font-size: 15px;
   }
 }
 /*---------- FIN FOOTER ------------- */

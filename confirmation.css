@@ -1,40 +1,39 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-	font-family: "Caslon"
 
+body {
+  font-family: "Caslon";
 }
 
 @font-face {
-	font-family: "Caslon";
-	src: url(./Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
-	
+  font-family: "Caslon";
+  src: url(./Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
 }
-.thx{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-top:#efbb7e 4px solid;
-    border-bottom:#efbb7e 4px solid;
-    margin-top: 150px;
-    height: 50vh;
-    width: auto;
-    color: #b17f4a; 
+
+.thx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: #efbb7e 4px solid;
+  border-bottom: #efbb7e 4px solid;
+  margin-top: 150px;
+  height: 50vh;
+  width: auto;
+  color: #b17f4a;
 }
 
 /************** Media Queries **************/
-@media(max-width: 600px){
-    h1{
-        font-size: 30px;
-        text-align: center;
-    }
-    h2, h3{
-        font-size: 20px;
-    }
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+    text-align: center;
   }
-    
+  h2,
+  h3 {
+    font-size: 20px;
+  }
+}
