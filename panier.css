@@ -291,6 +291,9 @@ input {
   .containerGrand {
     grid-template-columns: 1fr;
   }
+  .s2 {
+    border-left: none;
+  }
 }
 
 /* ! HEADER FOOTER */

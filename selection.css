@@ -106,7 +106,7 @@ a {
     center/cover;
 }
 
-#coeur .active {
+#coeur.active {
   width: 28px;
   height: 25px;
   background: url("./images/sélection/coeur\ favori\ 2.png") no-repeat
