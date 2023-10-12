@@ -1,251 +1,368 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jeanne Paris, un site web vitrine pour une marque de vêtements fictive">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jeanne Paris, un site web vitrine pour une marque de vêtements fictive"
+    />
     <title>Jeanne Paris</title>
-    <link rel="stylesheet" href="paiement.css">
+    <link rel="stylesheet" href="paiement.css" />
     <link rel="icon" type="image/png" href="./images/rond.png" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- ASCENSEUR -->
     <div id="scroll_to_top">
-        <a href="#haut"><img src="./images/chevrons.png" alt="haut"></a>
+      <a href="#haut"><img src="./images/chevrons.png" alt="haut" /></a>
     </div>
 
-<!----------------------- HEADER------------------------->
-<header id="haut">
-    <div class="responsive mob">
-        <div class="mob" id="burger" >
-            <span></span>
-        </div> 
-    </div>
+    <!----------------------- HEADER------------------------->
+    <header id="haut">
+      <div class="responsive mob">
+        <div class="mob" id="burger">
+          <span></span>
+        </div>
+      </div>
 
-    <div class="header-left flex">
+      <div class="header-left flex">
         <div id="root">
-            <a class="pc" id="topnav_icon" href="javascript:void(0);" onmouseover="showMenu()" >
-                <h3 class="pc anim">Collection</h3></a>
+          <a
+            class="pc"
+            id="topnav_icon"
+            href="javascript:void(0);"
+            onmouseover="showMenu()"
+          >
+            <h3 class="pc anim">Collection</h3></a
+          >
 
-            <!-- MENU DEROULANT -->
-            <nav role="navigation" id="topnav_menu" >
-                <ol class="grande-categorie" href="javascript:void(0);" onmouseleave="showMenu()">
-                    <li><a href="#" id="robes">Robes</a>
-                        <ul class="petite-categorie" id="listeRobes">
-                            <li><a href="vetement.html">Robes blanches</a></li>
-                            <li><a href="vetement.html">Robes denim</a></li>
-                            <li><a href="vetement.html">Robes à fleurs</a></li>
-                            <li><a href="vetement.html">Robes longues</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" id="bijoux">Bijoux</a>
-                        <ul class="petite-categorie" id="listeBijoux">
-                            <li><a href="vetement.html">Boucles d'oreilles</a></li>
-                            <li><a href="vetement.html">Colliers</a></li>
-                            <li><a href="vetement.html">Bracelets</a></li>
-                            <li><a href="vetement.html">Bagues</a></li>
-                        </ul>
-                    </li>
-                    <li  ><a id="sacs" href="#" >Sacs</a>
-                        <ul class="petite-categorie" id="listeSacs">
-                            <li><a href="vetement.html">Sacs à main</a></li>
-                            <li><a href="vetement.html">Sacs à dos</a></li>
-                            <li><a href="vetement.html">Sacs en bandolière</a></li>
-                        </ul>
-                    </li>
-                    <li><a id="chaussures"  href="#" >Chaussures</a>
-                        <ul class="petite-categorie" id="listeChaussures">
-                            <li><a href="vetement.html">Mocassins</a></li>
-                            <li><a href="vetement.html">Sandales</a></li>
-                            <li><a href="vetement.html">Escarpins</a></li>
-                            <li><a href="vetement.html">Chaussures plates</a></li>
-                        </ul>
-                    </li>
+          <!-- MENU DEROULANT -->
+          <nav role="navigation" id="topnav_menu">
+            <ol
+              class="grande-categorie"
+              href="javascript:void(0);"
+              onmouseleave="showMenu()"
+            >
+              <li>
+                <a href="#" id="robes">Robes</a>
+                <ul class="petite-categorie" id="listeRobes">
+                  <li><a href="vetement.html">Robes blanches</a></li>
+                  <li><a href="vetement.html">Robes denim</a></li>
+                  <li><a href="vetement.html">Robes à fleurs</a></li>
+                  <li><a href="vetement.html">Robes longues</a></li>
                 </ul>
-            </nav>
+              </li>
+              <li>
+                <a href="#" id="bijoux">Bijoux</a>
+                <ul class="petite-categorie" id="listeBijoux">
+                  <li><a href="vetement.html">Boucles d'oreilles</a></li>
+                  <li><a href="vetement.html">Colliers</a></li>
+                  <li><a href="vetement.html">Bracelets</a></li>
+                  <li><a href="vetement.html">Bagues</a></li>
+                </ul>
+              </li>
+              <li>
+                <a id="sacs" href="#">Sacs</a>
+                <ul class="petite-categorie" id="listeSacs">
+                  <li><a href="vetement.html">Sacs à main</a></li>
+                  <li><a href="vetement.html">Sacs à dos</a></li>
+                  <li><a href="vetement.html">Sacs en bandolière</a></li>
+                </ul>
+              </li>
+              <li>
+                <a id="chaussures" href="#">Chaussures</a>
+                <ul class="petite-categorie" id="listeChaussures">
+                  <li><a href="vetement.html">Mocassins</a></li>
+                  <li><a href="vetement.html">Sandales</a></li>
+                  <li><a href="vetement.html">Escarpins</a></li>
+                  <li><a href="vetement.html">Chaussures plates</a></li>
+                </ul>
+              </li>
+            </ol>
+          </nav>
         </div>
 
         <a href="#" class="pc"><h3 class="anim">Nouveautés</h3></a>
         <a href="#" class="pc anim"><h3 class="promo anim">Promotions</h3></a>
+      </div>
 
-    </div>
-   
-    <!-- LOGO -->
-    <a href="index.html"><img class="LOGO" src="./images/LOGO.png" alt="logo Jeanne" title="Accueil"></a>
+      <!-- LOGO -->
+      <a href="index.html"
+        ><img
+          class="LOGO"
+          src="./images/LOGO.png"
+          alt="logo Jeanne"
+          title="Accueil"
+      /></a>
 
-    <div class="header-right flex pc">
-        <input type="search" name="recherche" id="recherche" placeholder="Recherche" class="pc anim">
-    </div>
+      <div class="header-right flex pc">
+        <input
+          type="search"
+          name="recherche"
+          id="recherche"
+          placeholder="Recherche"
+          class="pc anim"
+        />
+      </div>
 
-    <!-- PICTO -->
-    <div class="picto">
-        <a href="panier.html"><img class="anim" src="./images/coeur1.png" alt="picto coeur" title="Favoris"></a>
-        <a href="panier.html"><img class="anim" src="./images/panier1.png" alt="picto panier" title="Panier"></a>
-        <a href="index.html"><img class="anim" src="./images/connexion1.png" alt="picto connexion" title="Connexion"></a>
-    </div>
+      <!-- PICTO -->
+      <div class="picto">
+        <a href="panier.html"
+          ><img
+            class="anim"
+            src="./images/coeur1.png"
+            alt="picto coeur"
+            title="Favoris"
+        /></a>
+        <a href="panier.html"
+          ><img
+            class="anim"
+            src="./images/panier1.png"
+            alt="picto panier"
+            title="Panier"
+        /></a>
+        <a href="index.html"
+          ><img
+            class="anim"
+            src="./images/connexion1.png"
+            alt="picto connexion"
+            title="Connexion"
+        /></a>
+      </div>
+    </header>
 
-</header>
-
-<!-- CONTAINER PRINCIPAL -->
-<main class="container">
-    <!--------------SECTION 1 --------------->
-    <section class="s1">
+    <!-- CONTAINER PRINCIPAL -->
+    <main class="container">
+      <!--------------SECTION 1 --------------->
+      <section class="s1">
         <div class="etapes-paiement">
-            <div>PANIER</div>
-            <span>></span>
-            <div class="payer">PAIEMENT</div>
-            <span>></span>
-            <div>CONFIRMATION</div>   
+          <div>PANIER</div>
+          <span>></span>
+          <div class="payer">PAIEMENT</div>
+          <span>></span>
+          <div>CONFIRMATION</div>
         </div>
 
         <div class="retour-panier">
-            <a href="panier.html"><img class="triangle" src="./images/Polygon 1.png" alt="triangle"></a>
-            <a href="panier.html">Retour au panier</a>
+          <a href="panier.html"
+            ><img class="triangle" src="./images/Polygon 1.png" alt="triangle"
+          /></a>
+          <a href="panier.html">Retour au panier</a>
         </div>
 
-        <p class="attention">Veuillez vérifier que les informations de facturation ci-dessous correspondent au nom et à l'adresse associés à la carte de crédit que vous utilisez pour cet achat.</p>
+        <p class="attention">
+          Veuillez vérifier que les informations de facturation ci-dessous
+          correspondent au nom et à l'adresse associés à la carte de crédit que
+          vous utilisez pour cet achat.
+        </p>
 
         <form action="" name="">
-            <label class="adf" for="">Adresse de facturation</label>
-            <input class="nom" type="text" name="nom" placeholder="Marie Dupont">
-            <input class="adresse" type="email" name="email" placeholder="1 rue du Paradis, 75000 Paris, FRANCE">          
-            <input class="mail" type="email" name="email" placeholder="exemple@domaine.com"> 
-            <input class="telephone" type="email" name="email" placeholder="+33750000000"> 
-            <div class="btn-form">
-                <input class="envoi" type="submit" value="Modifier">
-                <input class="envoi" type="submit" value="Supprimer">
-            </div>
+          <label class="adf" for="">Adresse de facturation</label>
+          <input
+            class="nom"
+            type="text"
+            name="nom"
+            placeholder="Marie Dupont"
+          />
+          <input
+            class="adresse"
+            type="email"
+            name="email"
+            placeholder="1 rue du Paradis, 75000 Paris, FRANCE"
+          />
+          <input
+            class="mail"
+            type="email"
+            name="email"
+            placeholder="exemple@domaine.com"
+          />
+          <input
+            class="telephone"
+            type="email"
+            name="email"
+            placeholder="+33750000000"
+          />
+          <div class="btn-form">
+            <input class="envoi" type="submit" value="Modifier" />
+            <input class="envoi" type="submit" value="Supprimer" />
+          </div>
         </form>
 
         <form action="" name="">
-            <label for="">Adresse de livraison</label>
-            <input class="nom" type="text" name="nom" placeholder="Marie Dupont">         
-            <input class="adresse" type="email" name="email" placeholder="1 rue du Paradis, 75000 Paris, FRANCE">
-            <input class="telephone" type="email" name="email" placeholder="+33750000000"> 
-            <div class="btn-form">
-                <input class="envoi" type="submit" value="Modifier">
-                <input class="envoi" type="submit" value="Supprimer">
-            </div>
+          <label for="">Adresse de livraison</label>
+          <input
+            class="nom"
+            type="text"
+            name="nom"
+            placeholder="Marie Dupont"
+          />
+          <input
+            class="adresse"
+            type="email"
+            name="email"
+            placeholder="1 rue du Paradis, 75000 Paris, FRANCE"
+          />
+          <input
+            class="telephone"
+            type="email"
+            name="email"
+            placeholder="+33750000000"
+          />
+          <div class="btn-form">
+            <input class="envoi" type="submit" value="Modifier" />
+            <input class="envoi" type="submit" value="Supprimer" />
+          </div>
         </form>
-    </section>
+      </section>
 
-    <!--------------- SECTION 2 ------------------>
-    <section class="s2">
+      <!--------------- SECTION 2 ------------------>
+      <section class="s2">
         <!-- Résumé commande -->
         <div class="resume-commande">
-            <h3>Récapitulatif de la commande</h3>
-            <div class="box-recap">
-                <div class="panier">Panier (1)</div>
-                <div class="numero">
-                    <p>Numéro de commande</p>
-                    <p>GSHMHL00N000TVJ</p>
-                </div>
-                <div class="article">
-                    <p>Sous-total</p>
-                    <p>70,00 €</p>
-                </div>
-                <div class="frais-livraison">
-                    <p>Frais de livraison</p>
-                    <p>5,50 €</p>
-                </div>
-                <div class="total">
-                    <p class="tva">TOTAL <span>(TVA incluse)</span></p>
-                    <p class="prix">75,50 €</p>  
-                </div>
-            </div>      
+          <h3>Récapitulatif de la commande</h3>
+          <div class="box-recap">
+            <div class="panier">Panier (1)</div>
+            <div class="numero">
+              <p>Numéro de commande</p>
+              <p>GSHMHL00N000TVJ</p>
+            </div>
+            <div class="article">
+              <p>Sous-total</p>
+              <p>70,00 €</p>
+            </div>
+            <div class="frais-livraison">
+              <p>Frais de livraison</p>
+              <p>5,50 €</p>
+            </div>
+            <div class="total">
+              <p class="tva">TOTAL <span>(TVA incluse)</span></p>
+              <p class="prix">75,50 €</p>
+            </div>
+          </div>
         </div>
 
-        <!-- Infos paiement -->            
+        <!-- Infos paiement -->
         <div class="infos-paiement">
-            <h3>Informations sur le paiement</h3>
+          <h3>Informations sur le paiement</h3>
 
-            <!---------- Box paiement----------->
-            <div class="box-cb">
-                <div class="cards">
-                    <a href="#" ><img class="paypal" src="./images/paypal-img.png" alt=""></a>
-                    <img class="all-cards-img" src="./images/cb-sans-paypal.jpg" alt="cb sans paypal"/> 
-                </div>   
-                                         
-                <br/> 
+          <!---------- Box paiement----------->
+          <div class="box-cb">
+            <div class="cards">
+              <a href="#"
+                ><img class="paypal" src="./images/paypal-img.png" alt=""
+              /></a>
+              <img
+                class="all-cards-img"
+                src="./images/cb-sans-paypal.jpg"
+                alt="cb sans paypal"
+              />
+            </div>
 
-                <div class="card-holder">Titulaire de la carte :<br>
-                    <input type="text" placeholder="Nom et prénom du titulaire">
-                </div>
+            <br />
 
-                <div class="card-number">Numéro de carte :<br/>
-                    <input class="firstfour" placeholder="1111" maxlength="4"/>
-                    <input placeholder="2222" maxlength="4"/>
-                    <input placeholder="3333" maxlength="4"/>
-                    <input placeholder="4444" maxlength="4"/>
-                </div>
+            <div class="card-holder">
+              Titulaire de la carte :<br />
+              <input type="text" placeholder="Nom et prénom du titulaire" />
+            </div>
 
-                <div class="card-expiration">Date d'expiration :<br/>
-                    <input class="month" placeholder="MM" maxlength="2"/> / <input class="year" placeholder="AA" maxlength="4"/>
-                </div>
+            <div class="card-number">
+              Numéro de carte :<br />
+              <input class="firstfour" placeholder="1111" maxlength="4" />
+              <input placeholder="2222" maxlength="4" />
+              <input placeholder="3333" maxlength="4" />
+              <input placeholder="4444" maxlength="4" />
+            </div>
 
-                <div class="card-security">Cryptogramme :<br/>
-                    <input class="security" placeholder="CVV" maxlength="3"/>
-                    <small><span class="tooltip">Où le trouver?</span><span class="help">Le cryptogramme à 3 chiffres se trouve au verso de votre carte, à droite de la zone de signature</span></small>
-                </div>
+            <div class="card-expiration">
+              Date d'expiration :<br />
+              <input class="month" placeholder="MM" maxlength="2" /> /
+              <input class="year" placeholder="AA" maxlength="4" />
+            </div>
 
-                <a class="pay" href="confirmation.html">PAYER MAINTENANT</a>
+            <div class="card-security">
+              Cryptogramme :<br />
+              <input class="security" placeholder="CVV" maxlength="3" />
+              <small
+                ><span class="tooltip">Où le trouver?</span
+                ><span class="help"
+                  >Le cryptogramme à 3 chiffres se trouve au verso de votre
+                  carte, à droite de la zone de signature</span
+                ></small
+              >
+            </div>
 
-            </div>                
+            <a class="pay" href="confirmation.html">PAYER MAINTENANT</a>
+          </div>
         </div>
-    </section>
-</main>
+      </section>
+    </main>
 
-<!-----------------------FOOTER------------------------->
-<footer>
-    <div class="picto">
-        <a href=""><img src="./images/fb.png" alt="picto facebook" title="Notre Facebook"></a>
-        <a href=""><img src="./images/insta.png" alt="picto instagram" title="Notre Instagram"></a>
-        <a href=""><img src="./images/twitter.png" alt="picto instagram" title="Notre Twitter"></a>
-    </div>
-  
-    <div class="bloc">  
+    <!-----------------------FOOTER------------------------->
+    <footer>
+      <div class="picto">
+        <a href=""
+          ><img
+            src="./images/fb.png"
+            alt="picto facebook"
+            title="Notre Facebook"
+        /></a>
+        <a href=""
+          ><img
+            src="./images/insta.png"
+            alt="picto instagram"
+            title="Notre Instagram"
+        /></a>
+        <a href=""
+          ><img
+            src="./images/twitter.png"
+            alt="picto instagram"
+            title="Notre Twitter"
+        /></a>
+      </div>
+
+      <div class="bloc">
         <div class="bloc1">
-            <h1> AIDE & INFORMATION</h1>
-            <ul class="pc">
-                <li><a href="">Assistance</a></li>
-                <li><a href="">Suivi de commande</a></li>
-                <li><a href="">Livraison & retours</a></li>
-                <li><a href="">Livraison Premier</a></li>
-            </ul>
+          <h1>AIDE & INFORMATION</h1>
+          <ul class="pc">
+            <li><a href="">Assistance</a></li>
+            <li><a href="">Suivi de commande</a></li>
+            <li><a href="">Livraison & retours</a></li>
+            <li><a href="">Livraison Premier</a></li>
+          </ul>
         </div>
-  
-        <div class="bloc2">
-            <h1>À PROPOS DE  JEANNE</h1>
-            <ul class="pc">
-                <li><a href=""> À propos de JEANNE</a></li>
-                <li><a href="">JEANNE recrute</a></li>
-                <li><a href=""> Responsabilité des entreprises</a></li>
-                <li><a href=""> Investisseurs</a></li>                    
-            </ul>    
-        </div>
-  
-        <div class="bloc3">
-            <h1>ENCORE PLUS DE JEANNE</h1>
-            <ul class="pc">
-                <li><a href="">Chèques cadeaux</a></li>
-                <li><a href="">French Days</a></li>
-                <li><a href="">Soldes</a></li>
-                <li><a href="">Black Friday</a></li>
-            </ul>
-        </div>
-  
-    </div> 
-  
-    <a class="logobas" href="#haut"><img src="./images/LOGO.png" alt="logo Jeanne"></a>
-    <a href="">© 2021 Jeanne</a>  
-  </footer>
-  
-  <!-- JAVASCRIPT -->
-  <script src="./js/libraries/gsap-3.7.js"></script>
-  <script src="./js/libraries/gsap-scrolltrigger-3.7.js"></script>
-  <script src="./js/script.js"></script> 
 
-</body>
+        <div class="bloc2">
+          <h1>À PROPOS DE JEANNE</h1>
+          <ul class="pc">
+            <li><a href=""> À propos de JEANNE</a></li>
+            <li><a href="">JEANNE recrute</a></li>
+            <li><a href=""> Responsabilité des entreprises</a></li>
+            <li><a href=""> Investisseurs</a></li>
+          </ul>
+        </div>
+
+        <div class="bloc3">
+          <h1>ENCORE PLUS DE JEANNE</h1>
+          <ul class="pc">
+            <li><a href="">Chèques cadeaux</a></li>
+            <li><a href="">French Days</a></li>
+            <li><a href="">Soldes</a></li>
+            <li><a href="">Black Friday</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="logobas" href="#haut"
+        ><img src="./images/LOGO.png" alt="logo Jeanne"
+      /></a>
+      <a href="">© 2021 Jeanne</a>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="./js/libraries/gsap-3.7.js"></script>
+    <script src="./js/libraries/gsap-scrolltrigger-3.7.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
