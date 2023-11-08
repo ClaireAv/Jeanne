@@ -115,10 +115,10 @@ if (coeur) {
 
 // Slideshow vêtement sélectionné
 let slide = new Array(
-  "./images/sélection/responsive/vue1-1000px.jpg",
-  "./images/sélection/responsive/vue2-1000px.jpg",
-  "./images/sélection/responsive/vue3-1000px.jpg",
-  "./images/sélection/responsive/vue4-1000px.jpg"
+  "../images/sélection/responsive/vue1-1000px.jpg",
+  "../images/sélection/responsive/vue2-1000px.jpg",
+  "../images/sélection/responsive/vue3-1000px.jpg",
+  "../images/sélection/responsive/vue4-1000px.jpg"
 );
 
 let numero = 0;
