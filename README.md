@@ -1,6 +1,6 @@
 # Jeanne
 
-A fictive clothing brand showcase website
+A showcase website of a fictive clothing brand
 
 ## https://jesselessa.github.io/jeanne/
 
