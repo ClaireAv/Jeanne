@@ -4,129 +4,167 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Caslon";
+  src: url(./fonts/Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
+}
+
 img {
   display: block;
   max-width: 100%;
 }
 
-@font-face {
-  font-family: "Caslon";
-  src: url(../../fonts/Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
+a {
+  cursor: pointer;
+  text-decoration: none;
 }
 
-body {
-  font-family: "Caslon";
-}
-
-.containerGrand {
-  font-family: "Caslon", serif;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background: rgba(255, 255, 255, 0.85);
-  height: auto;
+/** CONTAINER PRINCIPAL */
+.container {
+  display: flex;
+  font-size: 20px;
+  padding: 20px;
+  line-height: 1.4;
   max-width: 100%;
 }
 
-/* -------------------- S1 ------------------- */
-.s1 .haut h1 {
-  font-size: 25px;
-}
-
-.h2 h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-}
-
-.haut {
-  display: flex;
-  margin: 0px;
-  justify-content: space-evenly;
-  align-items: center;
-  border: #efbb7e;
-  background: #efbb7e;
-  min-height: 52px;
-}
-
-.s1 .div1 img {
-  height: 350px;
-  width: 280px;
-}
-
-ul {
-  font-size: 16px;
-  list-style: none;
-  padding: 20px;
-}
-
-li {
-  border-bottom: 1px dashed black;
-  margin-bottom: 10px;
-}
-
-.div1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  padding: 20px;
-  gap: 40px;
-  width: 100%;
-}
-
-.contenu h2 {
-  align-items: center;
-  font-size: 25px;
-  padding: 35px;
-  color: #b17f4a;
-}
-
-.contenu {
-  line-height: 1.6;
-}
-
-.s1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 87vh;
-}
-
-.bas {
-  height: 52px;
-  margin: 0px;
-  background: #efbb7e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: #efbb7e;
-}
-
-/* ------------------- S2 ------------------- */
+.s1,
 .s2 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  border-left: #efbb7e 1px solid;
-  min-height: 87vh;
+  width: 50%;
+  padding: 10px;
 }
 
-.s2 h1 {
-  font-size: 25px;
+h3 {
+  margin-bottom: 20px;
+  font-family: "Caslon";
+  color: #b17f4a;
 }
 
-.livraison {
-  height: auto;
+input {
+  font-size: 16px;
+  text-align: center;
+}
+
+/** SECTION 1 */
+.s1 {
+  border-right: 1px solid #efbb7e;
+}
+
+.etapes-paiement {
+  display: flex;
+  font-family: "Caslon";
+  font-size: 22px;
+  gap: 10px;
+}
+
+.etapes-paiement .payer {
+  font-weight: bolder;
+  color: #b17f4a;
+}
+
+.etapes-paiement span {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.retour-panier {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.retour-panier a {
+  color: black;
+  font-weight: bold;
+}
+
+.attention {
+  font-size: 20px;
+}
+
+.adf {
+  margin-top: 15px;
+}
+
+/* Adresses de facturation et livraison */
+form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  line-height: 1.6;
-  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+label {
+  color: #b17f4a;
+  font-family: "Caslon";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input,
+textarea {
+  width: 495px;
+}
+
+.nom,
+.mail,
+.telephone,
+.adresse,
+.envoi {
+  height: 51px;
+}
+
+.envoi {
+  width: 130px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 15px;
+  background: #efbb7e;
+  font-weight: bold;
+  font-family: "Caslon";
+  margin-bottom: 50px;
+}
+
+.envoi:hover {
+  cursor: pointer;
+  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-form {
+  display: flex;
   gap: 20px;
 }
 
-.mode-livraison,
+/** SECTION 2 */
+/* Résumé commande et infos paiement */
+.resume-commande,
+.infos-paiement {
+  height: 50%;
+}
+
+.resume-commande {
+  font-size: 22px;
+  line-height: 2.5;
+}
+
+.retour-panier {
+  font-family: "Caslon";
+  margin-bottom: 20px;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.article,
+.numero,
+.frais-livraison,
 .total {
   display: flex;
   justify-content: space-between;
@@ -134,180 +172,152 @@ li {
   border-bottom: 1px dashed black;
 }
 
-.total h1 {
-  font-size: 20px;
+.frais-livraison {
+  margin-bottom: 20px;
 }
 
-form {
-  height: 40px;
+/* Box CB */
+.infos-paiement h3 {
+  margin-bottom: 50px;
+}
+
+.box-cb {
+  max-width: 560px;
+  background-color: #ffdbb0;
+  border-radius: 10px;
+  margin: 0 auto;
+  color: black;
+  padding: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cards {
   display: flex;
   justify-content: space-between;
-  margin: 10px;
+  align-items: center;
 }
 
-input {
-  font-size: 16px;
-  padding: 5px;
-  outline: none;
+.paypal {
+  width: 11%;
 }
 
-.btn {
-  margin-bottom: 20px;
+.all-cards-img {
+  width: 30%;
 }
 
-.btn,
-.btn-1,
-.btn-2 {
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+small {
+  margin: 5px 0;
+  font-style: italic;
 }
 
-.btn,
-.btn-2 {
+.card-holder input {
+  width: 100%;
+  text-align: left;
+}
+
+.card-number input {
+  width: 23%;
+  margin: 2px 1px;
+}
+
+.card-expiration {
+  float: left;
+  width: 50%;
+}
+
+.card-security {
+  float: right;
+  width: 50%;
+  position: relative;
+}
+
+.card-expiration,
+.card-security {
+  margin-bottom: 5px;
+}
+
+/* Taille des éléments <input> (saisie de données) dans .cb-box */
+.card-expiration input,
+.card-security input {
+  width: 25%;
+}
+
+.month {
+  width: 20%;
+}
+
+.year {
+  width: 35%;
+}
+
+.security {
+  width: 22%;
+}
+
+/* Encadré en commentaire au survol de .tooltip */
+.help {
+  display: none;
   background: #f3ede3;
+  padding: 10px;
+  max-width: 175px;
+  font-size: 0.85em;
+  border-radius: 3px;
+  border-bottom: 3px solid #efbb7e;
+  position: absolute;
+  bottom: -6em;
+  right: 30px;
+  z-index: 100;
 }
 
-.btn-1 {
+/* Petite flèche de .help */
+.help:before {
+  content: " ";
+  display: inline-block;
+  border-bottom: 10px solid #efbb7e;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  position: absolute;
+  top: -10px;
+  left: 15px;
+}
+
+.tooltip:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.tooltip:hover ~ .help {
+  display: inline-block;
+}
+
+.cb-box input {
+  margin: 10px 0 0;
+  width: 100%;
+}
+
+.pay {
+  display: inline-block;
+  width: 100%;
   background: #efbb7e;
-}
-
-.btn:hover,
-.btn-1:hover,
-.btn-2:hover {
-  cursor: pointer;
-  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
-}
-.paye2 {
-  height: auto;
-  margin-bottom: 20px;
-}
-.paye2 h3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   font-family: "Caslon";
-  color: #b17f4a;
-}
-
-.cb img {
-  width: 40%;
-  margin-top: 20px;
-}
-
-.cb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.paye1 {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: 15px;
-  background-color: #efbb7e;
-  font-weight: bold;
-  font-family: "Caslon";
-  padding: 20px 40px;
-  font-size: 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-}
-
-.paye1:hover {
-  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.s2 .lien-paiement {
-  align-self: center;
-}
-
-.footer {
-  background: #efbb7e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: #efbb7e;
-  min-height: 52px;
-}
-
-/************* Media Queries ****************/
-@media screen and (max-width: 609px) {
-  .containerGrand {
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .s1,
-  .s2,
-  .footer {
-    /* height: auto; */
-  }
-  .div1 {
-    flex-direction: column;
-    align-items: center;
-  }
-  .div1 img {
-    object-fit: contain;
-  }
-
-  .s1 .haut h1 {
-    font-size: 20px;
-  }
-  .s1 .haut p {
-    font-size: 15px;
-  }
-  .s1 .div1 img {
-    min-height: 250px;
-    width: 200px;
-  }
-  .s2 h1 {
-    font-size: 20px;
-  }
-  .cb {
-    margin-bottom: 20px;
-  }
-
-  .contenu h2 {
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-  }
-  .h2 h2 {
-    font-size: 15px;
-  }
-  .livraison {
-    font-size: 15px;
-  }
-  .bas,
-  .footer {
-    font-size: 18px;
-  }
-  .bas {
-    margin-bottom: 30px;
-    background-color: #ffdbb0;
-  }
-  .paye1 {
-    margin-top: 10px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .containerGrand {
-    grid-template-columns: 1fr;
-  }
-  .s2 {
-    border-left: none;
-  }
-}
-
-/* ! HEADER FOOTER */
-
-a {
-  cursor: pointer;
+  color: black;
   text-decoration: none;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.5s background;
+  font-weight: bold;
 }
+
+.pay:hover {
+  background-color: #f3ede3;
+  cursor: pointer;
+  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ! HEADER AND FOOTER */
 
 /* ASCENSEUR */
 #scroll_to_top {
@@ -324,7 +334,7 @@ footer {
   max-width: 100%;
 }
 
-/*--------------------- HEADER----------------------- */
+/* --------------------- HEADER----------------------- */
 header {
   font-family: "Caslon", serif;
   box-shadow: 0px 0px 10px #b17f4a;
@@ -390,10 +400,10 @@ header form input {
 
 .header-right input:hover {
   border-bottom: 2px solid black;
-  background: url(../../images/Vector.png) no-repeat 95%;
+  background: url(./images/Vector.png) no-repeat 95%;
 }
 
-/* ------------------ MENU DEROULANT ------------------- */
+/* --------------------- MENU DEROULANT--------------------- */
 #topnav_menu {
   display: block;
   position: absolute;
@@ -460,10 +470,11 @@ header form input {
   -webkit-user-select: none;
 }
 
-/*--------------- HEADER RESPONSIVE ----------------- */
+/* -------- RESPONSIVE HEADER ----------*/
 .pc {
   display: block;
 }
+
 .mob {
   display: none;
 }
@@ -555,7 +566,7 @@ header form input {
   }
 }
 
-/*-------------- FOOTER ---------------- */
+/*------------ FOOTER ---------------- */
 footer {
   background-color: #ffdbb0;
   display: flex;
@@ -628,5 +639,60 @@ footer a {
   }
   footer .bloc h1 {
     font-size: 15px;
+  }
+}
+
+/************* Media Queries *************/
+@media screen and (max-width: 1100px) {
+  .container {
+    flex-direction: column;
+  }
+  .s1 {
+    border-right: none;
+  }
+  .s1,
+  .s2,
+  .etapes-paiement,
+  form input,
+  .box-cb,
+  .numero {
+    width: 100%;
+  }
+  .etapes-paiement,
+  .etapes-paiement span {
+    font-size: 12px;
+  }
+  .box-recap {
+    font-size: 20px;
+  }
+  .numero {
+    display: flex;
+    flex-direction: column;
+  }
+  .total {
+    line-height: 1.3;
+    font-size: 21px;
+  }
+  .tva {
+    width: 60%;
+  }
+  .prix {
+    width: 40%;
+    text-align: right;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  .resume-commande h3 {
+    line-height: 1.2;
+  }
+  .infos-paiement h3 {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .box-cb {
+    max-width: 100%;
   }
 }

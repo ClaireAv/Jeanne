@@ -10,7 +10,7 @@ body {
 
 @font-face {
   font-family: "Caslon";
-  src: url(../../fonts/Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
+  src: url(./fonts/Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
 }
 
 .thx {

@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Caslon", serif;
-  src: url(../../fonts/Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
+  src: url(./fonts/Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
 }
 
 a {
@@ -112,7 +112,7 @@ header form input {
 
 .header-right input:hover {
   border-bottom: 2px solid black;
-  background: url(../../images/Vector.png) no-repeat 95%;
+  background: url(./images/Vector.png) no-repeat 95%;
 }
 
 /* ---------- MENU DEROULANT -------- */
@@ -419,19 +419,19 @@ main h2 {
 }
 
 #grande-cat .bijoux {
-  background: url(../../images/gde-cat/Bijoux.png) no-repeat center/cover;
+  background: url(./images/gde-cat/Bijoux.png) no-repeat center/cover;
 }
 
 #grande-cat .sacs {
-  background: url(../../images/gde-cat/sac.png) no-repeat center/cover;
+  background: url(./images/gde-cat/sac.png) no-repeat center/cover;
 }
 
 #grande-cat .chaussures {
-  background: url(../../images/gde-cat/chaussures.png) no-repeat center/cover;
+  background: url(./images/gde-cat/chaussures.png) no-repeat center/cover;
 }
 
 #grande-cat .robes {
-  background: url(../../images/gde-cat/robes-categorie.png) no-repeat
+  background: url(./images/gde-cat/robes-categorie.png) no-repeat
     center/cover;
 }
 
@@ -478,21 +478,21 @@ main h2 {
 }
 
 #petite-cat .robes-blanches {
-  background: url(../../images/ptte-cat/robe-blanche.png) no-repeat center/cover;
+  background: url(./images/ptte-cat/robe-blanche.png) no-repeat center/cover;
 }
 
 #petite-cat .robes-denim {
-  background: url(../../images/ptte-cat/robe-denim\ 1.png) no-repeat
+  background: url(./images/ptte-cat/robe-denim\ 1.png) no-repeat
     center/cover;
 }
 
 #petite-cat .robes-fleurs {
-  background: url(../../images/ptte-cat/robe-fleurs\ 1.png) no-repeat
+  background: url(./images/ptte-cat/robe-fleurs\ 1.png) no-repeat
     center/cover;
 }
 
 #petite-cat .robes-longues {
-  background: url(../../images/ptte-cat/robe-a-pois\ 1.png) no-repeat
+  background: url(./images/ptte-cat/robe-a-pois\ 1.png) no-repeat
     center/cover;
 }
 
@@ -568,7 +568,7 @@ main h2 {
     height: auto;
   }
   #grande-cat .robes {
-    background: url(../../images/gde-cat/img-mob/media1000/robes-categorie.png)
+    background: url(./images/gde-cat/img-mob/media1000/robes-categorie.png)
       no-repeat center/cover;
   }
   #petite-cat {
@@ -576,19 +576,19 @@ main h2 {
     height: auto;
   }
   #petite-cat .robes-blanches {
-    background: url(../../images/ptte-cat/img-mob/media1000/robe-blanche.png)
+    background: url(./images/ptte-cat/img-mob/media1000/robe-blanche.png)
       no-repeat center/cover;
   }
   #petite-cat .robes-denim {
-    background: url(../../images/ptte-cat/img-mob/media1000/robe-denim\ 1.png)
+    background: url(./images/ptte-cat/img-mob/media1000/robe-denim\ 1.png)
       no-repeat center/cover;
   }
   #petite-cat .robes-fleurs {
-    background: url(../../images/ptte-cat/img-mob/media1000/robe-fleurs\ 1.png)
+    background: url(./images/ptte-cat/img-mob/media1000/robe-fleurs\ 1.png)
       no-repeat center/cover;
   }
   #petite-cat .robes-longues {
-    background: url(../../images/ptte-cat/img-mob/media1000/robe-a-pois\ 1.png)
+    background: url(./images/ptte-cat/img-mob/media1000/robe-a-pois\ 1.png)
       no-repeat center/cover;
   }
 }
@@ -607,18 +607,18 @@ main h2 {
     height: 500px;
   }
   #grande-cat .bijoux {
-    background: url(../../images/gde-cat/img-mob/Bijoux.png) no-repeat
+    background: url(./images/gde-cat/img-mob/Bijoux.png) no-repeat
       center/cover;
   }
   #grande-cat .sacs {
-    background: url(../../images/gde-cat/img-mob/sac.png) no-repeat center/cover;
+    background: url(./images/gde-cat/img-mob/sac.png) no-repeat center/cover;
   }
   #grande-cat .chaussures {
-    background: url(../../images/gde-cat/img-mob/chaussures.png) no-repeat
+    background: url(./images/gde-cat/img-mob/chaussures.png) no-repeat
       center/cover;
   }
   #grande-cat .robes {
-    background: url(../../images/gde-cat/img-mob/robes-categorie.png) no-repeat
+    background: url(./images/gde-cat/img-mob/robes-categorie.png) no-repeat
       center/cover;
   }
   #petite-cat {
@@ -634,19 +634,19 @@ main h2 {
     height: 500px;
   }
   #petite-cat .robes-blanches {
-    background: url(../../images/ptte-cat/img-mob/robe-blanche.png) no-repeat
+    background: url(./images/ptte-cat/img-mob/robe-blanche.png) no-repeat
       center/cover;
   }
   #petite-cat .robes-denim {
-    background: url(../../images/ptte-cat/img-mob/robe-denim\ 1.png) no-repeat
+    background: url(./images/ptte-cat/img-mob/robe-denim\ 1.png) no-repeat
       center/cover;
   }
   #petite-cat .robes-fleurs {
-    background: url(../../images/ptte-cat/img-mob/robe-fleurs\ 1.png) no-repeat
+    background: url(./images/ptte-cat/img-mob/robe-fleurs\ 1.png) no-repeat
       center/cover;
   }
   #petite-cat .robes-longues {
-    background: url(../../images/ptte-cat/img-mob/robe-a-pois\ 1.png) no-repeat
+    background: url(./images/ptte-cat/img-mob/robe-a-pois\ 1.png) no-repeat
       center/cover;
   }
   .grid {

@@ -115,10 +115,10 @@ if (coeur) {
 
 // Slideshow vêtement sélectionné
 let slide = new Array(
-  "../images/sélection/responsive/vue1-1000px.jpg",
-  "../images/sélection/responsive/vue2-1000px.jpg",
-  "../images/sélection/responsive/vue3-1000px.jpg",
-  "../images/sélection/responsive/vue4-1000px.jpg"
+  "./images/sélection/responsive/vue1-1000px.jpg",
+  "./images/sélection/responsive/vue2-1000px.jpg",
+  "./images/sélection/responsive/vue3-1000px.jpg",
+  "./images/sélection/responsive/vue4-1000px.jpg"
 );
 
 let numero = 0;
@@ -127,5 +127,5 @@ function ChangeSlide(sens) {
   numero = numero + sens;
   if (numero < 0) numero = slide.length - 1;
   if (numero > slide.length - 1) numero = 0;
-  document.querySelector("slide").src = slide[numero];
+  document.querySelector("#slide").src = slide[numero];
 }
