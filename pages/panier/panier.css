@@ -11,7 +11,7 @@ img {
 
 @font-face {
   font-family: "Caslon";
-  src: url(./Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
+  src: url(../../fonts/Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
 }
 
 body {
@@ -23,6 +23,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: rgba(255, 255, 255, 0.85);
+  height: auto;
   max-width: 100%;
 }
 
@@ -45,7 +46,7 @@ body {
   align-items: center;
   border: #efbb7e;
   background: #efbb7e;
-  height: 52px;
+  min-height: 52px;
 }
 
 .s1 .div1 img {
@@ -89,7 +90,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 87vh;
+  min-height: 87vh;
 }
 
 .bas {
@@ -108,7 +109,7 @@ li {
   flex-direction: column;
   justify-content: space-between;
   border-left: #efbb7e 1px solid;
-  height: 87vh;
+  min-height: 87vh;
 }
 
 .s2 h1 {
@@ -116,11 +117,12 @@ li {
 }
 
 .livraison {
-  padding: 20px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   line-height: 1.6;
+  padding: 20px;
   gap: 20px;
 }
 
@@ -175,6 +177,9 @@ input {
   cursor: pointer;
   box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
 }
+.paye2 {
+  height: auto;
+}
 .paye2 h3 {
   display: flex;
   justify-content: center;
@@ -223,7 +228,7 @@ input {
   justify-content: center;
   align-items: center;
   border: #efbb7e;
-  height: 52px;
+  min-height: 52px;
 }
 
 /************* Media Queries ****************/
@@ -236,7 +241,7 @@ input {
   .s1,
   .s2,
   .footer {
-    height: auto;
+    /* height: auto; */
   }
   .div1 {
     flex-direction: column;
@@ -253,7 +258,7 @@ input {
     font-size: 15px;
   }
   .s1 .div1 img {
-    height: 250px;
+    min-height: 250px;
     width: 200px;
   }
   .s2 h1 {
@@ -384,7 +389,7 @@ header form input {
 
 .header-right input:hover {
   border-bottom: 2px solid black;
-  background: url(./images/Vector.png) no-repeat 95%;
+  background: url(../../images/Vector.png) no-repeat 95%;
 }
 
 /* ------------------ MENU DEROULANT ------------------- */

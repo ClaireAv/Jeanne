@@ -4,15 +4,14 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Caslon";
+  src: url(../../fonts/Libre_Caslon_Text/LibreCaslonText-Regular.ttf);
+}
+
 img {
   display: block;
   max-width: 100%;
-  height: auto;
-}
-
-@font-face {
-  font-family: "Caslon";
-  src: url("./Libre_Caslon_Text/LibreCaslonText-Regular.ttf");
 }
 
 a {
@@ -20,309 +19,302 @@ a {
   text-decoration: none;
 }
 
+/** CONTAINER PRINCIPAL */
 .container {
-  font-family: "Caslon";
+  display: flex;
+  font-size: 20px;
+  padding: 20px;
+  line-height: 1.4;
+  max-width: 100%;
 }
 
 .s1,
-.s2,
-.s3 {
-  display: flex;
-  justify-content: space-around;
-  margin: 40px 0;
-}
-
-.vues {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.vues img,
-.mainPhoto img {
-  box-shadow: 0px 4px 10px #b17f4a;
-}
-
-.vues-responsive-1000px {
-  display: none;
-}
-
-#slider {
-  position: relative;
-  width: 582px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#precedent,
-#suivant {
-  cursor: pointer;
-  transition: 0.3s ease;
-  opacity: 0;
-  position: absolute;
-  font-size: 100px;
-  color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(212, 144, 41, 0.8);
-  padding: 10px;
-}
-
-#precedent {
-  left: 0;
-}
-
-#suivant {
-  right: 0;
-}
-
-#slider:hover #precedent,
-#slider:hover #suivant {
-  opacity: 1;
-}
-
-.details {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 406px;
-}
-
-.nomFav {
-  display: flex;
-  justify-content: space-between;
-  font-size: 25px;
-  margin-bottom: 20px;
-}
-
-.nom span {
-  font-size: 40px;
-  color: #b17f4a;
-}
-
-#coeur {
-  width: 27px;
-  height: 25px;
-  background: url("./images/sélection/coeur\ favori\ 1.png") no-repeat
-    center/cover;
-}
-
-#coeur.active {
-  width: 28px;
-  height: 25px;
-  background: url("./images/sélection/coeur\ favori\ 2.png") no-repeat
-    center/cover;
-}
-
-.nomFav span {
-  font-size: 40px;
-}
-
-.prix {
-  margin-bottom: 20px;
-  font-size: 40px;
-}
-
-.livraison {
-  margin-bottom: 64px;
-  font-size: 25px;
-}
-
-.livraison a {
-  text-decoration: none;
-  color: black;
-}
-
-.livraison a:hover {
-  color: #b17f4a;
-}
-
-.couleur {
-  margin-bottom: 50px;
-  font-size: 25px;
-}
-
-.couleur span {
-  color: #b17f4a;
-  font-size: 32px;
-}
-
-.robes {
-  display: flex;
-  justify-content: space-between;
-  gap: 34px;
-  margin-bottom: 30px;
-}
-
-.boutons {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-select {
-  background: white;
-  color: #b17f4a;
-}
-
-.panier,
-select {
-  font-weight: bold;
-  font-size: 25px;
-  font-family: "Caslon";
-  text-align: center;
-  width: 400px;
-  height: 70px;
-  box-shadow: 0px 4px 10px #b17f4a;
-  border: none;
-  padding: 10px;
-}
-
-select .t,
-select .t0 {
-  color: black;
-  font-weight: normal;
-  font-size: 22px;
-}
-
-.panier {
-  color: white;
-  background: #efbb7e;
-  text-decoration: none;
-}
-
-.panier:hover {
-  color: #b17f4a;
-  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-}
-
 .s2 {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  padding: 10px;
 }
 
-.description {
-  text-align: left;
-  font-size: 20px;
-  background: #f3ede3;
-  width: 360px;
-  height: 525px;
-  line-height: 30px;
-  padding: 15px;
-}
-
-.container h3 {
+h3 {
+  margin-bottom: 20px;
+  font-family: "Caslon";
   color: #b17f4a;
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
 }
 
-ul {
-  margin-left: 20px;
-  line-height: 40px;
+input {
+  font-size: 16px;
+  text-align: center;
 }
 
-.p1 {
-  margin-bottom: 20px;
+/** SECTION 1 */
+.s1 {
+  border-right: 1px solid #efbb7e;
 }
 
-.s2 .coupes {
-  line-height: 25px;
-}
-
-.coupes p {
-  margin-bottom: 18px;
-}
-
-h2 {
-  font-size: 50px;
-  font-weight: bold;
-  margin-left: 20px;
-  margin-bottom: 40px;
-}
-
-.s3 {
+.etapes-paiement {
   display: flex;
-  justify-content: space-around;
+  font-family: "Caslon";
+  font-size: 22px;
+  gap: 10px;
 }
 
-.s3-a {
-  display: block;
+.etapes-paiement .payer {
+  font-weight: bolder;
+  color: #b17f4a;
 }
 
-.s3 a {
-  text-decoration: none;
+.etapes-paiement span {
+  font-weight: bolder;
+  font-size: 20px;
 }
 
-.boucles,
-.chaussures,
-.bague {
-  width: 354px;
-  height: 354px;
+.retour-panier {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.boucles {
-  background: url("./images/sélection/boucles.png") no-repeat center/cover;
+.retour-panier a {
+  color: black;
+  font-weight: bold;
 }
 
-.chaussures {
-  background: url("./images/sélection/chaussures.png") no-repeat center/cover;
+.attention {
+  font-size: 20px;
 }
 
-.bague {
-  background: url("./images/sélection/bague.png") no-repeat center/cover;
+.adf {
+  margin-top: 15px;
 }
 
-.hover {
+/* Adresses de facturation et livraison */
+form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: space-around;
-  padding: 20px;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.5s ease;
-  background: rgba(255, 255, 255, 0.7);
+  align-items: center;
+  gap: 15px;
 }
 
-.hover:hover {
-  opacity: 1;
-}
-
-.hover a {
-  color: black;
-}
-
-.p4 a:hover {
+label {
   color: #b17f4a;
+  font-family: "Caslon";
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.p4 span:hover {
-  color: black;
+input,
+textarea {
+  width: 495px;
 }
 
-.p6 a:hover {
-  color: #b17f4a;
+.nom,
+.mail,
+.telephone,
+.adresse,
+.envoi {
+  height: 51px;
 }
 
-.p2 {
+.envoi {
+  width: 130px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 15px;
+  background: #efbb7e;
+  font-weight: bold;
+  font-family: "Caslon";
+  margin-bottom: 50px;
+}
+
+.envoi:hover {
+  cursor: pointer;
+  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-form {
+  display: flex;
+  gap: 20px;
+}
+
+/** SECTION 2 */
+/* Résumé commande et infos paiement */
+.resume-commande,
+.infos-paiement {
+  height: 50%;
+}
+
+.resume-commande {
   font-size: 22px;
+  line-height: 2.5;
+}
+
+.retour-panier {
+  font-family: "Caslon";
   margin-bottom: 20px;
 }
 
-.p2,
-.p3 {
+.total {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.article,
+.numero,
+.frais-livraison,
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed black;
+}
+
+.frais-livraison {
+  margin-bottom: 20px;
+}
+
+/* Box CB */
+.infos-paiement h3 {
+  margin-bottom: 50px;
+}
+
+.box-cb {
+  max-width: 560px;
+  background-color: #ffdbb0;
+  border-radius: 10px;
+  margin: 0 auto;
+  color: black;
+  padding: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paypal {
+  width: 11%;
+}
+
+.all-cards-img {
+  width: 30%;
+}
+
+small {
+  margin: 5px 0;
+  font-style: italic;
+}
+
+.card-holder input {
+  width: 100%;
+  text-align: left;
+}
+
+.card-number input {
+  width: 23%;
+  margin: 2px 1px;
+}
+
+.card-expiration {
+  float: left;
+  width: 50%;
+}
+
+.card-security {
+  float: right;
+  width: 50%;
+  position: relative;
+}
+
+.card-expiration,
+.card-security {
+  margin-bottom: 5px;
+}
+
+/* Taille des éléments <input> (saisie de données) dans .cb-box */
+.card-expiration input,
+.card-security input {
+  width: 25%;
+}
+
+.month {
+  width: 20%;
+}
+
+.year {
+  width: 35%;
+}
+
+.security {
+  width: 22%;
+}
+
+/* Encadré en commentaire au survol de .tooltip */
+.help {
+  display: none;
+  background: #f3ede3;
+  padding: 10px;
+  max-width: 175px;
+  font-size: 0.85em;
+  border-radius: 3px;
+  border-bottom: 3px solid #efbb7e;
+  position: absolute;
+  bottom: -6em;
+  right: 30px;
+  z-index: 100;
+}
+
+/* Petite flèche de .help */
+.help:before {
+  content: " ";
+  display: inline-block;
+  border-bottom: 10px solid #efbb7e;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  position: absolute;
+  top: -10px;
+  left: 15px;
+}
+
+.tooltip:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.tooltip:hover ~ .help {
+  display: inline-block;
+}
+
+.cb-box input {
+  margin: 10px 0 0;
+  width: 100%;
+}
+
+.pay {
+  display: inline-block;
+  width: 100%;
+  background: #efbb7e;
+  font-family: "Caslon";
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.5s background;
   font-weight: bold;
 }
 
-.p3,
-.p4,
-.p5,
-.p6 {
-  font-size: 20px;
-  margin-bottom: 20px;
+.pay:hover {
+  background-color: #f3ede3;
+  cursor: pointer;
+  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* ! HEADER AND FOOTER */
@@ -342,20 +334,19 @@ footer {
   max-width: 100%;
 }
 
-/*--------- HEADER -------- */
+/* --------------------- HEADER----------------------- */
 header {
   font-family: "Caslon", serif;
-  box-shadow: 0 0 10px #b17f4a;
+  box-shadow: 0px 0px 10px #b17f4a;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: white;
   height: 90px;
-  padding: 0 5px;
 }
 
 header img {
-  margin-left: 10px;
+  margin: 10px;
 }
 
 header .LOGO {
@@ -409,10 +400,10 @@ header form input {
 
 .header-right input:hover {
   border-bottom: 2px solid black;
-  background: url(./images/Vector.png) no-repeat 95%;
+  background: url(../../images/Vector.png) no-repeat 95%;
 }
 
-/* ----------------- MENU DEROULANT ---------------------- */
+/* --------------------- MENU DEROULANT--------------------- */
 #topnav_menu {
   display: block;
   position: absolute;
@@ -478,7 +469,7 @@ header form input {
   -webkit-user-select: none;
 }
 
-/*----- Responsive header ------ */
+/* -------- RESPONSIVE HEADER ----------*/
 .pc {
   display: block;
 }
@@ -581,7 +572,7 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
 }
 
 footer .bloc {
@@ -641,7 +632,6 @@ footer a {
   margin: 30px;
 }
 
-/* Responsive footer */
 @media screen and (max-width: 600px) {
   footer .bloc {
     flex-direction: column;
@@ -651,92 +641,57 @@ footer a {
   }
 }
 
-/*************** Media queries ***************/
-@media screen and (max-width: 766px) {
-  h2 {
-    font-size: 30px;
-    margin-left: 0;
-    text-align: center;
-    margin-bottom: 0;
+/************* Media Queries *************/
+@media screen and (max-width: 1100px) {
+  .container {
+    flex-direction: column;
   }
-  .nom span {
-    font-size: 30px;
+  .s1 {
+    border-right: none;
   }
-  .nom,
-  .couleur,
-  .couleur span,
-  select,
-  form {
-    font-size: 22px;
-  }
-  .prix {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-  .livraison {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  .description {
-    max-width: 100%;
-  }
-  .boucles,
-  .chaussures,
-  .bague {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 767px) and (max-width: 1129px) {
-  .description {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 1130px) {
   .s1,
   .s2,
-  .s3 {
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    height: auto;
-    text-align: center;
-    padding: 20px;
-    margin: 0px 0;
-    gap: 20px;
-  }
-  .vues,
-  #slider {
-    display: none;
-  }
-  .vues-responsive-1000px {
-    display: block;
-  }
-  .vues-responsive-1000px img {
-    margin-bottom: 20px;
-  }
-  .nomFav {
-    text-align: center;
-  }
-  .details {
-    max-width: 100%;
-    align-items: center;
-  }
-  .nom,
-  .couleur {
-    margin-bottom: 10px;
-  }
-  .description {
-    height: auto;
-  }
-  select,
-  form,
-  .panier {
+  .etapes-paiement,
+  form input,
+  .box-cb,
+  .numero {
     width: 100%;
   }
-  h2 {
-    text-align: center;
-    margin-bottom: 0;
+  .etapes-paiement,
+  .etapes-paiement span {
+    font-size: 12px;
+  }
+  .box-recap {
+    font-size: 20px;
+  }
+  .numero {
+    display: flex;
+    flex-direction: column;
+  }
+  .total {
+    line-height: 1.3;
+    font-size: 21px;
+  }
+  .tva {
+    width: 60%;
+  }
+  .prix {
+    width: 40%;
+    text-align: right;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  .resume-commande h3 {
+    line-height: 1.2;
+  }
+  .infos-paiement h3 {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .box-cb {
+    max-width: 100%;
   }
 }
