@@ -179,6 +179,7 @@ input {
 }
 .paye2 {
   height: auto;
+  margin-bottom: 20px;
 }
 .paye2 h3 {
   display: flex;
@@ -413,7 +414,7 @@ header form input {
   position: fixed;
 }
 
-#topnav_menu ol {
+#topnav_menu .grande-categorie {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
@@ -426,6 +427,7 @@ header form input {
   text-align: left;
   background: rgba(255, 255, 255, 0.85);
   list-style-type: none;
+  gap: 10px;
 }
 
 #topnav_menu ul {
@@ -434,7 +436,7 @@ header form input {
   list-style-type: none;
 }
 
-#topnav_menu ol li {
+#topnav_menu .grande-categorie li {
   padding: 10px;
   font-size: 20px;
 }
@@ -537,7 +539,7 @@ header form input {
   header .picto {
     margin-right: 20px;
   }
-  #topnav_menu ol {
+  #topnav_menu .grande-categorie {
     grid-template-columns: 1fr;
     grid-template-rows: repeat (4, auto);
   }
