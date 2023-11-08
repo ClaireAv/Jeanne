@@ -267,8 +267,7 @@ h2 {
 }
 
 .chaussures {
-  background: url("./images/sélection/chaussures.png") no-repeat
-    center/cover;
+  background: url("./images/sélection/chaussures.png") no-repeat center/cover;
 }
 
 .bague {
@@ -654,6 +653,13 @@ footer a {
 }
 
 /*************** Media queries ***************/
+@media screen and (max-width: 600px) {
+  #slider,
+  #slide {
+    width: 300px;
+  }
+}
+
 @media screen and (max-width: 766px) {
   h2 {
     font-size: 30px;
@@ -708,15 +714,8 @@ footer a {
     margin: 0px 0;
     gap: 20px;
   }
-  .vues,
-  #slider {
+  .vues {
     display: none;
-  }
-  .vues-responsive-1000px {
-    display: block;
-  }
-  .vues-responsive-1000px img {
-    margin-bottom: 20px;
   }
   .nomFav {
     text-align: center;
