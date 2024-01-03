@@ -6,6 +6,7 @@ Welcome to Jeanne Paris, a website for a fictive brand showcasing a collection o
 
 - [Website](#website)
 - [Stack](#stack)
+- [Screenshot](#screenshot)
 - [Pages](#pages)
   - [Home (index.html)](#1-home)
   - [Collection (vetement.html)](#2-collection)
@@ -25,9 +26,11 @@ You can view Jeanne Paris website [here](https://jesselessa.github.io/jeanne/)
 
 This project has been created with HTML, CSS and JavaScript.
 
-## Pages
+## Sreenshot
 
 ![Screenshot](./images/screenshot/screenshot.png)
+
+## Pages
 
 The website features a responsive design, dynamic interactions, and a visually appealing layout.
 
