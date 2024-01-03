@@ -38,7 +38,7 @@ The website features a responsive design, dynamic interactions, and a visually a
 
 The landing page with the main navigation and featured content.
 
-### 2. Collection Selection (vetement.html)
+### 2. Collection (vetement.html)
 
 Page showcasing a selection of clothing items with details, including images, descriptions, and options for sizes.
 
