@@ -8,12 +8,12 @@ Welcome to Jeanne Paris, a website for a fictive brand showcasing a collection o
 - [Stack](#stack)
 - [Screenshot](#screenshot)
 - [Pages](#pages)
-  - [Home (index.html)](#1-home)
-  - [Collection (vetement.html)](#2-collection)
-  - [Clothing Details (selection.html)](#3-selection)
-  - [Shopping Cart (panier.html)](#4-shopping-cart)
-  - [Order Confirmation (confirmation.html)](#5-order-confirmation)
-- [Run the project locally](#run-project)
+  - [Home (index.html)](#1-home-indexhtml)
+  - [Collection (vetement.html)](#2-collection-vetementhtml)
+  - [Clothing Details (selection.html)](#3-clothing-details-selectionhtml)
+  - [Shopping Cart (panier.html)](#4-shopping-cart-panierhtml)
+  - [Order Confirmation (confirmation.html)](#5-order-confirmation-confirmationhtml)
+- [Run the project locally](#run-the-project-locally)
 - [Contributing](#contributing)
 - [Stay updated](#stay-updated)
 - [Contact](#contact)
@@ -26,7 +26,7 @@ You can view Jeanne Paris website [here](https://jesselessa.github.io/jeanne/)
 
 This project has been created with HTML, CSS and JavaScript.
 
-## Sreenshot
+## Screenshot
 
 ![Screenshot](./images/screenshot/screenshot.png)
 
