@@ -27,6 +27,8 @@ This project has been created with HTML, CSS and JavaScript.
 
 ## Pages
 
+![Screenshot](./images/screenshot/screenshot.png)
+
 The website features a responsive design, dynamic interactions, and a visually appealing layout.
 
 ### 1. Home (index.html)
