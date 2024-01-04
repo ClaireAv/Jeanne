@@ -9,10 +9,11 @@ Welcome to Jeanne Paris, a website for a fictive brand showcasing a collection o
 - [Screenshot](#screenshot)
 - [Pages](#pages)
   - [Home (index.html)](#1-home-indexhtml)
-  - [Collection (vetement.html)](#2-collection-vetementhtml)
+  - [Collection (vetement.html)](#2-collection-collectionhtml)
   - [Clothing Details (selection.html)](#3-clothing-details-selectionhtml)
   - [Shopping Cart (panier.html)](#4-shopping-cart-panierhtml)
-  - [Order Confirmation (confirmation.html)](#5-order-confirmation-confirmationhtml)
+  - [Payment (paiement.html](#5-payment-paiementhtml)
+  - [Order Confirmation (confirmation.html)](#6-order-confirmation-confirmationhtml)
 - [Run the project locally](#run-the-project-locally)
 - [Contributing](#contributing)
 - [Stay updated](#stay-updated)
@@ -38,7 +39,7 @@ The website features a responsive design, dynamic interactions, and a visually a
 
 The landing page with the main navigation and featured content.
 
-### 2. Collection (vetement.html)
+### 2. Collection (collection.html)
 
 Page showcasing a selection of clothing items with details, including images, descriptions, and options for sizes.
 
@@ -50,7 +51,11 @@ Detailed view of a specific clothing item, including images, description, pricin
 
 Shopping cart page where users can review selected items, see the total cost, and proceed to checkout.
 
-### 5. Order Confirmation (confirmation.html)
+### 5. Payment (paiement.html)
+
+Payment page where users can find their order summary and fill out their information before making payment.
+
+### 6. Order Confirmation (confirmation.html)
 
 Confirmation page displaying a thank you message and order reference after a successful purchase.
 
@@ -59,7 +64,7 @@ Confirmation page displaying a thank you message and order reference after a suc
 1. Clone the repository : git clone https://github.com/jesselessa/jeanne.git
 2. Navigate to the project directory : cd jeanne
 3. Open the index.html file in your preferred browser, in order to explore the main landing page.
-4. Check out other HTML files such as vetement.html, selection.html, panier.html and confirmation.html, in order to navigate through different sections of the website.
+4. Check out other HTML files such as collection.html, selection.html, panier.html, paiement.html and confirmation.html, in order to navigate through the different pages of the website.
 
 ## Contributing
 
@@ -76,4 +81,4 @@ For inquiries, contact me via [LinkedIn](https://www.linkedin.com/in/jessica-ele
 
 ---
 
-© 2021, Jessica ELESSA - All rights reserved
+&copy; 2023, Jessica ELESSA - All rights reserved
