@@ -61,10 +61,10 @@ Confirmation page displaying a thank you message and order reference after a suc
 
 ## Run the project locally
 
-1. Clone the repository : git clone https://github.com/jesselessa/jeanne.git
-2. Navigate to the project directory : cd jeanne
-3. Open the index.html file in your preferred browser, in order to explore the main landing page.
-4. Check out other HTML files such as collection.html, selection.html, panier.html, paiement.html and confirmation.html, in order to navigate through the different pages of the website.
+1. Clone the repository : `git clone https://github.com/jesselessa/jeanne.git`
+2. Navigate to the project directory : `cd jeanne`
+3. Open the `index.html` file in your preferred browser, in order to explore the main landing page.
+4. Check out other HTML files such as `collection.html`, `selection.html`, `panier.html`, `paiement.html` and `confirmation.html`, in order to navigate through different sections of the website.
 
 ## Contributing
 
@@ -73,7 +73,7 @@ Confirmation page displaying a thank you message and order reference after a suc
 
 ## Stay updated
 
-To stay updated with the latest changes, you can pull the latest changes from the repository : git pull origin main
+To stay updated with the latest changes, you can pull the latest changes from the repository : `git pull origin main`
 
 ## Contact
 
