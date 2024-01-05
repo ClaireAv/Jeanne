@@ -77,7 +77,7 @@ To stay updated with the latest changes, you can pull the latest changes from th
 
 ## Contact
 
-For inquiries, contact me via [LinkedIn](https://www.linkedin.com/in/jessica-elessa/) or [GitHub](https://github.com/jesselessa).
+For inquiries, contact me via [LinkedIn](https://www.linkedin.com/in/jessica-elessa/).
 
 ---
 
